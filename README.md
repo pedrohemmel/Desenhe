@@ -26,13 +26,13 @@ _Exemplo: class PersonagemPrincipal {}_
 
 ### Branches
 
-* CamelCase
+* Snake case
+* Tudo minúsculo
 * Nome auto explicativo
-* Verbo
 * Utilizado para resolver uma função única
 * Nao fazer alteração na main/v1 sem consultar os colegas
 
-_Exemplo: criarBotao_
+_Exemplo: botao_tela_inicial
 
 ### Commit
 
