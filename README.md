@@ -14,9 +14,8 @@ _Exemplo: var nomeCompleto: String = "Pike Pedros"_
 
 * Verbo
 * CamelCase
-* Estritamente retornando uma tipagem
 
-_Exemplo: func personagemAnimar() -> Void {}_
+_Exemplo: func personagemAnimar() {}_
 
 ### Classes
 
