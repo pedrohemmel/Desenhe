@@ -8,14 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var carregadorInfDesenho: CarregadorInfDesenho?
+    @State var recebeuInfDesenho = false
     var body: some View {
         VStack {
-//            Image(systemName: "globe")
-//                .imageScale(.large)
-//                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            if recebeuInfDesenho {
+                ForEach(carregadorInfDesenho?.infDesenho?.categorias ?? [Categoria](), id: \.id) { categoria in
+                    VStack {
+                        Text("\(categoria.nomeCategoria)")
+                        ForEach(categoria.desenhos, id: \.id) { desenho in
+                            Text("\(desenho.nomeDiretorio)")
+                                .padding(.leading, 50)
+                        }
+                    }
+                    .padding(.bottom, 50)
+                }
+            } else {
+                ProgressView()
+            }
+        }
+        .onAppear {
+            self.carregadorInfDesenho = coletaDados {
+                self.recebeuInfDesenho = true
+            }
         }
         .padding()
+    }
+    
+    func coletaDados(resposta: @escaping (() -> Void)) -> CarregadorInfDesenho {
+        let carregador = CarregadorInfDesenho(resposta: resposta)
+        
+        return carregador
     }
 }
 
