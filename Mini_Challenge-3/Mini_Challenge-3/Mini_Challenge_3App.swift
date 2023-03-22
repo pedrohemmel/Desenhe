@@ -7,11 +7,12 @@
 
 import SwiftUI
 
+@available(iOS 16.0, *)
 @main
 struct Mini_Challenge_3App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ImportarImagemView()
         }
     }
 }
