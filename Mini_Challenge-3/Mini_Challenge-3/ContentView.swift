@@ -31,8 +31,6 @@ struct ContentView: View {
             self.carregadorInfDesenho = coletaDados {
                 self.recebeuInfDesenho = true
             }
-            
-            
         }
         .padding()
     }

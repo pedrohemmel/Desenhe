@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05162EAE29CA3DA9007A7FB3 /* BotaoGeralComponente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05162EAD29CA3DA9007A7FB3 /* BotaoGeralComponente.swift */; };
+		05162EB029CA3DCC007A7FB3 /* TelaInicialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05162EAF29CA3DCC007A7FB3 /* TelaInicialView.swift */; };
+		05E7280C29CA1FBE007C7D72 /* TelaInicialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E7280B29CA1FBE007C7D72 /* TelaInicialViewModel.swift */; };
 		BB7C6E8029C8FF9D0056BBD7 /* Mini_Challenge_3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C6E7F29C8FF9D0056BBD7 /* Mini_Challenge_3App.swift */; };
 		BB7C6E8229C8FF9D0056BBD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C6E8129C8FF9D0056BBD7 /* ContentView.swift */; };
 		BB7C6E8429C8FF9E0056BBD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB7C6E8329C8FF9E0056BBD7 /* Assets.xcassets */; };
@@ -17,6 +20,7 @@
 		BB7C6EC329CA2FCC0056BBD7 /* InfDesenho.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C6EC229CA2FCC0056BBD7 /* InfDesenho.swift */; };
 		BB7C6EC529CA300D0056BBD7 /* Categoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C6EC429CA300D0056BBD7 /* Categoria.swift */; };
 		BB7C6EC629CA441A0056BBD7 /* InfDesenhoJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = BB7C6EBF29CA2DD50056BBD7 /* InfDesenhoJSON.json */; };
+		BB7C6EC829CB95AC0056BBD7 /* ImportarImagemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C6EC729CB95AC0056BBD7 /* ImportarImagemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05162EAD29CA3DA9007A7FB3 /* BotaoGeralComponente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotaoGeralComponente.swift; sourceTree = "<group>"; };
+		05162EAF29CA3DCC007A7FB3 /* TelaInicialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialView.swift; sourceTree = "<group>"; };
+		05E7280B29CA1FBE007C7D72 /* TelaInicialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialViewModel.swift; sourceTree = "<group>"; };
 		BB7C6E7C29C8FF9D0056BBD7 /* Mini_Challenge-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini_Challenge-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7C6E7F29C8FF9D0056BBD7 /* Mini_Challenge_3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini_Challenge_3App.swift; sourceTree = "<group>"; };
 		BB7C6E8129C8FF9D0056BBD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +49,7 @@
 		BB7C6EBF29CA2DD50056BBD7 /* InfDesenhoJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = InfDesenhoJSON.json; sourceTree = "<group>"; };
 		BB7C6EC229CA2FCC0056BBD7 /* InfDesenho.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfDesenho.swift; sourceTree = "<group>"; };
 		BB7C6EC429CA300D0056BBD7 /* Categoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categoria.swift; sourceTree = "<group>"; };
+		BB7C6EC729CB95AC0056BBD7 /* ImportarImagemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportarImagemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05E7280D29CA1FD3007C7D72 /* TelaInicial */ = {
+			isa = PBXGroup;
+			children = (
+				05162EAF29CA3DCC007A7FB3 /* TelaInicialView.swift */,
+				05E7280B29CA1FBE007C7D72 /* TelaInicialViewModel.swift */,
+			);
+			path = TelaInicial;
+			sourceTree = "<group>";
+		};
+		05E7280E29CA2130007C7D72 /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+				05162EAD29CA3DA9007A7FB3 /* BotaoGeralComponente.swift */,
+			);
+			path = Componentes;
+			sourceTree = "<group>";
+		};
 		BB7C6E7329C8FF9D0056BBD7 = {
 			isa = PBXGroup;
 			children = (
@@ -83,14 +108,16 @@
 		BB7C6E7E29C8FF9D0056BBD7 /* Mini_Challenge-3 */ = {
 			isa = PBXGroup;
 			children = (
+				BB7C6E8529C8FF9E0056BBD7 /* Preview Content */,
 				BB7C6E8329C8FF9E0056BBD7 /* Assets.xcassets */,
 				BB7C6E7F29C8FF9D0056BBD7 /* Mini_Challenge_3App.swift */,
 				BB7C6E8129C8FF9D0056BBD7 /* ContentView.swift */,
 				BB7C6EBB29CA2B8F0056BBD7 /* Source */,
 				BB7C6EBC29CA2BB30056BBD7 /* Utils */,
 				BB7C6EB829CA266A0056BBD7 /* Model */,
+				BB7C6EC729CB95AC0056BBD7 /* ImportarImagemView.swift */,
+				05E7280E29CA2130007C7D72 /* Componentes */,
 				BB7C6EAA29C900340056BBD7 /* View */,
-				BB7C6E8529C8FF9E0056BBD7 /* Preview Content */,
 			);
 			path = "Mini_Challenge-3";
 			sourceTree = "<group>";
@@ -114,6 +141,7 @@
 		BB7C6EAA29C900340056BBD7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+        05E7280D29CA1FD3007C7D72 /* TelaInicial */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -247,6 +275,10 @@
 			files = (
 				BB7C6EBA29CA26750056BBD7 /* Desenho.swift in Sources */,
 				BB7C6EC329CA2FCC0056BBD7 /* InfDesenho.swift in Sources */,
+				BB7C6EC829CB95AC0056BBD7 /* ImportarImagemView.swift in Sources */,
+				05E7280C29CA1FBE007C7D72 /* TelaInicialViewModel.swift in Sources */,
+				05162EB029CA3DCC007A7FB3 /* TelaInicialView.swift in Sources */,
+				05162EAE29CA3DA9007A7FB3 /* BotaoGeralComponente.swift in Sources */,
 				BB7C6E8229C8FF9D0056BBD7 /* ContentView.swift in Sources */,
 				BB7C6EBE29CA2D9D0056BBD7 /* CarregadorInfDesenho.swift in Sources */,
 				BB7C6E8029C8FF9D0056BBD7 /* Mini_Challenge_3App.swift in Sources */,
