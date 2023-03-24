@@ -7,19 +7,18 @@
 
 import SwiftUI
 struct NossosDesenhosView: View {
-    @State private var searchText = ""
+    @State private var textoPesquisa = ""
+    
+    @State var filtroAberto = false
+    @State var filtroSelecionado = ""
+    
     var body: some View {
-        VStack {
-            HStack {
-                Image(systemName: "search")
-                TextField("Pesquise aqui", text: $searchText)
+        ZStack {
+            VStack {
+                SearchBarComponente(textoPesquisa: $textoPesquisa, filtroAberto: $filtroAberto, filtroSelecionado: $filtroSelecionado)
+                Spacer()
             }
-            .padding(7)
-            .padding(.horizontal, 25)
-            .background(Color(.systemGray6))
-            .cornerRadius(8)
-            .padding(.horizontal, 10)
-            Spacer()
+            FiltroNossosDesenhosComponente(filtroAberto: $filtroAberto, filtroSelecionado: $filtroSelecionado)
         }
         .navigationBarTitle(Text("Nossos Desenhos"), displayMode: .inline)
     }
