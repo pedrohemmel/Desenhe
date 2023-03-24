@@ -17,7 +17,7 @@ struct TelaInicialView: View {
                 Spacer()
                 BotaoGeral(destination: AnyView(TelaInicialView()), text: "Primeiro botão")
                     .padding(.bottom, 40)
-                BotaoGeral(destination: AnyView(TelaInicialView()), text: "Primeiro botão")
+                BotaoGeral(destination: AnyView(NossosDesenhosView()), text: "Selecione um de nossos desenhos")
                     .padding(.bottom, 40)
                 BotaoGeral(destination: AnyView(TelaInicialView()), text: "Primeiro botão")
                 Spacer()
