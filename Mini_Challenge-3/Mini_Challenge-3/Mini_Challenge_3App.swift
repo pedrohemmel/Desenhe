@@ -12,6 +12,7 @@ struct Mini_Challenge_3App: App {
     var body: some Scene {
         WindowGroup {
             TelaInicialView()
+//           ScrollViewHorizontal()
         }
     }
 }
