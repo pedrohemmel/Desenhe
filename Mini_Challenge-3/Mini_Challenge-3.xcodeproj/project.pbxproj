@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43CF996E29CCDC1A00AF990C /* ModoCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CF996D29CCDC1A00AF990C /* ModoCameraView.swift */; };
+		43CF997329CD4B8C00AF990C /* ModoCameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CF997229CD4B8C00AF990C /* ModoCameraModel.swift */; };
+		43CF997729CD4C3E00AF990C /* ModoCameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CF997629CD4C3E00AF990C /* ModoCameraViewModel.swift */; };
 		BB7C6E8029C8FF9D0056BBD7 /* Mini_Challenge_3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C6E7F29C8FF9D0056BBD7 /* Mini_Challenge_3App.swift */; };
 		BB7C6E8229C8FF9D0056BBD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C6E8129C8FF9D0056BBD7 /* ContentView.swift */; };
 		BB7C6E8429C8FF9E0056BBD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB7C6E8329C8FF9E0056BBD7 /* Assets.xcassets */; };
@@ -25,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43CF996D29CCDC1A00AF990C /* ModoCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModoCameraView.swift; sourceTree = "<group>"; };
+		43CF997229CD4B8C00AF990C /* ModoCameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModoCameraModel.swift; sourceTree = "<group>"; };
+		43CF997629CD4C3E00AF990C /* ModoCameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModoCameraViewModel.swift; sourceTree = "<group>"; };
 		BB7C6E7C29C8FF9D0056BBD7 /* Mini_Challenge-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini_Challenge-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7C6E7F29C8FF9D0056BBD7 /* Mini_Challenge_3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini_Challenge_3App.swift; sourceTree = "<group>"; };
 		BB7C6E8129C8FF9D0056BBD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +61,9 @@
 		BB7C6E7329C8FF9D0056BBD7 = {
 			isa = PBXGroup;
 			children = (
+				43CF997229CD4B8C00AF990C /* ModoCameraModel.swift */,
+				43CF996D29CCDC1A00AF990C /* ModoCameraView.swift */,
+				43CF997629CD4C3E00AF990C /* ModoCameraViewModel.swift */,
 				BB7C6E7E29C8FF9D0056BBD7 /* Mini_Challenge-3 */,
 				BB7C6E8F29C8FF9E0056BBD7 /* Mini_Challenge-3Tests */,
 				BB7C6E7D29C8FF9D0056BBD7 /* Products */,
@@ -214,7 +223,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB7C6E8229C8FF9D0056BBD7 /* ContentView.swift in Sources */,
+				43CF997329CD4B8C00AF990C /* ModoCameraModel.swift in Sources */,
 				BB7C6E8029C8FF9D0056BBD7 /* Mini_Challenge_3App.swift in Sources */,
+				43CF997729CD4C3E00AF990C /* ModoCameraViewModel.swift in Sources */,
+				43CF996E29CCDC1A00AF990C /* ModoCameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,9 +371,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mini_Challenge-3/Preview Content\"";
-				DEVELOPMENT_TEAM = UFS93RKF34;
+				DEVELOPMENT_TEAM = V32Q5HA7F8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -388,9 +401,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mini_Challenge-3/Preview Content\"";
-				DEVELOPMENT_TEAM = UFS93RKF34;
+				DEVELOPMENT_TEAM = V32Q5HA7F8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
