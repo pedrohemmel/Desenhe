@@ -16,7 +16,7 @@ struct ScrollViewHorizontal: View {
     var body: some View {
         VStack {
             HStack {
-                Text("Titulo")
+                Text("titulo") 
                     .padding(10)
                     .background(Color.gray)
                     .cornerRadius(10)
