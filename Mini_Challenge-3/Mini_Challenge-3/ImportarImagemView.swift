@@ -12,8 +12,8 @@ struct ImportarImagemView: View {
     @State private var itemSelecionado: PhotosPickerItem? = nil
     @State private var dadosImagemSelecionada: Data? = nil
     
-    let screenWidth = UIScreen.main.bounds.size.width
-    let screenHeight = UIScreen.main.bounds.size.height
+    let larguraTela = UIScreen.main.bounds.size.width
+    let alturaTela = UIScreen.main.bounds.size.height
     
     var body: some View {
         
@@ -37,7 +37,7 @@ struct ImportarImagemView: View {
             Image(uiImage: uiImage)
                 .resizable()
                 .scaledToFit()
-                .frame(width: screenWidth, height: 250)
+                .frame(width: larguraTela, height: 250)
         }
     }
 }
