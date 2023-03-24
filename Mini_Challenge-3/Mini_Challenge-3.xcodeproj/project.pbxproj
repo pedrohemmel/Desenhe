@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		05162EAE29CA3DA9007A7FB3 /* BotaoGeralComponente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05162EAD29CA3DA9007A7FB3 /* BotaoGeralComponente.swift */; };
 		05162EB029CA3DCC007A7FB3 /* TelaInicialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05162EAF29CA3DCC007A7FB3 /* TelaInicialView.swift */; };
+		05162EBE29CD1183007A7FB3 /* SliderComponente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05162EBD29CD1183007A7FB3 /* SliderComponente.swift */; };
 		05E7280C29CA1FBE007C7D72 /* TelaInicialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E7280B29CA1FBE007C7D72 /* TelaInicialViewModel.swift */; };
 		BB7C6E8029C8FF9D0056BBD7 /* Mini_Challenge_3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C6E7F29C8FF9D0056BBD7 /* Mini_Challenge_3App.swift */; };
 		BB7C6E8229C8FF9D0056BBD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C6E8129C8FF9D0056BBD7 /* ContentView.swift */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		05162EAD29CA3DA9007A7FB3 /* BotaoGeralComponente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotaoGeralComponente.swift; sourceTree = "<group>"; };
 		05162EAF29CA3DCC007A7FB3 /* TelaInicialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialView.swift; sourceTree = "<group>"; };
+		05162EBD29CD1183007A7FB3 /* SliderComponente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderComponente.swift; sourceTree = "<group>"; };
 		05E7280B29CA1FBE007C7D72 /* TelaInicialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialViewModel.swift; sourceTree = "<group>"; };
 		BB7C6E7C29C8FF9D0056BBD7 /* Mini_Challenge-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini_Challenge-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7C6E7F29C8FF9D0056BBD7 /* Mini_Challenge_3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini_Challenge_3App.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				05162EAD29CA3DA9007A7FB3 /* BotaoGeralComponente.swift */,
+				05162EBD29CD1183007A7FB3 /* SliderComponente.swift */,
 			);
 			path = Componentes;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05162EBE29CD1183007A7FB3 /* SliderComponente.swift in Sources */,
 				BB7C6EBA29CA26750056BBD7 /* Desenho.swift in Sources */,
 				BB7C6EC329CA2FCC0056BBD7 /* InfDesenho.swift in Sources */,
 				BB7C6EC829CB95AC0056BBD7 /* ImportarImagemView.swift in Sources */,

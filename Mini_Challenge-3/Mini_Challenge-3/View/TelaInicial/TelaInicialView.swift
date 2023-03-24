@@ -15,7 +15,7 @@ struct TelaInicialView: View {
                 Text("Titulo")
                     .padding(.top, 60)
                 Spacer()
-                BotaoGeral(destination: AnyView(TelaInicialView()), text: "Primeiro botão")
+                BotaoGeral(destination: AnyView(SliderComponente()), text: "Primeiro botão")
                     .padding(.bottom, 40)
                 BotaoGeral(destination: AnyView(TelaInicialView()), text: "Primeiro botão")
                     .padding(.bottom, 40)
