@@ -7,7 +7,6 @@
 
 import SwiftUI
 import PhotosUI
-@available(iOS 16.0, *)
 struct ImportarImagemView: View {
     @State private var itemSelecionado: PhotosPickerItem? = nil
     @State private var dadosImagemSelecionada: Data? = nil

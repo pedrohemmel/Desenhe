@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BotaoGeral: View {
+struct BotaoMenuInicialComponente: View {
     
     var destination: AnyView
     var text: String
