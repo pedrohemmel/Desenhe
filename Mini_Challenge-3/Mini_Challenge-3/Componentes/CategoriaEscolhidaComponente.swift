@@ -7,15 +7,17 @@
 
 import SwiftUI
 
-struct TelaFiltroEscolhidoView: View {
+struct CategoriaEscolhidaComponente: View {
     let itens = 1...50
     let colunas = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
+    
+    @Binding var filtroSelecionado: String
     
     var body: some View {
         
         ScrollView {
             HStack {
-                Text("Titulo")
+                Text("\(self.filtroSelecionado)")
                     .padding(10)
                     .background(.secondary)
                     .cornerRadius(10)
@@ -38,11 +40,5 @@ struct TelaFiltroEscolhidoView: View {
         }
         .navigationTitle("Title")
         .navigationBarTitleDisplayMode(.inline)
-    }
-}
-
-struct TelaFiltroEscolhidoView_Previews: PreviewProvider {
-    static var previews: some View {
-        TelaFiltroEscolhidoView()
     }
 }
