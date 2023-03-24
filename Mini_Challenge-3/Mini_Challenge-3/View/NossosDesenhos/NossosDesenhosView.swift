@@ -7,6 +7,8 @@
 
 import SwiftUI
 struct NossosDesenhosView: View {
+    var categorias = ["Primeira", "Segunda", "Terceira", "Quarta", "Quinta", "Sexta"]
+    
     @State private var textoPesquisa = ""
     
     @State var filtroAberto = false
@@ -16,9 +18,15 @@ struct NossosDesenhosView: View {
         ZStack {
             VStack {
                 SearchBarComponente(textoPesquisa: $textoPesquisa, filtroAberto: $filtroAberto, filtroSelecionado: $filtroSelecionado)
-                Spacer()
+                ScrollView {
+                    ForEach(self.categorias, id: \.self) { categoria in
+                        CarrosselComponente(categoriaDesenhos: categoria)
+                            .padding(.top, 5)
+                    }
+                }
             }
             FiltroNossosDesenhosComponente(filtroAberto: $filtroAberto, filtroSelecionado: $filtroSelecionado)
+            
         }
         .navigationBarTitle(Text("Nossos Desenhos"), displayMode: .inline)
     }

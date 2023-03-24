@@ -1,5 +1,5 @@
 //
-//  ScrollViewHorizontal.swift
+//  CarrosseeComponente.swift
 //  Mini_Challenge-3
 //
 //  Created by Guilherme Borges on 23/03/23.
@@ -7,16 +7,20 @@
 
 import SwiftUI
 
-struct ScrollViewHorizontal: View {
-    @State var array = ["Pedro", "Rodrigao", "Cecilia", "Pintudinho", "Cec", "Sarah", "Danilo Santana"]
-    let larguraTela = UIScreen.main.bounds.size.width
-    private let tamanhoImagem = 150.0
-//    var 
+struct CarrosselComponente: View {
+    var array = ["Pedro", "Rodrigao", "Cecilia", "Pintudinho", "Cec", "Sarah", "Danilo Santana"]
+    var categoriaDesenhos: String
+    
+    private let alturaELarguraImagem = 100.0
+    
+    init(categoriaDesenhos: String) {
+        self.categoriaDesenhos = categoriaDesenhos
+    }
     
     var body: some View {
         VStack {
             HStack {
-                Text("titulo") 
+                Text("\(categoriaDesenhos)")
                     .padding(10)
                     .background(Color.gray)
                     .cornerRadius(10)
@@ -24,19 +28,22 @@ struct ScrollViewHorizontal: View {
                 Spacer()
             }
             ScrollView(.horizontal) {
-                LazyHGrid(rows: [GridItem(.fixed(0))], content: {
+                LazyHGrid(
+                    rows: [GridItem(.fixed(15))],
+                    spacing: 15,
+                    content: {
                     ForEach(array, id: \.self) {nome in
                         Button {
                             print(nome)
                         } label: {
                             Image("post1")
-                                .frame(width: self.tamanhoImagem, height: self.tamanhoImagem)
-                                
+                                .resizable()
+                                .frame(width: self.alturaELarguraImagem, height: self.alturaELarguraImagem)
                         }
                     }
                 })
             }
-            .frame(height: self.tamanhoImagem)
+            .frame(height: self.alturaELarguraImagem)
             .padding(.horizontal, 10)
         }
         
