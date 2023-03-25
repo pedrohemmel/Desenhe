@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		05162EAE29CA3DA9007A7FB3 /* BotaoGeralComponente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05162EAD29CA3DA9007A7FB3 /* BotaoGeralComponente.swift */; };
 		05162EB029CA3DCC007A7FB3 /* TelaInicialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05162EAF29CA3DCC007A7FB3 /* TelaInicialView.swift */; };
-		05E7280C29CA1FBE007C7D72 /* TelaInicialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E7280B29CA1FBE007C7D72 /* TelaInicialViewModel.swift */; };
 		05162EBC29CCE12C007A7FB3 /* ScrollViewHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05162EBB29CCE12C007A7FB3 /* ScrollViewHorizontal.swift */; };
+		05E7280C29CA1FBE007C7D72 /* TelaInicialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E7280B29CA1FBE007C7D72 /* TelaInicialViewModel.swift */; };
+		43910A3C29CE30C000B1BBD8 /* ConfirmarDesenhoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43910A3B29CE30C000B1BBD8 /* ConfirmarDesenhoView.swift */; };
 		BB7C6E8029C8FF9D0056BBD7 /* Mini_Challenge_3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C6E7F29C8FF9D0056BBD7 /* Mini_Challenge_3App.swift */; };
 		BB7C6E8229C8FF9D0056BBD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C6E8129C8FF9D0056BBD7 /* ContentView.swift */; };
 		BB7C6E8429C8FF9E0056BBD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB7C6E8329C8FF9E0056BBD7 /* Assets.xcassets */; };
@@ -37,8 +38,9 @@
 /* Begin PBXFileReference section */
 		05162EAD29CA3DA9007A7FB3 /* BotaoGeralComponente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotaoGeralComponente.swift; sourceTree = "<group>"; };
 		05162EAF29CA3DCC007A7FB3 /* TelaInicialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialView.swift; sourceTree = "<group>"; };
-		05E7280B29CA1FBE007C7D72 /* TelaInicialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialViewModel.swift; sourceTree = "<group>"; };
 		05162EBB29CCE12C007A7FB3 /* ScrollViewHorizontal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewHorizontal.swift; sourceTree = "<group>"; };
+		05E7280B29CA1FBE007C7D72 /* TelaInicialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialViewModel.swift; sourceTree = "<group>"; };
+		43910A3B29CE30C000B1BBD8 /* ConfirmarDesenhoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmarDesenhoView.swift; sourceTree = "<group>"; };
 		BB7C6E7C29C8FF9D0056BBD7 /* Mini_Challenge-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini_Challenge-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7C6E7F29C8FF9D0056BBD7 /* Mini_Challenge_3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini_Challenge_3App.swift; sourceTree = "<group>"; };
 		BB7C6E8129C8FF9D0056BBD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			children = (
 				BB7C6E8129C8FF9D0056BBD7 /* ContentView.swift */,
 				BB7C6EC729CB95AC0056BBD7 /* ImportarImagemView.swift */,
+				43910A3B29CE30C000B1BBD8 /* ConfirmarDesenhoView.swift */,
 				BB7C6EBC29CA2BB30056BBD7 /* Utils */,
 				05E7280E29CA2130007C7D72 /* Componentes */,
 				BB7C6EBB29CA2B8F0056BBD7 /* Source */,
@@ -144,7 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				05E7280D29CA1FD3007C7D72 /* TelaInicial */,
-                05162EBB29CCE12C007A7FB3 /* ScrollViewHorizontal.swift */,
+				05162EBB29CCE12C007A7FB3 /* ScrollViewHorizontal.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				BB7C6EBA29CA26750056BBD7 /* Desenho.swift in Sources */,
 				BB7C6EC329CA2FCC0056BBD7 /* InfDesenho.swift in Sources */,
 				BB7C6EC829CB95AC0056BBD7 /* ImportarImagemView.swift in Sources */,
+				43910A3C29CE30C000B1BBD8 /* ConfirmarDesenhoView.swift in Sources */,
 				05E7280C29CA1FBE007C7D72 /* TelaInicialViewModel.swift in Sources */,
 				05162EB029CA3DCC007A7FB3 /* TelaInicialView.swift in Sources */,
 				05162EAE29CA3DA9007A7FB3 /* BotaoGeralComponente.swift in Sources */,
