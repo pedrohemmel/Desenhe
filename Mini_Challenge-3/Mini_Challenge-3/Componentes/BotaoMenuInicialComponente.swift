@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct BotaoMenuInicialComponente: View {
-    
     var destination: AnyView
     var text: String
     
@@ -25,8 +24,6 @@ struct BotaoMenuInicialComponente: View {
             .padding(.vertical, 20)
             .padding(.horizontal, 60)
             .background(Color.black)
-            .cornerRadius(20)
-
-        }
+            .cornerRadius(20)        }
     }
 }
