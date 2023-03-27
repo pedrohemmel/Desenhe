@@ -11,6 +11,9 @@ struct CategoriaEscolhidaComponente: View {
     let itens = 1...50
     let colunas = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
     
+    @Binding var acaoDismiss: DismissAction
+    @Binding var imagemEstaSelecionada: Bool
+    @Binding var desenhoSelecionado: String
     @Binding var filtroSelecionado: String
     
     var body: some View {
@@ -26,11 +29,13 @@ struct CategoriaEscolhidaComponente: View {
             LazyVGrid(columns: colunas, spacing: 10) {
                 ForEach(itens, id: \.self) { item in
                     Button(action: {
-                        print("Something")
+                        self.desenhoSelecionado = "\(item)"
+                        self.imagemEstaSelecionada = true
+                        self.acaoDismiss()
                     }, label: {
                         Image("post1")
+                            .frame(width: 100, height: 100)
                     })
-                    .frame(width: 100, height: 100)
                     .cornerRadius(10)
                 }
             }

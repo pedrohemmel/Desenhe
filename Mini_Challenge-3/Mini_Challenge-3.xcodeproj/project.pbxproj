@@ -22,7 +22,7 @@
 		BB7C6EC329CA2FCC0056BBD7 /* InfDesenho.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C6EC229CA2FCC0056BBD7 /* InfDesenho.swift */; };
 		BB7C6EC529CA300D0056BBD7 /* Categoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C6EC429CA300D0056BBD7 /* Categoria.swift */; };
 		BB7C6EC629CA441A0056BBD7 /* InfDesenhoJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = BB7C6EBF29CA2DD50056BBD7 /* InfDesenhoJSON.json */; };
-		BB7C6EC829CB95AC0056BBD7 /* ImportarImagemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C6EC729CB95AC0056BBD7 /* ImportarImagemView.swift */; };
+		BB7C6EC829CB95AC0056BBD7 /* BotaoImportarImagemComponente.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C6EC729CB95AC0056BBD7 /* BotaoImportarImagemComponente.swift */; };
 		BB7C6ECB29CB9AC90056BBD7 /* NossosDesenhosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C6ECA29CB9AC90056BBD7 /* NossosDesenhosViewModel.swift */; };
 		BB7C6ECD29CB9AD20056BBD7 /* NossosDesenhosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C6ECC29CB9AD20056BBD7 /* NossosDesenhosView.swift */; };
 		BB7C6F0529CCF1830056BBD7 /* SearchBarComponente.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C6F0429CCF1830056BBD7 /* SearchBarComponente.swift */; };
@@ -57,7 +57,7 @@
 		BB7C6EBF29CA2DD50056BBD7 /* InfDesenhoJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = InfDesenhoJSON.json; sourceTree = "<group>"; };
 		BB7C6EC229CA2FCC0056BBD7 /* InfDesenho.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfDesenho.swift; sourceTree = "<group>"; };
 		BB7C6EC429CA300D0056BBD7 /* Categoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categoria.swift; sourceTree = "<group>"; };
-		BB7C6EC729CB95AC0056BBD7 /* ImportarImagemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportarImagemView.swift; sourceTree = "<group>"; };
+		BB7C6EC729CB95AC0056BBD7 /* BotaoImportarImagemComponente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotaoImportarImagemComponente.swift; sourceTree = "<group>"; };
 		BB7C6ECA29CB9AC90056BBD7 /* NossosDesenhosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NossosDesenhosViewModel.swift; sourceTree = "<group>"; };
 		BB7C6ECC29CB9AD20056BBD7 /* NossosDesenhosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NossosDesenhosView.swift; sourceTree = "<group>"; };
 		BB7C6F0429CCF1830056BBD7 /* SearchBarComponente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarComponente.swift; sourceTree = "<group>"; };
@@ -94,6 +94,7 @@
 		05E7280E29CA2130007C7D72 /* Componentes */ = {
 			isa = PBXGroup;
 			children = (
+				BB7C6EC729CB95AC0056BBD7 /* BotaoImportarImagemComponente.swift */,
 				43910A3929CE17BB00B1BBD8 /* CategoriaEscolhidaComponente.swift */,
 				05162EBB29CCE12C007A7FB3 /* CarrosselComponente.swift */,
 				05162EAD29CA3DA9007A7FB3 /* BotaoMenuInicialComponente.swift */,
@@ -125,10 +126,9 @@
 			isa = PBXGroup;
 			children = (
 				BB7C6E8129C8FF9D0056BBD7 /* ContentView.swift */,
-				BB7C6EC729CB95AC0056BBD7 /* ImportarImagemView.swift */,
+				BB7C6EBB29CA2B8F0056BBD7 /* Source */,
 				BB7C6EBC29CA2BB30056BBD7 /* Utils */,
 				05E7280E29CA2130007C7D72 /* Componentes */,
-				BB7C6EBB29CA2B8F0056BBD7 /* Source */,
 				BB7C6EB829CA266A0056BBD7 /* Model */,
 				BB7C6EAA29C900340056BBD7 /* View */,
 				BB7C6E8529C8FF9E0056BBD7 /* Preview Content */,
@@ -301,7 +301,7 @@
 			files = (
 				BB7C6EBA29CA26750056BBD7 /* Desenho.swift in Sources */,
 				BB7C6EC329CA2FCC0056BBD7 /* InfDesenho.swift in Sources */,
-				BB7C6EC829CB95AC0056BBD7 /* ImportarImagemView.swift in Sources */,
+				BB7C6EC829CB95AC0056BBD7 /* BotaoImportarImagemComponente.swift in Sources */,
 				05E7280C29CA1FBE007C7D72 /* TelaInicialViewModel.swift in Sources */,
 				BB7C6ECD29CB9AD20056BBD7 /* NossosDesenhosView.swift in Sources */,
 				BB7C6F0729CE1ABA0056BBD7 /* FiltroNossosDesenhosComponente.swift in Sources */,
