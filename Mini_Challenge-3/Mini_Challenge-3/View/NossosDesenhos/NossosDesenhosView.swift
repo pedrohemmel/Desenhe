@@ -17,7 +17,7 @@ struct NossosDesenhosView: View {
     
     var body: some View {
         ZStack {
-            NavigationLink(destination: EmptyView(), isActive: self.$imagemEstaSelecionada, label: {})
+            NavigationLink(destination: ConfirmarDesenhoView(), isActive: self.$imagemEstaSelecionada, label: {})
             VStack {
                 SearchBarComponente(
                     textoPesquisa: self.$textoPesquisa,

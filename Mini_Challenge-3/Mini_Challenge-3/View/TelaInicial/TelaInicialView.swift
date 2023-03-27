@@ -13,7 +13,7 @@ struct TelaInicialView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                NavigationLink(destination: EmptyView(), isActive: self.$imagemEstaSelecionada, label: {})
+                NavigationLink(destination: ConfirmarDesenhoView(), isActive: self.$imagemEstaSelecionada, label: {})
                 VStack {
                     Text("Titulo")
                         .padding(.top, 60)

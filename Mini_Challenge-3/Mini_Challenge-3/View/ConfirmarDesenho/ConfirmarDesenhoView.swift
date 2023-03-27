@@ -22,15 +22,19 @@ struct ConfirmarDesenhoView: View {
                 
                 HStack {
                     Spacer()
-                    Text("Desenhar \(Image(systemName: "arrow.right"))")
-                        .padding(15)
-                        .background(.white)
-                        .cornerRadius(10)
-                        .padding(.bottom, 40)
-                        .padding(.trailing, 10)
+                    NavigationLink(destination: EmptyView(), label: {
+                        Text("Desenhar \(Image(systemName: "arrow.right"))")
+                            .foregroundColor(.black)
+                            .padding(15)
+                            .background(.white)
+                            .cornerRadius(10)
+                    })
+                    .padding(.bottom, 40)
+                    .padding(.trailing, 10)
                 }
             }
         }
+        .background(.black)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
         .toolbar {
