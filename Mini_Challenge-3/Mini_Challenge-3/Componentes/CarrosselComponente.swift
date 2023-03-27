@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct CarrosselComponente: View {
-    @Binding var acaoDismiss: DismissAction
     @Binding var imagemEstaSelecionada: Bool
     @Binding var desenhoSelecionado: String
     @Binding var categoriaDesenhos: String
@@ -35,7 +34,6 @@ struct CarrosselComponente: View {
                         Button {
                             self.desenhoSelecionado = desenho
                             self.imagemEstaSelecionada = true
-                            self.acaoDismiss()
                         } label: {
                             Image("post1")
                                 .resizable()

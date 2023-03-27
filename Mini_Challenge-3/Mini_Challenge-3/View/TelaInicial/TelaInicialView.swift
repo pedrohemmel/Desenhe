@@ -10,8 +10,6 @@ import SwiftUI
 struct TelaInicialView: View {
     @State var imagemEstaSelecionada = false
     @State var dadosImagemSelecionada = Data()
-    @State var desenhoSelecionado = ""
-    
     var body: some View {
         NavigationView {
             ZStack {
@@ -22,9 +20,10 @@ struct TelaInicialView: View {
                     Spacer()
                     BotaoImportarImagemComponente(imagemEstaSelecionada: self.$imagemEstaSelecionada, dadosImagemSelecionada: self.$dadosImagemSelecionada)
                         .padding(.bottom, 40)
-                    BotaoMenuInicialComponente(destination: AnyView(NossosDesenhosView(imagemEstaSelecionada: self.$imagemEstaSelecionada, desenhoSelecionado: self.$desenhoSelecionado)), text: "Selecione um de nossos desenhos")
+                    
+                    BotaoMenuInicialComponente(destination: AnyView(NossosDesenhosView()), text: "Selecione um de nossos desenhos")
                         .padding(.bottom, 40)
-                    BotaoMenuInicialComponente(destination: AnyView(TelaInicialView()), text: "Primeiro botão")
+                    BotaoMenuInicialComponente(destination: AnyView(EmptyView()), text: "Primeiro botão")
                     Spacer()
                     Spacer()
                 }

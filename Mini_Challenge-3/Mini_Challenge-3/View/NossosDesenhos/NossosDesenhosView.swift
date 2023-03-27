@@ -7,9 +7,8 @@
 
 import SwiftUI
 struct NossosDesenhosView: View {
-    @Environment(\.dismiss) var dismiss
-    @Binding var imagemEstaSelecionada: Bool
-    @Binding var desenhoSelecionado: String
+    @State var imagemEstaSelecionada = false
+    @State var desenhoSelecionado = ""
     
     @State var categorias = ["Primeira", "Segunda", "Terceira", "Quarta", "Quinta", "Sexta"]
     @State private var textoPesquisa = ""
@@ -18,6 +17,7 @@ struct NossosDesenhosView: View {
     
     var body: some View {
         ZStack {
+            NavigationLink(destination: EmptyView(), isActive: self.$imagemEstaSelecionada, label: {})
             VStack {
                 SearchBarComponente(
                     textoPesquisa: self.$textoPesquisa,
@@ -28,7 +28,6 @@ struct NossosDesenhosView: View {
                     ScrollView {
                         ForEach(self.$categorias, id: \.self) { categoria in
                             CarrosselComponente(
-                                acaoDismiss: .constant(self.dismiss),
                                 imagemEstaSelecionada: self.$imagemEstaSelecionada,
                                 desenhoSelecionado: self.$desenhoSelecionado,
                                 categoriaDesenhos: categoria, desenhos: .constant(["Pedro", "Rodrigao", "Cecilia", "Pintudinho", "Cec", "Sarah", "Danilo Santana"]))
@@ -37,12 +36,10 @@ struct NossosDesenhosView: View {
                     }
                 } else {
                     CategoriaEscolhidaComponente(
-                        acaoDismiss: .constant(self.dismiss),
                         imagemEstaSelecionada: self.$imagemEstaSelecionada,
                         desenhoSelecionado: self.$desenhoSelecionado,
                         filtroSelecionado: self.$filtroSelecionado)
                 }
-                
             }
             FiltroNossosDesenhosComponente(categorias: self.$categorias, filtroAberto: self.$filtroAberto, filtroSelecionado: self.$filtroSelecionado)
         }
