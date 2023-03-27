@@ -12,30 +12,12 @@ struct ConfirmarDesenhoView: View {
     let alturaTela = UIScreen.main.bounds.size.height
     
     var body: some View {
-        
-        ZStack{
-            Color.black
-                .ignoresSafeArea()
-            
-            Group{
-                Rectangle()
-                    .foregroundColor(.white)
-                    .frame(width: larguraTela, height: 300)
-                    .opacity(0.5)
-                
-                Circle()
-                    .stroke(lineWidth: 3)
-                    .frame(width: 200)
-                    .opacity(0.5)
-            }
-            .padding(.init(top: -100, leading: 0, bottom: 0, trailing: 0))
-            
+        ZStack {
             VStack {
-                Image(systemName: "xmark")
-                    .imageScale(.large)
-                    .foregroundColor(.white)
-                    .padding(.init(top: 20, leading: -170, bottom: 0, trailing: 0))
-                
+                Spacer()
+                Image("post1")
+                    .resizable()
+                    .frame(width: larguraTela, height: larguraTela)
                 Spacer()
                 
                 HStack {
@@ -44,15 +26,22 @@ struct ConfirmarDesenhoView: View {
                         .padding(15)
                         .background(.white)
                         .cornerRadius(10)
-                        .padding(.init(top: 0, leading: 0, bottom: 70, trailing: 25))
+                        .padding(.bottom, 40)
+                        .padding(.trailing, 10)
                 }
             }
         }
-    }
-}
-
-struct ConfirmarDesenhoView_Previews: PreviewProvider {
-    static var previews: some View {
-        ConfirmarDesenhoView()
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button {
+                    print("Sair")
+                } label: {
+                    Image(systemName: "xmark")
+                        .foregroundColor(.white)
+                }
+            }
+        }
     }
 }
