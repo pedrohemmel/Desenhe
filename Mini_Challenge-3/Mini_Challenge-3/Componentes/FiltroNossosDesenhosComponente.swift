@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FiltroNossosDesenhosComponente: View {
-    var categorias = ["Primeira", "Segunda", "Terceira", "Quarta", "Quinta", "Sexta"]
+    @State var categorias = ["Primeira", "Segunda", "Terceira", "Quarta", "Quinta", "Sexta"]
     @Binding var filtroAberto: Bool
     @Binding var filtroSelecionado: String
     var body: some View {
@@ -18,6 +18,7 @@ struct FiltroNossosDesenhosComponente: View {
                     ForEach(self.categorias, id: \.self) { categoria in
                         Button {
                             self.filtroSelecionado = categoria
+                            self.filtroAberto = false
                         } label: {
                             VStack(alignment: .leading) {
                                 Text(categoria)
@@ -27,7 +28,7 @@ struct FiltroNossosDesenhosComponente: View {
                             }
                         }
                         .padding(.leading, 15)
-                       
+                        
                     }
                 }
                 .padding([.top, .leading, .trailing], 10)
@@ -36,6 +37,18 @@ struct FiltroNossosDesenhosComponente: View {
                 .padding([.leading, .top] , 60)
                 .padding(.trailing, 20)
                 Spacer()
+            }
+        }
+        .onChange(of: self.filtroSelecionado) { novoFiltroSelecionado in
+            if novoFiltroSelecionado != "" {
+                if !self.categorias.contains("Limpar filtro") {
+                    self.categorias.append("Limpar filtro")
+                    self.filtroAberto = false
+                } else if novoFiltroSelecionado == "Limpar filtro" {
+                    self.filtroSelecionado = ""
+                    self.categorias.removeLast()
+                    self.filtroAberto = false
+                }
             }
         }
     }

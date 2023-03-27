@@ -14,31 +14,26 @@ struct CategoriaEscolhidaComponente: View {
     @Binding var filtroSelecionado: String
     
     var body: some View {
-        
         ScrollView {
             HStack {
                 Text("\(self.filtroSelecionado)")
                     .padding(10)
                     .background(.secondary)
                     .cornerRadius(10)
-                    .padding(.horizontal, 21)
+                    .padding(.horizontal, 10)
                 Spacer()
             }
-            LazyVGrid(columns: colunas, spacing: 30) {
+            LazyVGrid(columns: colunas, spacing: 10) {
                 ForEach(itens, id: \.self) { item in
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 10)
-                            .frame(width: 100, height: 100)
-                            .foregroundColor(.secondary)
-                            .opacity(0.7)
-                        
-                        Text("Imagem \(item)")
-                    }
+                    Button(action: {
+                        print("Something")
+                    }, label: {
+                        Image("post1")
+                    })
+                    .frame(width: 100, height: 100)
+                    .cornerRadius(10)
                 }
             }
-            .padding()
         }
-        .navigationTitle("Title")
-        .navigationBarTitleDisplayMode(.inline)
     }
 }

@@ -18,12 +18,18 @@ struct NossosDesenhosView: View {
         ZStack {
             VStack {
                 SearchBarComponente(textoPesquisa: $textoPesquisa, filtroAberto: $filtroAberto, filtroSelecionado: $filtroSelecionado)
-                ScrollView {
-                    ForEach(self.categorias, id: \.self) { categoria in
-                        CarrosselComponente(categoriaDesenhos: categoria)
-                            .padding(.top, 5)
+                
+                if filtroSelecionado == "" {
+                    ScrollView {
+                        ForEach(self.categorias, id: \.self) { categoria in
+                            CarrosselComponente(categoriaDesenhos: categoria)
+                                .padding(.top, 5)
+                        }
                     }
+                } else {
+                    CategoriaEscolhidaComponente(filtroSelecionado: $filtroSelecionado)
                 }
+                
             }
             FiltroNossosDesenhosComponente(filtroAberto: $filtroAberto, filtroSelecionado: $filtroSelecionado)
             
