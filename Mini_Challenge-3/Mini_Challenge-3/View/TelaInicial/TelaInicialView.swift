@@ -28,11 +28,11 @@ struct TelaInicialView: View {
                     
                     BotaoImportarImagemComponente(imagemEstaSelecionada: self.$imagemEstaSelecionada, dadosImagemSelecionada: self.$dadosImagemSelecionada)
                         .padding(.bottom, 15)
-                        .foregroundColor(Color("texts"))
+                        
                     
                     BotaoMenuInicialComponente(destination: AnyView(NossosDesenhosView()), imageName: "rectangle.3.offgrid.fill", text: "Escolha um de nossos desenhos")
                         .padding(.bottom, 15)
-                        .foregroundColor(Color("texts"))
+                      
                     
                     BotaoMenuInicialComponente(destination: AnyView(TelaInicialView()), imageName: "lightbulb", text: "     Me surpreenda")
                     Spacer()
