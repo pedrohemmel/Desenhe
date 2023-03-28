@@ -15,7 +15,7 @@ struct ModoCameraView: View {
     
     var body: some View {
         ZStack{
-            ModoCameraModel(cameraViewModel: cameraViewModel)
+            ModoCameraRepresentable(cameraViewModel: cameraViewModel)
                 .ignoresSafeArea(.all, edges: .all)
             
                 Rectangle()

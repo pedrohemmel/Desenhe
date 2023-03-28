@@ -8,7 +8,7 @@
 import SwiftUI
 import AVFoundation
 
-struct ModoCameraModel: UIViewRepresentable {
+struct ModoCameraRepresentable: UIViewRepresentable {
     @ObservedObject var cameraViewModel: ModoCameraViewModel
     
     func makeUIView(context: Context) -> UIView {
