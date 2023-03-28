@@ -12,7 +12,9 @@ struct ConfirmarDesenhoView: View {
     
     @Binding var dadosImagemSelecionada: Data
     @Binding var desenhoSelecionado: String
+    
     @State var eDesenho: Bool? = nil
+    @State var telaDesenharParametrizada: TelaDesenharView? = nil
     
     let larguraTela = UIScreen.main.bounds.size.width
     let alturaTela = UIScreen.main.bounds.size.height
@@ -37,7 +39,7 @@ struct ConfirmarDesenhoView: View {
                 
                 HStack {
                     Spacer()
-                    NavigationLink(destination: EmptyView(), label: {
+                    NavigationLink(destination: self.telaDesenharParametrizada, label: {
                         Text("Desenhar \(Image(systemName: "arrow.right"))")
                             .foregroundColor(.black)
                             .padding(15)
@@ -51,6 +53,13 @@ struct ConfirmarDesenhoView: View {
         }
         .onAppear {
             self.eDesenho = self.verificaImagemNula(dadosImagemSelecionada: self.dadosImagemSelecionada, desenhoSelecionado: self.desenhoSelecionado)
+            
+            if eDesenho ?? false {
+                self.telaDesenharParametrizada = TelaDesenharView(dadosImagemSelecionada: .constant(Data()), desenhoSelecionado: self.$desenhoSelecionado)
+            } else {
+                self.telaDesenharParametrizada = TelaDesenharView(dadosImagemSelecionada: self.$dadosImagemSelecionada, desenhoSelecionado: .constant(""))
+            }
+            
         }
         .background(.black)
         .navigationBarTitleDisplayMode(.inline)
