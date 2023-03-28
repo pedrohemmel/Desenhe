@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct ConfirmarDesenhoView: View {
+    @Environment(\.dismiss) var dismiss
+    
+    @Binding var dadosImagemSelecionada: Data
+    @Binding var desenhoSelecionado: String
+    @State var eDesenho: Bool? = nil
+    
     let larguraTela = UIScreen.main.bounds.size.width
     let alturaTela = UIScreen.main.bounds.size.height
     
@@ -15,9 +21,18 @@ struct ConfirmarDesenhoView: View {
         ZStack {
             VStack {
                 Spacer()
-                Image("post1")
-                    .resizable()
-                    .frame(width: larguraTela, height: larguraTela)
+                if self.eDesenho ?? false {
+                    Image(self.desenhoSelecionado)
+                        .resizable()
+                        .frame(width: larguraTela, height: larguraTela)
+                } else {
+                    if let uiImage = UIImage(data: self.dadosImagemSelecionada) {
+                        Image(uiImage: uiImage)
+                            .resizable()
+                            .frame(width: larguraTela, height: larguraTela)
+                    }
+                }
+                
                 Spacer()
                 
                 HStack {
@@ -34,18 +49,27 @@ struct ConfirmarDesenhoView: View {
                 }
             }
         }
+        .onAppear {
+            self.eDesenho = self.verificaImagemNula(dadosImagemSelecionada: self.dadosImagemSelecionada, desenhoSelecionado: self.desenhoSelecionado)
+        }
         .background(.black)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
-                    print("Sair")
+                    self.dismiss()
                 } label: {
                     Image(systemName: "xmark")
                         .foregroundColor(.white)
                 }
             }
         }
+    }
+    func verificaImagemNula(dadosImagemSelecionada: Data?, desenhoSelecionado: String?) -> Bool {
+        if desenhoSelecionado != "" {
+            return true
+        }
+        return false
     }
 }
