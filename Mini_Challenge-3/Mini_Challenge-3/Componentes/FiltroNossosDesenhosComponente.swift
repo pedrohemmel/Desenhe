@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FiltroNossosDesenhosComponente: View {
-    @State var categorias = ["Primeira", "Segunda", "Terceira", "Quarta", "Quinta", "Sexta"]
+    @Binding var categorias: [String]
     @Binding var filtroAberto: Bool
     @Binding var filtroSelecionado: String
     var body: some View {

@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct CarrosselComponente: View {
-    var array = ["Pedro", "Rodrigao", "Cecilia", "Pintudinho", "Cec", "Sarah", "Danilo Santana"]
-    var categoriaDesenhos: String
+    @Binding var imagemEstaSelecionada: Bool
+    @Binding var desenhoSelecionado: String
+    @Binding var categoriaDesenhos: String
+    @Binding var desenhos: [String]
     
     private let alturaELarguraImagem = 100.0
-    
-    init(categoriaDesenhos: String) {
-        self.categoriaDesenhos = categoriaDesenhos
-    }
     
     var body: some View {
         VStack {
@@ -32,9 +30,10 @@ struct CarrosselComponente: View {
                     rows: [GridItem(.fixed(15))],
                     spacing: 15,
                     content: {
-                    ForEach(array, id: \.self) {nome in
+                    ForEach(desenhos, id: \.self) { desenho in
                         Button {
-                            print(nome)
+                            self.desenhoSelecionado = desenho
+                            self.imagemEstaSelecionada = true
                         } label: {
                             Image("post1")
                                 .resizable()

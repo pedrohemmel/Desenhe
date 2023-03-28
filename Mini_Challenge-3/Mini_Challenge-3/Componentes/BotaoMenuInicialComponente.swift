@@ -9,7 +9,6 @@ import SwiftUI
 
 struct BotaoMenuInicialComponente: View {
     let larguraTela = UIScreen.main.bounds.size.width
-    
     var destination: AnyView
     var image: Image
     var text: String
