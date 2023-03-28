@@ -30,7 +30,7 @@ struct NossosDesenhosView: View {
                             CarrosselComponente(
                                 imagemEstaSelecionada: self.$imagemEstaSelecionada,
                                 desenhoSelecionado: self.$desenhoSelecionado,
-                                categoriaDesenhos: categoria, desenhos: .constant(["post1", "post12", "post13", "post14", "post15", "post16", "post17"]))
+                                categoriaDesenhos: categoria, desenhos: .constant(["post1", "post12", "post13", "post14", "post15", "post16", "post18"]))
                                 .padding(.top, 5)
                         }
                     }
