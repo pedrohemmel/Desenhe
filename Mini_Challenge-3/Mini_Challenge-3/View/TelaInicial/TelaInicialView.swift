@@ -8,28 +8,28 @@
 import SwiftUI
 
 struct TelaInicialView: View {
-    @State var imagemEstaSelecionada = false
-    @State var dadosImagemSelecionada = Data()
+    let larguraTela = UIScreen.main.bounds.size.width
+    let alturaTela = UIScreen.main.bounds.size.height
+    
     var body: some View {
         NavigationView {
-            ZStack {
-                NavigationLink(destination: ConfirmarDesenhoView(), isActive: self.$imagemEstaSelecionada, label: {})
-                VStack {
-                    Text("Titulo")
-                        .padding(.top, 60)
-                    Spacer()
-                    BotaoImportarImagemComponente(imagemEstaSelecionada: self.$imagemEstaSelecionada, dadosImagemSelecionada: self.$dadosImagemSelecionada)
-                        .padding(.bottom, 40)
-                    
-                    BotaoMenuInicialComponente(destination: AnyView(NossosDesenhosView()), text: "Selecione um de nossos desenhos")
-                        .padding(.bottom, 40)
-                    BotaoMenuInicialComponente(destination: AnyView(EmptyView()), text: "Primeiro botão")
-                    Spacer()
-                    Spacer()
+            VStack {
+                VStack{
+                    Text("Vamos Desenhar!")
+                        .padding(.bottom, 5)
+                    Text("Para começar...")
                 }
+                .padding(.bottom, 50)
+                
+                BotaoMenuInicialComponente(destination: AnyView(TelaInicialView()), imageName: "square.and.arrow.down", text: "   Importe uma foto de sua galeria")
+                    .padding(.bottom, 15)
+                
+                BotaoMenuInicialComponente(destination: AnyView(NossosDesenhosView()), imageName: "rectangle.3.offgrid.fill", text: "Escolha um de nossos desenhos")
+                    .padding(.bottom, 15)
+                
+                BotaoMenuInicialComponente(destination: AnyView(TelaInicialView()), imageName: "lightbulb", text: "     Me surpreenda")
             }
         }
-        
-        
+        .position(CGPoint(x: larguraTela*0.5, y: alturaTela*0.4))
     }
 }
