@@ -10,6 +10,7 @@
 		05162EAE29CA3DA9007A7FB3 /* BotaoMenuInicialComponente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05162EAD29CA3DA9007A7FB3 /* BotaoMenuInicialComponente.swift */; };
 		05162EB029CA3DCC007A7FB3 /* TelaInicialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05162EAF29CA3DCC007A7FB3 /* TelaInicialView.swift */; };
 		05162EBC29CCE12C007A7FB3 /* CarrosselComponente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05162EBB29CCE12C007A7FB3 /* CarrosselComponente.swift */; };
+		05162EBE29CD1183007A7FB3 /* SliderComponente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05162EBD29CD1183007A7FB3 /* SliderComponente.swift */; };
 		05E7280C29CA1FBE007C7D72 /* TelaInicialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E7280B29CA1FBE007C7D72 /* TelaInicialViewModel.swift */; };
 		43910A3A29CE17BB00B1BBD8 /* CategoriaEscolhidaComponente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43910A3929CE17BB00B1BBD8 /* CategoriaEscolhidaComponente.swift */; };
 		43910A3C29CE30C000B1BBD8 /* ConfirmarDesenhoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43910A3B29CE30C000B1BBD8 /* ConfirmarDesenhoView.swift */; };
@@ -48,6 +49,7 @@
 		05162EAD29CA3DA9007A7FB3 /* BotaoMenuInicialComponente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotaoMenuInicialComponente.swift; sourceTree = "<group>"; };
 		05162EAF29CA3DCC007A7FB3 /* TelaInicialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialView.swift; sourceTree = "<group>"; };
 		05162EBB29CCE12C007A7FB3 /* CarrosselComponente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrosselComponente.swift; sourceTree = "<group>"; };
+		05162EBD29CD1183007A7FB3 /* SliderComponente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderComponente.swift; sourceTree = "<group>"; };
 		05E7280B29CA1FBE007C7D72 /* TelaInicialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialViewModel.swift; sourceTree = "<group>"; };
 		43910A3929CE17BB00B1BBD8 /* CategoriaEscolhidaComponente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaEscolhidaComponente.swift; sourceTree = "<group>"; };
 		43910A3B29CE30C000B1BBD8 /* ConfirmarDesenhoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmarDesenhoView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,8 @@
 				05162EAD29CA3DA9007A7FB3 /* BotaoMenuInicialComponente.swift */,
 				BB7C6F0429CCF1830056BBD7 /* SearchBarComponente.swift */,
 				BB7C6F0629CE1ABA0056BBD7 /* FiltroNossosDesenhosComponente.swift */,
+				05162EAD29CA3DA9007A7FB3 /* BotaoGeralComponente.swift */,
+				05162EBD29CD1183007A7FB3 /* SliderComponente.swift */,
 			);
 			path = Componentes;
 			sourceTree = "<group>";
@@ -338,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05162EBE29CD1183007A7FB3 /* SliderComponente.swift in Sources */,
 				BB7C6EBA29CA26750056BBD7 /* Desenho.swift in Sources */,
 				BB7C6EC329CA2FCC0056BBD7 /* InfDesenho.swift in Sources */,
 				BB7C6EC829CB95AC0056BBD7 /* BotaoImportarImagemComponente.swift in Sources */,
