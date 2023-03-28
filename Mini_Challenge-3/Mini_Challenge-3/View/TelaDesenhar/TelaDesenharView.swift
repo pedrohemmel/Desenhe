@@ -14,6 +14,7 @@ struct TelaDesenharView: View {
     @State var eDesenho: Bool? = nil
     
     @State private var escalaZoom: CGFloat = 0.5
+    @State private var opacidade = 0.5
     
     @StateObject var cameraViewModel = ModoCameraViewModel()
     
@@ -25,47 +26,28 @@ struct TelaDesenharView: View {
         ZStack {
             ModoCameraRepresentable(cameraViewModel: self.cameraViewModel)
                 .ignoresSafeArea(.all)
+            Rectangle()
+                .frame(width: larguraTela, height: alturaTela)
+                .background(.white)
+                .opacity(opacidade)
             VStack {
                 if self.eDesenho ?? false {
                     Image(self.desenhoSelecionado)
                         .resizable()
                         .frame(width: larguraTela, height: larguraTela)
+                        .opacity(self.opacidade)
                 } else {
                     if let uiImage = UIImage(data: self.dadosImagemSelecionada) {
                         Image(uiImage: uiImage)
                             .resizable()
                             .frame(width: larguraTela, height: larguraTela)
+                            .opacity(self.opacidade)
                     }
                 }
             }
             
             VStack {
-                Image(systemName: "plus.magnifyingglass")
-                    .font(.title)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.black.opacity(0.5))
-                    .cornerRadius(10)
-                    .onTapGesture {
-                        if escalaZoom <= 1 {
-                            escalaZoom += 0.1
-                        }
-                        
-                        alterarZoom()
-                    }
-                Image(systemName: "minus.magnifyingglass")
-                    .font(.title)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.black.opacity(0.5))
-                    .cornerRadius(10)
-                    .onTapGesture {
-                        if escalaZoom >= 1 {
-                            escalaZoom -= 0.1
-                        }
-                        
-                        alterarZoom()
-                    }
+                SliderComponente(opacidade: self.$opacidade)
             }
             
         }
