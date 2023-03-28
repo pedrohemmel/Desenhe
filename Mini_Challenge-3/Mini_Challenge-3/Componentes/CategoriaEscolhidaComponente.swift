@@ -28,7 +28,7 @@ struct CategoriaEscolhidaComponente: View {
             LazyVGrid(columns: colunas, spacing: 10) {
                 ForEach(itens, id: \.self) { item in
                     Button(action: {
-                        self.desenhoSelecionado = "\(item)"
+                        self.desenhoSelecionado = "post1"
                         self.imagemEstaSelecionada = true
                     }, label: {
                         Image("post1")

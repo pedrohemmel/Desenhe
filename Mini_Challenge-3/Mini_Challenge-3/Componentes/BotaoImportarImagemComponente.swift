@@ -9,16 +9,26 @@ import SwiftUI
 import PhotosUI
 struct BotaoImportarImagemComponente: View {
     @Binding var imagemEstaSelecionada: Bool
-    @State private var imagemSelecionada: PhotosPickerItem? = nil
     @Binding var dadosImagemSelecionada: Data
+    @State private var imagemSelecionada: PhotosPickerItem? = nil
+    
+    let larguraTela = UIScreen.main.bounds.size.width
     
     var body: some View {
         PhotosPicker(selection: $imagemSelecionada, matching: .images, photoLibrary: .shared()) {
-            Text("Selecione a imagem")
-                .padding(.vertical, 20)
-                .padding(.horizontal, 60)
-                .background(Color.black)
-                .cornerRadius(20)
+            HStack {
+                Image(systemName: "square.and.arrow.down")
+                    .font(.system(size: 25))
+                Text("   Importe uma foto de sua galeria")
+                    .font(.system(size: 14))
+            }
+            .padding(.vertical, 10)
+            .padding(.horizontal, 10)
+            .frame(minWidth: larguraTela*0.75, alignment: .leading)
+            .background(Color("corBotao"))
+            .cornerRadius(10)
+            .foregroundColor(.black)
+            
         }
         .onChange(of: imagemSelecionada) { novaImagemSelecionada in
             Task {

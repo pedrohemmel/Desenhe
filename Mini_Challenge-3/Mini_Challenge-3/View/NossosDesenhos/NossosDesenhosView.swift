@@ -12,12 +12,12 @@ struct NossosDesenhosView: View {
     
     @State var categorias = ["Primeira", "Segunda", "Terceira", "Quarta", "Quinta", "Sexta"]
     @State private var textoPesquisa = ""
-    @State var filtroAberto = false
     @State var filtroSelecionado = ""
+    @State var filtroAberto = false
     
     var body: some View {
         ZStack {
-            NavigationLink(destination: ConfirmarDesenhoView(), isActive: self.$imagemEstaSelecionada, label: {})
+            NavigationLink(destination: ConfirmarDesenhoView(dadosImagemSelecionada: .constant(Data()), desenhoSelecionado: $desenhoSelecionado), isActive: self.$imagemEstaSelecionada, label: {})
             VStack {
                 SearchBarComponente(
                     textoPesquisa: self.$textoPesquisa,
@@ -30,7 +30,7 @@ struct NossosDesenhosView: View {
                             CarrosselComponente(
                                 imagemEstaSelecionada: self.$imagemEstaSelecionada,
                                 desenhoSelecionado: self.$desenhoSelecionado,
-                                categoriaDesenhos: categoria, desenhos: .constant(["Pedro", "Rodrigao", "Cecilia", "Pintudinho", "Cec", "Sarah", "Danilo Santana"]))
+                                categoriaDesenhos: categoria, desenhos: .constant(["post1", "post12", "post13", "post14", "post15", "post16", "post17"]))
                                 .padding(.top, 5)
                         }
                     }
