@@ -25,9 +25,9 @@ struct BotaoImportarImagemComponente: View {
 
             }
             .foregroundColor(Color("texts"))
+            .frame(minWidth: larguraTela*0.75, alignment: .leading)
             .padding(.vertical, 10)
             .padding(.horizontal, 10)
-            .frame(minWidth: larguraTela*0.75, alignment: .leading)
             .background(Color("corBotao"))
             .cornerRadius(10)
             .foregroundColor(.black)

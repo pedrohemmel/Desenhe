@@ -14,7 +14,9 @@ struct CategoriaEscolhidaComponente: View {
     @Binding var imagemEstaSelecionada: Bool
     @Binding var desenhoSelecionado: String
     @Binding var filtroSelecionado: String
+    @Binding var categorias: [Categoria]
     
+    let larguraTela = UIScreen.main.bounds.size.width
     var body: some View {
         ScrollView {
             HStack {
@@ -26,15 +28,21 @@ struct CategoriaEscolhidaComponente: View {
                 Spacer()
             }
             LazyVGrid(columns: colunas, spacing: 10) {
-                ForEach(itens, id: \.self) { item in
-                    Button(action: {
-                        self.desenhoSelecionado = "post1"
-                        self.imagemEstaSelecionada = true
-                    }, label: {
-                        Image("post1")
-                            .frame(width: 100, height: 100)
-                    })
-                    .cornerRadius(10)
+                ForEach(self.categorias, id: \.id) { categoria in
+                    if categoria.nomeCategoria == self.filtroSelecionado {
+                        ForEach(categoria.desenhos, id: \.id) { desenho in
+                            Button(action: {
+                                self.desenhoSelecionado = "\(desenho.nomeDiretorio)"
+                                self.imagemEstaSelecionada = true
+                            }, label: {
+                                Image("\(desenho.nomeDiretorio)")
+                                    .resizable()
+                                    .frame(width: self.larguraTela * 0.2, height: self.larguraTela * 0.2)
+                                    .cornerRadius(10)
+                            })
+                        }
+                        
+                    }
                 }
             }
         }

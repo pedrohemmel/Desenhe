@@ -8,20 +8,21 @@
 import SwiftUI
 
 struct FiltroNossosDesenhosComponente: View {
-    @Binding var categorias: [String]
+    @Binding var categorias: [Categoria]
     @Binding var filtroAberto: Bool
     @Binding var filtroSelecionado: String
+    
     var body: some View {
         VStack {
             if filtroAberto {
                 VStack {
-                    ForEach(self.categorias, id: \.self) { categoria in
+                    ForEach(self.categorias, id: \.id) { categoria in
                         Button {
-                            self.filtroSelecionado = categoria
+                            self.filtroSelecionado = categoria.nomeCategoria
                             self.filtroAberto = false
                         } label: {
                             VStack(alignment: .leading) {
-                                Text(categoria)
+                                Text(categoria.nomeCategoria)
                                     .foregroundColor(.white)
                                 Divider()
                                     .background(.white)
@@ -41,8 +42,12 @@ struct FiltroNossosDesenhosComponente: View {
         }
         .onChange(of: self.filtroSelecionado) { novoFiltroSelecionado in
             if novoFiltroSelecionado != "" {
-                if !self.categorias.contains("Limpar filtro") {
-                    self.categorias.append("Limpar filtro")
+                var strCategorias = [""]
+                for categoria in categorias {
+                    strCategorias.append(categoria.nomeCategoria)
+                }
+                if !strCategorias.contains("Limpar filtro") {
+                    self.categorias.append(Categoria(id: 7, nomeCategoria: "Limpar filtro", desenhos: [Desenho]()))
                     self.filtroAberto = false
                 } else if novoFiltroSelecionado == "Limpar filtro" {
                     self.filtroSelecionado = ""

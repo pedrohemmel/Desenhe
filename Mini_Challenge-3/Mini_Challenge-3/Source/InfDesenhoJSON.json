@@ -6,7 +6,7 @@
             "desenhos": [
                 {
                     "id": 0,
-                    "nomeDiretorio": "girafa.jpg",
+                    "nomeDiretorio": "girafa",
                     "palavrasChaves": [
                         "girafa",
 
@@ -18,7 +18,7 @@
                 },
                 {
                     "id": 1,
-                    "nomeDiretorio": "gato.jpg",
+                    "nomeDiretorio": "gato",
                     "palavrasChaves": [
                         "gato",
 
@@ -30,7 +30,7 @@
                 },
                 {
                     "id": 2,
-                    "nomeDiretorio": "papagaio.jpg",
+                    "nomeDiretorio": "papagaio",
                     "palavrasChaves": [
                         "papagaio",
 
@@ -42,7 +42,7 @@
                 },
                 {
                     "id": 3,
-                    "nomeDiretorio": "aguia.jpg",
+                    "nomeDiretorio": "aguia",
                     "palavrasChaves": [
                         "aguia",
 
@@ -54,7 +54,7 @@
                 },
                 {
                     "id": 4,
-                    "nomeDiretorio": "cavalo.jpg",
+                    "nomeDiretorio": "cavalo",
                     "palavrasChaves": [
                         "cavalo",
 
@@ -66,7 +66,7 @@
                 },
                 {
                     "id": 5,
-                    "nomeDiretorio": "coelho.jpg",
+                    "nomeDiretorio": "coelho",
                     "palavrasChaves": [
                         "coelho",
 
@@ -78,7 +78,7 @@
                 },
                 {
                     "id": 6,
-                    "nomeDiretorio": "lagarto.jpg",
+                    "nomeDiretorio": "lagarto",
                     "palavrasChaves": [
                         "lagarto",
 
@@ -90,7 +90,7 @@
                 },
                 {
                     "id": 7,
-                    "nomeDiretorio": "lobo.jpg",
+                    "nomeDiretorio": "lobo",
                     "palavrasChaves": [
                         "lobo",
 
@@ -102,7 +102,7 @@
                 },
                 {
                     "id": 8,
-                    "nomeDiretorio": "mariposa.jpg",
+                    "nomeDiretorio": "mariposa",
                     "palavrasChaves": [
                         "mariposa",
 
@@ -114,7 +114,7 @@
                 },
                 {
                     "id": 9,
-                    "nomeDiretorio": "coruja.jpg",
+                    "nomeDiretorio": "coruja",
                     "palavrasChaves": [
                         "coruja",
 
@@ -133,7 +133,7 @@
             "desenhos": [
                 {
                     "id": 0,
-                    "nomeDiretorio": "margarida.jpg",
+                    "nomeDiretorio": "margarida",
                     "palavrasChaves": [
                         "flor",
 
@@ -145,7 +145,7 @@
                 },
                 {
                     "id": 1,
-                    "nomeDiretorio": "girassol.jpg",
+                    "nomeDiretorio": "girassol",
                     "palavrasChaves": [
                         "amarela",
 
@@ -157,7 +157,7 @@
                 },
                 {
                     "id": 2,
-                    "nomeDiretorio": "flor_azul.jpg",
+                    "nomeDiretorio": "flor_azul",
                     "palavrasChaves": [
                         "flor",
 
@@ -169,7 +169,7 @@
                 },
                 {
                     "id": 3,
-                    "nomeDiretorio": "folhas_verdes.jpg",
+                    "nomeDiretorio": "folhas_verdes",
                     "palavrasChaves": [
                         "folha",
 
@@ -181,7 +181,7 @@
                 },
                 {
                     "id": 4,
-                    "nomeDiretorio": "flor_branca.jpg",
+                    "nomeDiretorio": "flor_branca",
                     "palavrasChaves": [
                         "flor",
 
@@ -193,7 +193,7 @@
                 },
                 {
                     "id": 5,
-                    "nomeDiretorio": "galho_com_folhas.jpg",
+                    "nomeDiretorio": "galho_com_folhas",
                     "palavrasChaves": [
                         "galho",
 
@@ -205,7 +205,7 @@
                 },
                 {
                     "id": 6,
-                    "nomeDiretorio": "suculentas.jpg",
+                    "nomeDiretorio": "suculentas",
                     "palavrasChaves": [
                         "plantinha",
 
@@ -217,7 +217,7 @@
                 },
                 {
                     "id": 7,
-                    "nomeDiretorio": "flores_roxas.jpg",
+                    "nomeDiretorio": "flores_roxas",
                     "palavrasChaves": [
                         "flor",
 
@@ -229,7 +229,7 @@
                 },
                 {
                     "id": 8,
-                    "nomeDiretorio": "rosa_branca.jpg",
+                    "nomeDiretorio": "rosa_branca",
                     "palavrasChaves": [
                         "flor",
 
@@ -241,7 +241,7 @@
                 },
                 {
                     "id": 9,
-                    "nomeDiretorio": "flor_rosa.jpg",
+                    "nomeDiretorio": "flor_rosa",
                     "palavrasChaves": [
                         "flor",
 
@@ -259,7 +259,7 @@
             "desenhos": [
                 {
                     "id": 0,
-                    "nomeDiretorio": "despertador.jpg",
+                    "nomeDiretorio": "despertador",
                     "palavrasChaves": [
                         "relogio",
 
@@ -271,7 +271,7 @@
                 },
                 {
                     "id": 1,
-                    "nomeDiretorio": "globo.jpg",
+                    "nomeDiretorio": "globo",
                     "palavrasChaves": [
                         "terra",
 
@@ -283,7 +283,7 @@
                 },
                 {
                     "id": 2,
-                    "nomeDiretorio": "tenis.jpg",
+                    "nomeDiretorio": "tenis",
                     "palavrasChaves": [
                         "calçado",
 
@@ -295,7 +295,7 @@
                 },
                 {
                     "id": 3,
-                    "nomeDiretorio": "luminaria.jpg",
+                    "nomeDiretorio": "luminaria",
                     "palavrasChaves": [
                         "lampada",
 
@@ -307,7 +307,7 @@
                 },
                 {
                     "id": 4,
-                    "nomeDiretorio": "lapis.jpg",
+                    "nomeDiretorio": "lapis",
                     "palavrasChaves": [
                         "lapis",
 
@@ -319,7 +319,7 @@
                 },
                 {
                     "id": 5,
-                    "nomeDiretorio": "banco.jpg",
+                    "nomeDiretorio": "banco",
                     "palavrasChaves": [
                         "cadeira",
 
@@ -331,7 +331,7 @@
                 },
                 {
                     "id": 6,
-                    "nomeDiretorio": "xadrez.png",
+                    "nomeDiretorio": "xadrez",
                     "palavrasChaves": [
                         "jogo",
 
@@ -343,7 +343,7 @@
                 },
                 {
                     "id": 7,
-                    "nomeDiretorio": "caneca.png",
+                    "nomeDiretorio": "caneca",
                     "palavrasChaves": [
                         "xicara",
 
@@ -355,7 +355,7 @@
                 },
                 {
                     "id": 8,
-                    "nomeDiretorio": "caderno.png",
+                    "nomeDiretorio": "caderno",
                     "palavrasChaves": [
                         "caderno",
 
@@ -367,7 +367,7 @@
                 },
                 {
                     "id": 9,
-                    "nomeDiretorio": "canetinhas.png",
+                    "nomeDiretorio": "canetinhas",
                     "palavrasChaves": [
                         "caneta",
 
@@ -386,7 +386,7 @@
             "desenhos": [
                 {
                     "id": 0,
-                    "nomeDiretorio": "macbook.jpg",
+                    "nomeDiretorio": "macbook",
                     "palavrasChaves": [
                         "Primeira palavra chave",
 
@@ -398,7 +398,7 @@
                 },
                 {
                     "id": 1,
-                    "nomeDiretorio": "iphone.jpg",
+                    "nomeDiretorio": "iphone",
                     "palavrasChaves": [
                         "celular",
 
@@ -410,7 +410,7 @@
                 },
                 {
                     "id": 2,
-                    "nomeDiretorio": "ipad.png",
+                    "nomeDiretorio": "ipad",
                     "palavrasChaves": [
                         "tablet",
 
@@ -422,7 +422,7 @@
                 },
                 {
                     "id": 3,
-                    "nomeDiretorio": "macintosh.jpg",
+                    "nomeDiretorio": "macintosh",
                     "palavrasChaves": [
                         "computador",
 
@@ -434,7 +434,7 @@
                 },
                 {
                     "id": 4,
-                    "nomeDiretorio": "vinil.jpg",
+                    "nomeDiretorio": "vinil",
                     "palavrasChaves": [
                         "disco",
 
@@ -446,7 +446,7 @@
                 },
                 {
                     "id": 5,
-                    "nomeDiretorio": "disquete.jpg",
+                    "nomeDiretorio": "disquete",
                     "palavrasChaves": [
                         "disquete",
 
@@ -458,7 +458,7 @@
                 },
                 {
                     "id": 6,
-                    "nomeDiretorio": "cubo_magico.jpg",
+                    "nomeDiretorio": "cubo_magico",
                     "palavrasChaves": [
                         "cubo magico",
 
@@ -470,7 +470,7 @@
                 },
                 {
                     "id": 7,
-                    "nomeDiretorio": "fita_k7.jpg",
+                    "nomeDiretorio": "fita_k7",
                     "palavrasChaves": [
                         "fita",
 
@@ -482,7 +482,7 @@
                 },
                 {
                     "id": 8,
-                    "nomeDiretorio": "polaroid.jpg",
+                    "nomeDiretorio": "polaroid",
                     "palavrasChaves": [
                         "fotografia",
 
@@ -494,7 +494,7 @@
                 },
                 {
                     "id": 9,
-                    "nomeDiretorio": "gameboy.jpg",
+                    "nomeDiretorio": "gameboy",
                     "palavrasChaves": [
                         "videogame",
 
@@ -512,7 +512,7 @@
             "desenhos": [
                 {
                     "id": 0,
-                    "nomeDiretorio": "rosquinhas.jpg",
+                    "nomeDiretorio": "rosquinhas",
                     "palavrasChaves": [
                         "rosquinha",
 
@@ -524,7 +524,7 @@
                 },
                 {
                     "id": 1,
-                    "nomeDiretorio": "macarons.jpg",
+                    "nomeDiretorio": "macarons",
                     "palavrasChaves": [
                         "macaron",
 
@@ -536,7 +536,7 @@
                 },
                 {
                     "id": 2,
-                    "nomeDiretorio": "suco.jpg",
+                    "nomeDiretorio": "suco",
                     "palavrasChaves": [
                         "suco",
 
@@ -548,7 +548,7 @@
                 },
                 {
                     "id": 3,
-                    "nomeDiretorio": "sushi.jpg",
+                    "nomeDiretorio": "sushi",
                     "palavrasChaves": [
                         "sushi",
 
@@ -560,7 +560,7 @@
                 },
                 {
                     "id": 4,
-                    "nomeDiretorio": "laranja.jpg",
+                    "nomeDiretorio": "laranja",
                     "palavrasChaves": [
                         "laranja",
 
@@ -572,7 +572,7 @@
                 },
                 {
                     "id": 5,
-                    "nomeDiretorio": "cafe.jpg",
+                    "nomeDiretorio": "cafe",
                     "palavrasChaves": [
                         "cafe",
 
@@ -584,7 +584,7 @@
                 },
                 {
                     "id": 6,
-                    "nomeDiretorio": "drink.jpg",
+                    "nomeDiretorio": "drink",
                     "palavrasChaves": [
                         "drink",
 
@@ -596,7 +596,7 @@
                 },
                 {
                     "id": 7,
-                    "nomeDiretorio": "champanhe.jpg",
+                    "nomeDiretorio": "champanhe",
                     "palavrasChaves": [
                         "champanhe",
 
@@ -608,7 +608,7 @@
                 },
                 {
                     "id": 8,
-                    "nomeDiretorio": "maca.jpg",
+                    "nomeDiretorio": "maca",
                     "palavrasChaves": [
                         "maçã",
 
@@ -620,7 +620,7 @@
                 },
                 {
                     "id": 9,
-                    "nomeDiretorio": "hamburger.jpg",
+                    "nomeDiretorio": "hamburger",
                     "palavrasChaves": [
                         "hamburger",
 
@@ -638,7 +638,7 @@
             "desenhos": [
                 {
                     "id": 0,
-                    "nomeDiretorio": "campo_noite.jpg",
+                    "nomeDiretorio": "campo_noite",
                     "palavrasChaves": [
                         "mato",
 
@@ -650,7 +650,7 @@
                 },
                 {
                     "id": 1,
-                    "nomeDiretorio": "amanhecer.jpg",
+                    "nomeDiretorio": "amanhecer",
                     "palavrasChaves": [
                         "alvorada",
 
@@ -662,7 +662,7 @@
                 },
                 {
                     "id": 2,
-                    "nomeDiretorio": "por_do_sol.jpg",
+                    "nomeDiretorio": "por_do_sol",
                     "palavrasChaves": [
                         "praia",
 
@@ -674,7 +674,7 @@
                 },
                 {
                     "id": 3,
-                    "nomeDiretorio": "ceu_azul.jpg",
+                    "nomeDiretorio": "ceu_azul",
                     "palavrasChaves": [
                         "campo",
 
@@ -686,7 +686,7 @@
                 },
                 {
                     "id": 4,
-                    "nomeDiretorio": "floresta.jpg",
+                    "nomeDiretorio": "floresta",
                     "palavrasChaves": [
                         "natureza",
 
@@ -698,7 +698,7 @@
                 },
                 {
                     "id": 5,
-                    "nomeDiretorio": "baloes.jpg",
+                    "nomeDiretorio": "baloes",
                     "palavrasChaves": [
                         "ceu",
 
@@ -710,7 +710,7 @@
                 },
                 {
                     "id": 6,
-                    "nomeDiretorio": "praia.jpg",
+                    "nomeDiretorio": "praia",
                     "palavrasChaves": [
                         "areia",
 
@@ -722,7 +722,7 @@
                 },
                 {
                     "id": 7,
-                    "nomeDiretorio": "pinheiros.jpg",
+                    "nomeDiretorio": "pinheiros",
                     "palavrasChaves": [
                         "floresta",
 
@@ -734,7 +734,7 @@
                 },
                 {
                     "id": 8,
-                    "nomeDiretorio": "riacho.jpg",
+                    "nomeDiretorio": "riacho",
                     "palavrasChaves": [
                         "rio",
 
@@ -746,7 +746,7 @@
                 },
                 {
                     "id": 9,
-                    "nomeDiretorio": "rio.jpg",
+                    "nomeDiretorio": "rio",
                     "palavrasChaves": [
                         "riacho",
 
@@ -759,12 +759,12 @@
             ]
         },
         {
-            "id": 5,
+            "id": 6,
             "nomeCategoria": "arquitetura",
             "desenhos": [
                 {
                     "id": 0,
-                    "nomeDiretorio": "copan.jpg",
+                    "nomeDiretorio": "copan",
                     "palavrasChaves": [
                         "edificio copan",
 
@@ -776,7 +776,7 @@
                 },
                 {
                     "id": 1,
-                    "nomeDiretorio": "louvre.jpg",
+                    "nomeDiretorio": "louvre",
                     "palavrasChaves": [
                         "louvre",
 
@@ -788,7 +788,7 @@
                 },
                 {
                     "id": 2,
-                    "nomeDiretorio": "terrario.jpg",
+                    "nomeDiretorio": "terrario",
                     "palavrasChaves": [
                         "moderno",
 
@@ -800,7 +800,7 @@
                 },
                 {
                     "id": 3,
-                    "nomeDiretorio": "catedral_se.jpg",
+                    "nomeDiretorio": "catedral_se",
                     "palavrasChaves": [
                         "são paulo",
 
@@ -812,7 +812,7 @@
                 },
                 {
                     "id": 4,
-                    "nomeDiretorio": "paralelepipedo.jpg",
+                    "nomeDiretorio": "paralelepipedo",
                     "palavrasChaves": [
                         "brasil",
 
@@ -824,7 +824,7 @@
                 },
                 {
                     "id": 5,
-                    "nomeDiretorio": "paulista.jpg",
+                    "nomeDiretorio": "paulista",
                     "palavrasChaves": [
                         "predios",
 
@@ -836,7 +836,7 @@
                 },
                 {
                     "id": 6,
-                    "nomeDiretorio": "predios.jpg",
+                    "nomeDiretorio": "predios",
                     "palavrasChaves": [
                         "predios",
 
@@ -848,7 +848,7 @@
                 },
                 {
                     "id": 7,
-                    "nomeDiretorio": "arcos.jpg",
+                    "nomeDiretorio": "arcos",
                     "palavrasChaves": [
                         "biblioteca",
 
@@ -860,7 +860,7 @@
                 },
                 {
                     "id": 8,
-                    "nomeDiretorio": "nublado.jpg",
+                    "nomeDiretorio": "nublado",
                     "palavrasChaves": [
                         "cinza",
 
@@ -872,7 +872,7 @@
                 },
                 {
                     "id": 9,
-                    "nomeDiretorio": "torre_eiffel.jpg",
+                    "nomeDiretorio": "torre_eiffel",
                     "palavrasChaves": [
                         "paris",
 

@@ -6,3 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
+
+class NossosDesenhosViewModel {
+    var carregadorInfDesenho: CarregadorInfDesenho? = nil
+    func buscarInfDesenho(resposta: @escaping (() -> Void)) {
+        self.carregadorInfDesenho = CarregadorInfDesenho(resposta: resposta)
+    }
+}

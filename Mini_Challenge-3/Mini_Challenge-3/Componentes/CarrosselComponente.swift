@@ -11,7 +11,7 @@ struct CarrosselComponente: View {
     @Binding var imagemEstaSelecionada: Bool
     @Binding var desenhoSelecionado: String
     @Binding var categoriaDesenhos: String
-    @Binding var desenhos: [String]
+    @Binding var desenhos: [Desenho]
     
     let larguraTela = UIScreen.main.bounds.size.width
     var body: some View {
@@ -29,14 +29,15 @@ struct CarrosselComponente: View {
                     rows: [GridItem(.fixed(15))],
                     spacing: 15,
                     content: {
-                    ForEach(desenhos, id: \.self) { desenho in
+                    ForEach(desenhos, id: \.id) { desenho in
                         Button {
-                            self.desenhoSelecionado = desenho
+                            self.desenhoSelecionado = desenho.nomeDiretorio
                             self.imagemEstaSelecionada = true
                         } label: {
-                            Image("post1")
+                            Image("\(desenho.nomeDiretorio)")
                                 .resizable()
                                 .frame(width: self.larguraTela * 0.2, height: self.larguraTela * 0.2)
+                                .cornerRadius(10)
                         }
                     }
                 })
