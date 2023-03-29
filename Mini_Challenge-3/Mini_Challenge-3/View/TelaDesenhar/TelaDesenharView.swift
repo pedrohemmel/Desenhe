@@ -13,7 +13,7 @@ struct TelaDesenharView: View {
     @Binding var desenhoSelecionado: String
     @State var eDesenho: Bool? = nil
     
-    @State private var escalaZoom: CGFloat = 0.5
+    @State private var escalaZoom = 1.0
     @State private var opacidade = 0.5
     
     @StateObject var cameraViewModel = ModoCameraViewModel()
@@ -45,9 +45,12 @@ struct TelaDesenharView: View {
                     }
                 }
             }
-            
             VStack {
-                SliderComponente(opacidade: self.$opacidade)
+                SliderComponente(titulo: "Opacidade", medida: self.$opacidade)
+                SliderComponente(titulo: "Lupa", medida: self.$escalaZoom)
+            }
+            .onChange(of: escalaZoom) { escala in
+                alterarZoom(escala: CGFloat(escala))
             }
             
         }
@@ -57,10 +60,11 @@ struct TelaDesenharView: View {
         .onAppear(perform: cameraViewModel.checarPermissao)
     }
     
-    func alterarZoom() {
+    func alterarZoom(escala: CGFloat) {
+        let novaEscala = 1 + 6 * (1 - escala)
         do {
             try camera?.lockForConfiguration()
-            camera?.videoZoomFactor = escalaZoom
+            camera?.videoZoomFactor = novaEscala
             camera?.unlockForConfiguration()
         } catch {
             print("Failed to update zoom: \(error.localizedDescription)")
@@ -74,4 +78,3 @@ struct TelaDesenharView: View {
         return false
     }
 }
-
