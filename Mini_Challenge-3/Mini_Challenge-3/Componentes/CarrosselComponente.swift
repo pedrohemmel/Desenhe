@@ -13,8 +13,7 @@ struct CarrosselComponente: View {
     @Binding var categoriaDesenhos: String
     @Binding var desenhos: [String]
     
-    private let alturaELarguraImagem = 100.0
-    
+    let larguraTela = UIScreen.main.bounds.size.width
     var body: some View {
         VStack {
             HStack {
@@ -37,12 +36,12 @@ struct CarrosselComponente: View {
                         } label: {
                             Image("post1")
                                 .resizable()
-                                .frame(width: self.alturaELarguraImagem, height: self.alturaELarguraImagem)
+                                .frame(width: self.larguraTela * 0.2, height: self.larguraTela * 0.2)
                         }
                     }
                 })
             }
-            .frame(height: self.alturaELarguraImagem)
+            .frame(height: self.larguraTela * 0.2)
             .padding(.horizontal, 10)
         }
         
