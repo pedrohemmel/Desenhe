@@ -20,19 +20,21 @@ struct BotaoMenuInicialComponente: View {
     }
     
     var body: some View {
-        HStack {
-            NavigationLink(destination: destination, label: {
+        NavigationLink(destination: destination, label: {
+            HStack {
                 image
                     .font(.system(size: 25))
                 Text("\(text)")
                     .font(.system(size: 14))
-            })
+            }
+            .frame(minWidth: larguraTela*0.75, alignment: .leading)
             .padding(.vertical, 10)
             .padding(.horizontal, 10)
-            .frame(minWidth: larguraTela*0.75, alignment: .leading)
-            .background(Color("corBotao"))
-            .cornerRadius(10)
-            .foregroundColor(.black)
-        }
+        })
+        .background(Color("corBotao"))
+        .cornerRadius(10)
+        .foregroundColor(Color("texts"))
+        
     }
+    
 }

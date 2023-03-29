@@ -110,10 +110,9 @@
 				BB7C6EC729CB95AC0056BBD7 /* BotaoImportarImagemComponente.swift */,
 				43910A3929CE17BB00B1BBD8 /* CategoriaEscolhidaComponente.swift */,
 				05162EBB29CCE12C007A7FB3 /* CarrosselComponente.swift */,
-				05162EAD29CA3DA9007A7FB3 /* BotaoMenuInicialComponente.swift */,
 				BB7C6F0429CCF1830056BBD7 /* SearchBarComponente.swift */,
 				BB7C6F0629CE1ABA0056BBD7 /* FiltroNossosDesenhosComponente.swift */,
-				05162EAD29CA3DA9007A7FB3 /* BotaoGeralComponente.swift */,
+				05162EAD29CA3DA9007A7FB3 /* BotaoMenuInicialComponente.swift */,
 				05162EBD29CD1183007A7FB3 /* SliderComponente.swift */,
 			);
 			path = Componentes;
@@ -518,7 +517,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -549,7 +548,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

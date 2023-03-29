@@ -9,16 +9,22 @@ import SwiftUI
 import AVFoundation
 
 struct TelaDesenharView: View {
+    @Environment(\.dismiss) var dismiss
+    
     @Binding var dadosImagemSelecionada: Data
     @Binding var desenhoSelecionado: String
+    
     @State var eDesenho: Bool? = nil
+    @State var estaTravado = false
     
     @State private var escalaZoom = 1.0
-    @State private var opacidade = 0.5
+    @State private var opacidadeFundo = 0.5
+    @State private var opacidadeImagem = 0.5
     
     @StateObject var cameraViewModel = ModoCameraViewModel()
     
-    let camera = AVCaptureDevice.default(.builtInDualWideCamera, for: .video, position: .back)
+    let telaDesenharViewModel = TelaDesenharViewModel()
+    
     let larguraTela = UIScreen.main.bounds.size.width
     let alturaTela = UIScreen.main.bounds.size.height
     
@@ -28,53 +34,84 @@ struct TelaDesenharView: View {
                 .ignoresSafeArea(.all)
             Rectangle()
                 .frame(width: larguraTela, height: alturaTela)
+                .ignoresSafeArea(.all)
                 .background(.white)
-                .opacity(opacidade)
+                .opacity(self.opacidadeFundo)
+            
             VStack {
                 if self.eDesenho ?? false {
                     Image(self.desenhoSelecionado)
                         .resizable()
-                        .frame(width: larguraTela, height: larguraTela)
-                        .opacity(self.opacidade)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: larguraTela)
+                        .opacity(self.opacidadeImagem)
                 } else {
                     if let uiImage = UIImage(data: self.dadosImagemSelecionada) {
                         Image(uiImage: uiImage)
                             .resizable()
-                            .frame(width: larguraTela, height: larguraTela)
-                            .opacity(self.opacidade)
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: larguraTela)
+                            .opacity(self.opacidadeImagem)
                     }
                 }
             }
-            VStack {
-                SliderComponente(titulo: "Opacidade", medida: self.$opacidade)
-                SliderComponente(titulo: "Lupa", medida: self.$escalaZoom)
-            }
-            .onChange(of: escalaZoom) { escala in
-                alterarZoom(escala: CGFloat(escala))
-            }
             
+            if !self.estaTravado {
+                VStack {
+                    Spacer()
+                    VStack {
+                        SliderComponente(titulo: "Lupa", medida: self.$escalaZoom)
+                        SliderComponente(titulo: "Imagem", medida: self.$opacidadeImagem)
+                        SliderComponente(titulo: "Fundo", medida: self.$opacidadeFundo)
+                    }
+                    .padding()
+                    .padding(.bottom, alturaTela * 0.1)
+                    .opacity(0.8)
+                    .onChange(of: escalaZoom) { escala in
+                        self.telaDesenharViewModel.alterarZoom(escala: CGFloat(escala))
+                    }
+                }
+                
+            }
         }
         .onAppear {
-            self.eDesenho = self.verificaImagemNula(dadosImagemSelecionada: self.dadosImagemSelecionada, desenhoSelecionado: self.desenhoSelecionado)
+            self.eDesenho = self.telaDesenharViewModel.verificaImagemNula(dadosImagemSelecionada: self.dadosImagemSelecionada, desenhoSelecionado: self.desenhoSelecionado)
         }
         .onAppear(perform: cameraViewModel.checarPermissao)
-    }
-    
-    func alterarZoom(escala: CGFloat) {
-        let novaEscala = 1 + 6 * (1 - escala)
-        do {
-            try camera?.lockForConfiguration()
-            camera?.videoZoomFactor = novaEscala
-            camera?.unlockForConfiguration()
-        } catch {
-            print("Failed to update zoom: \(error.localizedDescription)")
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button {
+                    self.estaTravado = !self.estaTravado
+                } label: {
+                    if !self.estaTravado {
+                        Image(systemName: "lock.open.fill")
+                            .font(.system(size: 25))
+                            .foregroundColor(Color("texts"))
+                    } else {
+                        Image(systemName: "lock.fill")
+                            .font(.system(size: 25))
+                            .foregroundColor(Color("texts"))
+                    }
+                }
+            }
+            
+            ToolbarItem(placement: .navigationBarTrailing) {
+                if !self.estaTravado {
+                    Button {
+                        self.dismiss()
+                    } label: {
+                        Text("Concluir")
+                            .fontWeight(.bold)
+                            .foregroundColor(Color("texts"))
+                    }
+                }
+            }
+                
         }
     }
     
-    func verificaImagemNula(dadosImagemSelecionada: Data?, desenhoSelecionado: String?) -> Bool {
-        if desenhoSelecionado != "" {
-            return true
-        }
-        return false
-    }
+    
+    
+    
 }
