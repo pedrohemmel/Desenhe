@@ -32,7 +32,6 @@ struct BotaoMenuInicialComponente: View {
             .frame(minWidth: larguraTela*0.75, alignment: .leading)
             .background(Color("corBotao"))
             .cornerRadius(10)
-            .foregroundColor(.black)
-        }
+            .foregroundColor(Color("texts"))        }
     }
 }

@@ -19,9 +19,12 @@ struct BotaoImportarImagemComponente: View {
             HStack {
                 Image(systemName: "square.and.arrow.down")
                     .font(.system(size: 25))
+                   
                 Text("   Importe uma foto de sua galeria")
                     .font(.system(size: 14))
+                    
             }
+            .foregroundColor(Color("texts"))
             .padding(.vertical, 10)
             .padding(.horizontal, 10)
             .frame(minWidth: larguraTela*0.75, alignment: .leading)

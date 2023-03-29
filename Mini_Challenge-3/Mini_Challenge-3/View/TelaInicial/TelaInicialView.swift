@@ -21,14 +21,18 @@ struct TelaInicialView: View {
                     Spacer()
                     Text("Vamos Desenhar!")
                         .padding(.bottom, 5)
+                        .foregroundColor(Color("texts"))
                     Text("Para começar...")
                         .padding(.bottom, 50)
+                        .foregroundColor(Color("texts"))
                     
                     BotaoImportarImagemComponente(imagemEstaSelecionada: self.$imagemEstaSelecionada, dadosImagemSelecionada: self.$dadosImagemSelecionada)
                         .padding(.bottom, 15)
+                        
                     
                     BotaoMenuInicialComponente(destination: AnyView(NossosDesenhosView()), imageName: "rectangle.3.offgrid.fill", text: "Escolha um de nossos desenhos")
                         .padding(.bottom, 15)
+                      
                     
                     BotaoMenuInicialComponente(destination: AnyView(TelaInicialView()), imageName: "lightbulb", text: "     Me surpreenda")
                     Spacer()

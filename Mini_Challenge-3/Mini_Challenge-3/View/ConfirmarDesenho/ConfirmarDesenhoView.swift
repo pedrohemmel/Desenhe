@@ -41,7 +41,7 @@ struct ConfirmarDesenhoView: View {
                     Spacer()
                     NavigationLink(destination: self.telaDesenharParametrizada, label: {
                         Text("Desenhar \(Image(systemName: "arrow.right"))")
-                            .foregroundColor(.black)
+                            .foregroundColor(Color("texts"))
                             .padding(15)
                             .background(.white)
                             .cornerRadius(10)
