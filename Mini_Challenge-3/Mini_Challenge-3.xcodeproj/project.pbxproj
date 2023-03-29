@@ -47,6 +47,8 @@
 		05E7280B29CA1FBE007C7D72 /* TelaInicialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialViewModel.swift; sourceTree = "<group>"; };
 		43910A3929CE17BB00B1BBD8 /* CategoriaEscolhidaComponente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaEscolhidaComponente.swift; sourceTree = "<group>"; };
 		43910A3B29CE30C000B1BBD8 /* ConfirmarDesenhoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmarDesenhoView.swift; sourceTree = "<group>"; };
+		43F79BDC29D4AA7F0097ACA8 /* Averia.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Averia.ttf; sourceTree = "<group>"; };
+		43F79BDD29D4AAB80097ACA8 /* Mini-Challenge-3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Mini-Challenge-3-Info.plist"; sourceTree = SOURCE_ROOT; };
 		BB7C6E7C29C8FF9D0056BBD7 /* Mini_Challenge-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini_Challenge-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7C6E7F29C8FF9D0056BBD7 /* Mini_Challenge_3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini_Challenge_3App.swift; sourceTree = "<group>"; };
 		BB7C6E8329C8FF9E0056BBD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		BB7C6E7E29C8FF9D0056BBD7 /* Mini_Challenge-3 */ = {
 			isa = PBXGroup;
 			children = (
+				43F79BDD29D4AAB80097ACA8 /* Mini-Challenge-3-Info.plist */,
 				BB7C6EBB29CA2B8F0056BBD7 /* Source */,
 				BB7C6EBC29CA2BB30056BBD7 /* Utils */,
 				05E7280E29CA2130007C7D72 /* Componentes */,
@@ -134,6 +137,7 @@
 				BB7C6EAA29C900340056BBD7 /* View */,
 				BB7C6E8529C8FF9E0056BBD7 /* Preview Content */,
 				BB7C6E8329C8FF9E0056BBD7 /* Assets.xcassets */,
+				43F79BDC29D4AA7F0097ACA8 /* Averia.ttf */,
 				BB7C6E7F29C8FF9D0056BBD7 /* Mini_Challenge_3App.swift */,
 			);
 			path = "Mini_Challenge-3";
@@ -474,6 +478,7 @@
 				DEVELOPMENT_TEAM = UFS93RKF34;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mini-Challenge-3-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -504,6 +509,7 @@
 				DEVELOPMENT_TEAM = UFS93RKF34;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mini-Challenge-3-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
