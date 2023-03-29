@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct SliderComponente: View {
-    @Binding var opacidade: Double
+    var titulo: String
+    @Binding var medida: Double
 
     var body: some View {
         VStack {
-            Slider(value: $opacidade, in: 0...1)
+            Text("\(titulo)")
+            Slider(value: $medida, in: 0...1)
                 .padding()
         }
     }
