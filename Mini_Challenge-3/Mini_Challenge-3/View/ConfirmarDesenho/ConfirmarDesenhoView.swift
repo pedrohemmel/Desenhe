@@ -26,12 +26,15 @@ struct ConfirmarDesenhoView: View {
                 if self.eDesenho ?? false {
                     Image(self.desenhoSelecionado)
                         .resizable()
-                        .frame(width: larguraTela, height: larguraTela)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: larguraTela)
+                    
                 } else {
                     if let uiImage = UIImage(data: self.dadosImagemSelecionada) {
                         Image(uiImage: uiImage)
                             .resizable()
-                            .frame(width: larguraTela, height: larguraTela)
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: larguraTela)
                     }
                 }
                 

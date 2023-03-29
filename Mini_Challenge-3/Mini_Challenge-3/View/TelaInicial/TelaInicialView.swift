@@ -40,5 +40,6 @@ struct TelaInicialView: View {
                 }
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }

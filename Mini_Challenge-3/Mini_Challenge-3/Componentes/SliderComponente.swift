@@ -12,10 +12,15 @@ struct SliderComponente: View {
     @Binding var medida: Double
 
     var body: some View {
-        VStack {
+        HStack {
             Text("\(titulo)")
+                .font(.system(size: 14))
+                .foregroundColor(Color("texts"))
+                .fontWeight(.bold)
+            
             Slider(value: $medida, in: 0...1)
-                .padding()
+                .tint(Color("texts"))
         }
+        
     }
 }

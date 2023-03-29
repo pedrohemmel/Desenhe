@@ -9,7 +9,7 @@ import Foundation
 import AVFoundation
 
 class TelaDesenharViewModel {
-    let camera = AVCaptureDevice.default(.builtInDualWideCamera, for: .video, position: .back)
+    let camera = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)
     
     func alterarZoom(escala: CGFloat) {
         let novaEscala = 1 + 6 * (1 - escala)

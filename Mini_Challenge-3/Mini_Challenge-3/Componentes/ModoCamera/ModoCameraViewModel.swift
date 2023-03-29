@@ -38,7 +38,7 @@ class ModoCameraViewModel: ObservableObject {
     func configurar(){
         do{
             self.sessao.beginConfiguration()
-            let cameraDevice = AVCaptureDevice.default(.builtInDualWideCamera, for: .video, position: .back)
+            let cameraDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)
             let input = try AVCaptureDeviceInput(device: cameraDevice!)
             
             if self.sessao.canAddInput(input){

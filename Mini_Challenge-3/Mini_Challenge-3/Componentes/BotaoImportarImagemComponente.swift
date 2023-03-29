@@ -19,10 +19,10 @@ struct BotaoImportarImagemComponente: View {
             HStack {
                 Image(systemName: "square.and.arrow.down")
                     .font(.system(size: 25))
-                   
+
                 Text("   Importe uma foto de sua galeria")
                     .font(.system(size: 14))
-                    
+
             }
             .foregroundColor(Color("texts"))
             .padding(.vertical, 10)
@@ -31,7 +31,7 @@ struct BotaoImportarImagemComponente: View {
             .background(Color("corBotao"))
             .cornerRadius(10)
             .foregroundColor(.black)
-            
+
         }
         .onChange(of: imagemSelecionada) { novaImagemSelecionada in
             Task {
