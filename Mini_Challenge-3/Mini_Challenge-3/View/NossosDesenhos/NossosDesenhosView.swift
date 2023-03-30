@@ -19,10 +19,15 @@ struct NossosDesenhosView: View {
     @State var recebeuInfDesenho = false
     var nossosDesenhosViewModel = NossosDesenhosViewModel()
     
+    let larguraTela = UIScreen.main.bounds.size.width
+    let alturaTela = UIScreen.main.bounds.size.height
+    
     var body: some View {
         ZStack {
             if recebeuInfDesenho {
                 NavigationLink(destination: ConfirmarDesenhoView(dadosImagemSelecionada: .constant(Data()), desenhoSelecionado: $desenhoSelecionado), isActive: self.$imagemEstaSelecionada, label: {})
+                
+                
                 VStack {
                     SearchBarComponente(
                         textoPesquisa: self.$textoPesquisa,
@@ -62,6 +67,11 @@ struct NossosDesenhosView: View {
             }
             
         }
+        .background(Image("fundo")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: self.larguraTela, height: self.alturaTela)
+        )
         .navigationBarTitle(Text("Nossos Desenhos"), displayMode: .inline)
         .onAppear {
             self.nossosDesenhosViewModel.buscarInfDesenho {

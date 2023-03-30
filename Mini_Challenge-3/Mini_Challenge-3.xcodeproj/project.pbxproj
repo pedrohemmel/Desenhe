@@ -17,6 +17,8 @@
 		43910A3C29CE30C000B1BBD8 /* ConfirmarDesenhoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43910A3B29CE30C000B1BBD8 /* ConfirmarDesenhoView.swift */; };
 		43CF997329CD4B8C00AF990C /* ModoCameraRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CF997229CD4B8C00AF990C /* ModoCameraRepresentable.swift */; };
 		43CF997729CD4C3E00AF990C /* ModoCameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CF997629CD4C3E00AF990C /* ModoCameraViewModel.swift */; };
+		43EB899D29D6125500968B76 /* AveriaGruesaLibre-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43EB899C29D6125500968B76 /* AveriaGruesaLibre-Regular.ttf */; };
+		43EB899E29D6125500968B76 /* AveriaGruesaLibre-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43EB899C29D6125500968B76 /* AveriaGruesaLibre-Regular.ttf */; };
 		BB70C21329D371C400FA8BA2 /* TelaDesenharView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB70C21229D371C400FA8BA2 /* TelaDesenharView.swift */; };
 		BB70C21529D371DC00FA8BA2 /* TelaDesenharViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB70C21429D371DC00FA8BA2 /* TelaDesenharViewModel.swift */; };
 		BB70C21729D5FEC000FA8BA2 /* DesenhosDePesquisaComponente.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB70C21629D5FEC000FA8BA2 /* DesenhosDePesquisaComponente.swift */; };
@@ -59,8 +61,8 @@
 		43910A3B29CE30C000B1BBD8 /* ConfirmarDesenhoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmarDesenhoView.swift; sourceTree = "<group>"; };
 		43CF997229CD4B8C00AF990C /* ModoCameraRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModoCameraRepresentable.swift; sourceTree = "<group>"; };
 		43CF997629CD4C3E00AF990C /* ModoCameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModoCameraViewModel.swift; sourceTree = "<group>"; };
-		43F79BDC29D4AA7F0097ACA8 /* Averia.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Averia.ttf; sourceTree = "<group>"; };
-		43F79BDD29D4AAB80097ACA8 /* Mini-Challenge-3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Mini-Challenge-3-Info.plist"; path = "Mini_Challenge-3/Source/Mini-Challenge-3-Info.plist"; sourceTree = SOURCE_ROOT; };
+		43EB899C29D6125500968B76 /* AveriaGruesaLibre-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AveriaGruesaLibre-Regular.ttf"; sourceTree = "<group>"; };
+		43F79BDD29D4AAB80097ACA8 /* Mini-Challenge-3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Mini-Challenge-3-Info.plist"; sourceTree = SOURCE_ROOT; };
 		BB70C21229D371C400FA8BA2 /* TelaDesenharView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaDesenharView.swift; sourceTree = "<group>"; };
 		BB70C21429D371DC00FA8BA2 /* TelaDesenharViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaDesenharViewModel.swift; sourceTree = "<group>"; };
 		BB70C21629D5FEC000FA8BA2 /* DesenhosDePesquisaComponente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesenhosDePesquisaComponente.swift; sourceTree = "<group>"; };
@@ -163,6 +165,8 @@
 				BB7C6EAA29C900340056BBD7 /* View */,
 				BB7C6E8529C8FF9E0056BBD7 /* Preview Content */,
 				BB7C6E8329C8FF9E0056BBD7 /* Assets.xcassets */,
+				43F79BDD29D4AAB80097ACA8 /* Mini-Challenge-3-Info.plist */,
+				43EB899C29D6125500968B76 /* AveriaGruesaLibre-Regular.ttf */,
 				BB7C6E7F29C8FF9D0056BBD7 /* Mini_Challenge_3App.swift */,
 			);
 			path = "Mini_Challenge-3";
@@ -344,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB7C6EC629CA441A0056BBD7 /* InfDesenhoJSON.json in Resources */,
+				43EB899D29D6125500968B76 /* AveriaGruesaLibre-Regular.ttf in Resources */,
 				4340BB2D29D5FE1100FE46F0 /* Localizable.strings in Resources */,
 				BB7C6E8729C8FF9E0056BBD7 /* Preview Assets.xcassets in Resources */,
 				BB7C6E8429C8FF9E0056BBD7 /* Assets.xcassets in Resources */,
@@ -354,6 +359,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43EB899E29D6125500968B76 /* AveriaGruesaLibre-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
