@@ -18,15 +18,15 @@ struct TelaDSplash: View {
             if !telaDSplashAtiva {
                 TelaInicialView()
             } else {
-                    
                 Image("TelaDSplash")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: self.larguraTela + 10, height: self.alturaTela)
                     .opacity(opacidade)
-                    .ignoresSafeArea()
+                    
             }
         }
+        .ignoresSafeArea()
         .onAppear {
             withAnimation {
                 self.opacidade = 1

@@ -10,6 +10,7 @@ import SwiftUI
 struct TelaInicialView: View {
     @State var imagemEstaSelecionada = false
     @State var dadosImagemSelecionada = Data()
+    @State var desenhoSelecionado = ""
     let larguraTela = UIScreen.main.bounds.size.width
     let alturaTela = UIScreen.main.bounds.size.height
     
@@ -20,7 +21,7 @@ struct TelaInicialView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: self.larguraTela, height: self.alturaTela)
-                    .ignoresSafeArea()
+//                    .ignoresSafeArea()
                 NavigationLink(destination: ConfirmarDesenhoView(dadosImagemSelecionada: $dadosImagemSelecionada, desenhoSelecionado: .constant("")), isActive: self.$imagemEstaSelecionada, label: {})
                 VStack {
                     Spacer()
@@ -41,16 +42,18 @@ struct TelaInicialView: View {
                         .padding(.bottom, 15)
                       
                     
-                    BotaoMenuInicialComponente(destination: AnyView(TelaInicialView()), imageName: "lightbulb", text: "     Me surpreenda")
+                    BotaoMenuInicialComponente(
+                        destination: AnyView(ConfirmarDesenhoView(
+                            dadosImagemSelecionada: .constant(Data()),
+                            desenhoSelecionado: self.$desenhoSelecionado,
+                            eMeSurpreenda: true)),
+                        imageName: "lightbulb",
+                        text: "     Me surpreenda")
                     Spacer()
                     Spacer()
                 }
-//                .background(Image("fundo")
-//                    .resizable()
-//                    .aspectRatio(contentMode: .fit)
-//                    .frame(width: self.larguraTela, height: self.alturaTela)
-//                )
             }
+            .ignoresSafeArea()
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
