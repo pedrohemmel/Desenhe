@@ -41,12 +41,12 @@ struct ConfirmarDesenhoView: View {
                 Spacer()
                 
                 HStack {
-                    Spacer()
+//                    Spacer()
                     NavigationLink(destination: self.telaDesenharParametrizada, label: {
-                        Text("Desenhar \(Image(systemName: "arrow.right"))")
+                        Text("Desenhar")
                             .foregroundColor(Color("texts"))
                             .padding(15)
-                            .background(.white)
+                            .background(Color("buttonBackground"))
                             .cornerRadius(10)
                     })
                     .padding(.bottom, 40)
@@ -66,17 +66,6 @@ struct ConfirmarDesenhoView: View {
         }
         .background(.black)
         .navigationBarTitleDisplayMode(.inline)
-        .navigationBarBackButtonHidden(true)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                Button {
-                    self.dismiss()
-                } label: {
-                    Image(systemName: "xmark")
-                        .foregroundColor(.white)
-                }
-            }
-        }
     }
     func verificaImagemNula(dadosImagemSelecionada: Data?, desenhoSelecionado: String?) -> Bool {
         if desenhoSelecionado != "" {
