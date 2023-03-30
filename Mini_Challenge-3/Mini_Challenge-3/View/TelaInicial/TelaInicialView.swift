@@ -20,9 +20,11 @@ struct TelaInicialView: View {
                 VStack {
                     Spacer()
                     Text("Vamos Desenhar!")
+                        .font(.custom("AveriaGruesaLibre-Regular", fixedSize: 40))
                         .padding(.bottom, 5)
                         .foregroundColor(Color("texts"))
                     Text("Para começar...")
+                        .font(.custom("AveriaGruesaLibre-Regular", fixedSize: 20))
                         .padding(.bottom, 50)
                         .foregroundColor(Color("texts"))
                     
@@ -38,6 +40,11 @@ struct TelaInicialView: View {
                     Spacer()
                     Spacer()
                 }
+                .background(Image("fundo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: self.larguraTela, height: self.alturaTela)
+                )
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())

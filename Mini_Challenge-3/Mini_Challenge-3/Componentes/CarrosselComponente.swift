@@ -18,8 +18,10 @@ struct CarrosselComponente: View {
         VStack {
             HStack {
                 Text("\(categoriaDesenhos)")
+                    .font(.custom("AveriaGruesaLibre-Regular", fixedSize: 25))
+                    .foregroundColor(.accentColor)
                     .padding(10)
-                    .background(Color.gray)
+//                    .background(Color.gray)
                     .cornerRadius(10)
                     .padding(.horizontal, 10)
                 Spacer()

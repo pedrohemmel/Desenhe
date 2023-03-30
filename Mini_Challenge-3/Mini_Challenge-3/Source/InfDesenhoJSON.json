@@ -255,7 +255,7 @@
         },
         {
             "id": 2,
-            "nomeCategoria": "objetos",
+            "nomeCategoria": "Objetos",
             "desenhos": [
                 {
                     "id": 0,
@@ -382,7 +382,7 @@
         {
                             
             "id": 3,
-            "nomeCategoria": "tecnologia",
+            "nomeCategoria": "Tecnologia",
             "desenhos": [
                 {
                     "id": 0,
@@ -508,7 +508,7 @@
         },
         {
             "id": 4,
-            "nomeCategoria": "comidas",
+            "nomeCategoria": "Comidas",
             "desenhos": [
                 {
                     "id": 0,
@@ -634,7 +634,7 @@
         },
         {
             "id": 5,
-            "nomeCategoria": "paisagens",
+            "nomeCategoria": "Paisagens",
             "desenhos": [
                 {
                     "id": 0,
@@ -760,7 +760,7 @@
         },
         {
             "id": 6,
-            "nomeCategoria": "arquitetura",
+            "nomeCategoria": "Arquitetura",
             "desenhos": [
                 {
                     "id": 0,
