@@ -136,7 +136,6 @@
 		BB7C6E7329C8FF9D0056BBD7 = {
 			isa = PBXGroup;
 			children = (
-				4340BB2F29D5FE1100FE46F0 /* Localizable.strings */,
 				BB7C6E7E29C8FF9D0056BBD7 /* Mini_Challenge-3 */,
 				BB7C6E8F29C8FF9E0056BBD7 /* Mini_Challenge-3Tests */,
 				BB7C6E7D29C8FF9D0056BBD7 /* Products */,
@@ -210,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				BB7C6EBF29CA2DD50056BBD7 /* InfDesenhoJSON.json */,
+				4340BB2F29D5FE1100FE46F0 /* Localizable.strings */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -542,8 +542,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mini_Challenge-3/Preview Content\"";
-				DEVELOPMENT_TEAM = TNPTQGXSA4;
-				DEVELOPMENT_TEAM = V32Q5HA7F8;
+				DEVELOPMENT_TEAM = UFS93RKF34;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mini-Challenge-3-Info.plist";
@@ -575,8 +574,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mini_Challenge-3/Preview Content\"";
-				DEVELOPMENT_TEAM = TNPTQGXSA4;
-				DEVELOPMENT_TEAM = V32Q5HA7F8;
+				DEVELOPMENT_TEAM = UFS93RKF34;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mini-Challenge-3-Info.plist";
