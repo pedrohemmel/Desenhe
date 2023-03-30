@@ -21,7 +21,6 @@ struct CarrosselComponente: View {
                     .font(.custom("AveriaGruesaLibre-Regular", fixedSize: 25))
                     .foregroundColor(.accentColor)
                     .padding(10)
-//                    .background(Color.gray)
                     .cornerRadius(10)
                     .padding(.horizontal, 10)
                 Spacer()

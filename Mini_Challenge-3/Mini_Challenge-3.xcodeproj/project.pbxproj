@@ -19,6 +19,7 @@
 		43CF997729CD4C3E00AF990C /* ModoCameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CF997629CD4C3E00AF990C /* ModoCameraViewModel.swift */; };
 		43EB899D29D6125500968B76 /* AveriaGruesaLibre-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43EB899C29D6125500968B76 /* AveriaGruesaLibre-Regular.ttf */; };
 		43EB899E29D6125500968B76 /* AveriaGruesaLibre-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43EB899C29D6125500968B76 /* AveriaGruesaLibre-Regular.ttf */; };
+		43EB89A229D622ED00968B76 /* ModoClaroEscuro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB89A129D622ED00968B76 /* ModoClaroEscuro.swift */; };
 		BB70C21329D371C400FA8BA2 /* TelaDesenharView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB70C21229D371C400FA8BA2 /* TelaDesenharView.swift */; };
 		BB70C21529D371DC00FA8BA2 /* TelaDesenharViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB70C21429D371DC00FA8BA2 /* TelaDesenharViewModel.swift */; };
 		BB70C21729D5FEC000FA8BA2 /* DesenhosDePesquisaComponente.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB70C21629D5FEC000FA8BA2 /* DesenhosDePesquisaComponente.swift */; };
@@ -62,6 +63,7 @@
 		43CF997229CD4B8C00AF990C /* ModoCameraRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModoCameraRepresentable.swift; sourceTree = "<group>"; };
 		43CF997629CD4C3E00AF990C /* ModoCameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModoCameraViewModel.swift; sourceTree = "<group>"; };
 		43EB899C29D6125500968B76 /* AveriaGruesaLibre-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AveriaGruesaLibre-Regular.ttf"; sourceTree = "<group>"; };
+		43EB89A129D622ED00968B76 /* ModoClaroEscuro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModoClaroEscuro.swift; sourceTree = "<group>"; };
 		BB70C21229D371C400FA8BA2 /* TelaDesenharView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaDesenharView.swift; sourceTree = "<group>"; };
 		BB70C21429D371DC00FA8BA2 /* TelaDesenharViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaDesenharViewModel.swift; sourceTree = "<group>"; };
 		BB70C21629D5FEC000FA8BA2 /* DesenhosDePesquisaComponente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesenhosDePesquisaComponente.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				BB7C6EC929CB9AA00056BBD7 /* NossosDesenhos */,
 				BB7C6F0829D248400056BBD7 /* ConfirmarDesenho */,
 				BB7C6F0C29D370B50056BBD7 /* TelaDesenhar */,
+				43EB89A129D622ED00968B76 /* ModoClaroEscuro.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05162EBE29CD1183007A7FB3 /* SliderComponente.swift in Sources */,
+				43EB89A229D622ED00968B76 /* ModoClaroEscuro.swift in Sources */,
 				BB7C6EBA29CA26750056BBD7 /* Desenho.swift in Sources */,
 				BB70C21729D5FEC000FA8BA2 /* DesenhosDePesquisaComponente.swift in Sources */,
 				BB7C6EC329CA2FCC0056BBD7 /* InfDesenho.swift in Sources */,
