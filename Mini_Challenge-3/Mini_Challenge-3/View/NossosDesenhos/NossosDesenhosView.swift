@@ -69,8 +69,6 @@ struct NossosDesenhosView: View {
                 self.infDesenho = self.nossosDesenhosViewModel.carregadorInfDesenho?.infDesenho
                 self.categorias = self.infDesenho!.categorias
             }
-            
-            
         }
     }
 }
