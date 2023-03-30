@@ -28,25 +28,33 @@ struct NossosDesenhosView: View {
                         textoPesquisa: self.$textoPesquisa,
                         filtroAberto: self.$filtroAberto,
                         filtroSelecionado: self.$filtroSelecionado)
-                    
-                    if filtroSelecionado == "" {
-                        ScrollView {
-                            ForEach(self.categorias, id: \.id) { categoria in
-                                CarrosselComponente(
-                                    imagemEstaSelecionada: self.$imagemEstaSelecionada,
-                                    desenhoSelecionado: self.$desenhoSelecionado,
-                                    categoriaDesenhos: .constant(categoria.nomeCategoria),
-                                    desenhos: .constant(categoria.desenhos))
-                                    .padding(.top, 5)
+                    if textoPesquisa == "" {
+                        if filtroSelecionado == "" {
+                            ScrollView {
+                                ForEach(self.categorias, id: \.id) { categoria in
+                                    CarrosselComponente(
+                                        imagemEstaSelecionada: self.$imagemEstaSelecionada,
+                                        desenhoSelecionado: self.$desenhoSelecionado,
+                                        categoriaDesenhos: .constant(categoria.nomeCategoria),
+                                        desenhos: .constant(categoria.desenhos))
+                                        .padding(.top, 5)
+                                }
                             }
+                        } else {
+                            CategoriaEscolhidaComponente(
+                                imagemEstaSelecionada: self.$imagemEstaSelecionada,
+                                desenhoSelecionado: self.$desenhoSelecionado,
+                                filtroSelecionado: self.$filtroSelecionado,
+                                categorias: .constant(self.categorias))
                         }
                     } else {
-                        CategoriaEscolhidaComponente(
-                            imagemEstaSelecionada: self.$imagemEstaSelecionada,
+                        DesenhosDePesquisaComponente(
+                            textoPesquisa: self.$textoPesquisa,
                             desenhoSelecionado: self.$desenhoSelecionado,
-                            filtroSelecionado: self.$filtroSelecionado,
-                            categorias: .constant(self.categorias))
+                            imagemEstaSelecionada: self.$imagemEstaSelecionada,
+                            categorias: self.$categorias)
                     }
+                    
                 }
                 FiltroNossosDesenhosComponente(categorias: $categorias, filtroAberto: self.$filtroAberto, filtroSelecionado: self.$filtroSelecionado)
             } else {
