@@ -16,6 +16,11 @@ struct TelaInicialView: View {
     var body: some View {
         NavigationView {
             ZStack {
+                Image("fundo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: self.larguraTela, height: self.alturaTela)
+                    .ignoresSafeArea()
                 NavigationLink(destination: ConfirmarDesenhoView(dadosImagemSelecionada: $dadosImagemSelecionada, desenhoSelecionado: .constant("")), isActive: self.$imagemEstaSelecionada, label: {})
                 VStack {
                     Spacer()
@@ -40,11 +45,11 @@ struct TelaInicialView: View {
                     Spacer()
                     Spacer()
                 }
-                .background(Image("fundo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: self.larguraTela, height: self.alturaTela)
-                )
+//                .background(Image("fundo")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fit)
+//                    .frame(width: self.larguraTela, height: self.alturaTela)
+//                )
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())

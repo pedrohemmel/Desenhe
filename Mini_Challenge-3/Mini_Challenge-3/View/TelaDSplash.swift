@@ -18,11 +18,13 @@ struct TelaDSplash: View {
             if !telaDSplashAtiva {
                 TelaInicialView()
             } else {
+                    
                 Image("TelaDSplash")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: self.larguraTela, height: self.alturaTela)
+                    .frame(width: self.larguraTela + 10, height: self.alturaTela)
                     .opacity(opacidade)
+                    .ignoresSafeArea()
             }
         }
         .onAppear {

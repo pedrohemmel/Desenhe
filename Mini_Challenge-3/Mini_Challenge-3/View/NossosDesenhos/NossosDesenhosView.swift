@@ -24,6 +24,11 @@ struct NossosDesenhosView: View {
     
     var body: some View {
         ZStack {
+            Image("fundo")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: self.larguraTela, height: self.alturaTela)
+                .ignoresSafeArea()
             if recebeuInfDesenho {
                 NavigationLink(destination: ConfirmarDesenhoView(dadosImagemSelecionada: .constant(Data()), desenhoSelecionado: $desenhoSelecionado), isActive: self.$imagemEstaSelecionada, label: {})
                 
@@ -33,6 +38,7 @@ struct NossosDesenhosView: View {
                         textoPesquisa: self.$textoPesquisa,
                         filtroAberto: self.$filtroAberto,
                         filtroSelecionado: self.$filtroSelecionado)
+                    .padding(.top, 65)
                     if textoPesquisa == "" {
                         if filtroSelecionado == "" {
                             ScrollView {
@@ -62,16 +68,12 @@ struct NossosDesenhosView: View {
                     
                 }
                 FiltroNossosDesenhosComponente(categorias: $categorias, filtroAberto: self.$filtroAberto, filtroSelecionado: self.$filtroSelecionado)
+                    .padding(.top, 65)
             } else {
                 ProgressView()
             }
             
         }
-        .background(Image("fundo")
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(width: self.larguraTela, height: self.alturaTela)
-        )
         .navigationBarTitle(Text("Nossos Desenhos"), displayMode: .inline)
         .onAppear {
             self.nossosDesenhosViewModel.buscarInfDesenho {
