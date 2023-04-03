@@ -10,6 +10,7 @@ import Foundation
 struct Desenho: Codable {
     let id: Int
     let nomeDiretorio: String
+    let nomeDiretorioMiniatura: String
     let palavrasChaves: [String]
     let referenciaImagem: String
 }

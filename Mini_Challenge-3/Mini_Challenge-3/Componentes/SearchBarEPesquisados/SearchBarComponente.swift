@@ -19,6 +19,7 @@ struct SearchBarComponente: View {
                 Image(systemName: "magnifyingglass")
                     .foregroundColor(Color.gray)
                 TextField("Pesquise aqui", text: $textoPesquisa)
+                    .keyboardType(.default)
             }
             .padding(7)
             .background(Color(.systemGray6))

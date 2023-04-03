@@ -35,7 +35,7 @@ struct CarrosselComponente: View {
                             self.desenhoSelecionado = desenho.nomeDiretorio
                             self.imagemEstaSelecionada = true
                         } label: {
-                            Image("\(desenho.nomeDiretorio)")
+                            Image("\(desenho.nomeDiretorioMiniatura)")
                                 .resizable()
                                 .frame(width: self.larguraTela * 0.2, height: self.larguraTela * 0.2)
                                 .cornerRadius(10)
