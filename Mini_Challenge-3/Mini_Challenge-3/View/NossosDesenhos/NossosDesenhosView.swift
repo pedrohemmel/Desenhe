@@ -29,7 +29,6 @@ struct NossosDesenhosView: View {
             if recebeuInfDesenho {
                 NavigationLink(destination: ConfirmarDesenhoView(dadosImagemSelecionada: .constant(Data()), desenhoSelecionado: $desenhoSelecionado), isActive: self.$imagemEstaSelecionada, label: {})
                 
-                
                 VStack {
                     SearchBarComponente(
                         textoPesquisa: self.$textoPesquisa,
@@ -48,6 +47,7 @@ struct NossosDesenhosView: View {
                                         .padding(.top, 5)
                                 }
                             }
+                            .padding(.bottom, 40)
                         } else {
                             CategoriaEscolhidaComponente(
                                 imagemEstaSelecionada: self.$imagemEstaSelecionada,
@@ -68,10 +68,19 @@ struct NossosDesenhosView: View {
                     .padding(.top, 65)
             } else {
                 ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle(tint: Color("texts")))
             }
             
         }
-        .navigationBarTitle(Text("Nossos Desenhos"), displayMode: .inline)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                HStack {
+                    Text("Nossos Desenhos")
+                        .foregroundColor(Color("texts"))
+                }
+            }
+        }
         .onAppear {
             self.nossosDesenhosViewModel.buscarInfDesenho {
                 self.recebeuInfDesenho = true

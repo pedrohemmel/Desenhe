@@ -16,6 +16,10 @@ struct ConfirmarDesenhoView: View {
     @State var eDesenho: Bool? = nil
     @State var telaDesenharParametrizada: TelaDesenharView? = nil
     
+    @State var eMeSurpreenda: Bool?
+    @State var recebeuInfDesenho = false
+    
+    let confirmarDesenhoViewModel = ConfirmarDesenhoViewModel()
     let larguraTela = UIScreen.main.bounds.size.width
     let alturaTela = UIScreen.main.bounds.size.height
     
@@ -37,11 +41,8 @@ struct ConfirmarDesenhoView: View {
                             .frame(width: larguraTela)
                     }
                 }
-                
                 Spacer()
-                
                 HStack {
-//                    Spacer()
                     NavigationLink(destination: self.telaDesenharParametrizada, label: {
                         Text("Desenhar")
                             .foregroundColor(Color("texts"))
@@ -53,9 +54,18 @@ struct ConfirmarDesenhoView: View {
                     .padding(.trailing, 10)
                 }
             }
+            
         }
         .onAppear {
             self.eDesenho = self.verificaImagemNula(dadosImagemSelecionada: self.dadosImagemSelecionada, desenhoSelecionado: self.desenhoSelecionado)
+            
+            if eMeSurpreenda ?? false {
+                self.confirmarDesenhoViewModel.buscarInfDesenho() {
+                    self.recebeuInfDesenho = true
+                    self.desenhoSelecionado = self.confirmarDesenhoViewModel.sortearDesenho()
+                    self.eDesenho = self.verificaImagemNula(dadosImagemSelecionada: self.dadosImagemSelecionada, desenhoSelecionado: self.desenhoSelecionado)
+                }
+            }
             
             if eDesenho ?? false {
                 self.telaDesenharParametrizada = TelaDesenharView(dadosImagemSelecionada: .constant(Data()), desenhoSelecionado: self.$desenhoSelecionado)
