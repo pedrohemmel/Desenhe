@@ -24,11 +24,8 @@ struct NossosDesenhosView: View {
     
     var body: some View {
         ZStack {
-            Image("fundo")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: self.larguraTela, height: self.alturaTela)
-                .ignoresSafeArea()
+            ModoClaroEscuro(light: Image("fundoLight"), dark: Image("fundoDark"))
+
             if recebeuInfDesenho {
                 NavigationLink(destination: ConfirmarDesenhoView(dadosImagemSelecionada: .constant(Data()), desenhoSelecionado: $desenhoSelecionado), isActive: self.$imagemEstaSelecionada, label: {})
                 

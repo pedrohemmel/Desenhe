@@ -17,10 +17,10 @@ struct TelaInicialView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Image("fundo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: self.larguraTela, height: self.alturaTela)
+                //Image("fundo")
+                 //   .resizable()
+                   // .aspectRatio(contentMode: .fit)
+                   // .frame(width: self.larguraTela, height: self.alturaTela)
 //                    .ignoresSafeArea()
                 NavigationLink(destination: ConfirmarDesenhoView(dadosImagemSelecionada: $dadosImagemSelecionada, desenhoSelecionado: .constant("")), isActive: self.$imagemEstaSelecionada, label: {})
                 VStack {
@@ -28,11 +28,11 @@ struct TelaInicialView: View {
                     Text("Vamos Desenhar!")
                         .font(.custom("AveriaGruesaLibre-Regular", fixedSize: 40))
                         .padding(.bottom, 5)
-                        .foregroundColor(Color("texts"))
+                        .foregroundColor(.accentColor)
                     Text("Para começar...")
                         .font(.custom("AveriaGruesaLibre-Regular", fixedSize: 20))
                         .padding(.bottom, 50)
-                        .foregroundColor(Color("texts"))
+                        .foregroundColor(.accentColor)
                     
                     BotaoImportarImagemComponente(imagemEstaSelecionada: self.$imagemEstaSelecionada, dadosImagemSelecionada: self.$dadosImagemSelecionada)
                         .padding(.bottom, 15)
@@ -52,6 +52,7 @@ struct TelaInicialView: View {
                     Spacer()
                     Spacer()
                 }
+                .background(ModoClaroEscuro(light: Image("fundoLight"), dark: Image("fundoDark")))
             }
             .ignoresSafeArea()
         }
