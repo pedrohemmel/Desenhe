@@ -99,6 +99,8 @@ struct TelaDesenharView: View {
             ToolbarItem(placement: .navigationBarTrailing) {
                 if !self.estaTravado {
                     Button {
+                        self.dadosImagemSelecionada = Data()
+                        self.desenhoSelecionado = ""
                         self.dismiss()
                     } label: {
                         Text("Concluir")

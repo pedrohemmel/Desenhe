@@ -50,6 +50,7 @@ struct NossosDesenhosView: View {
                                         .padding(.top, 5)
                                 }
                             }
+                            .padding(.bottom, 40)
                         } else {
                             CategoriaEscolhidaComponente(
                                 imagemEstaSelecionada: self.$imagemEstaSelecionada,
