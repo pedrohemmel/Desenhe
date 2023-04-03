@@ -55,7 +55,6 @@ struct TelaDesenharView: View {
                     }
                 }
             }
-            
             if !self.estaTravado {
                 VStack {
                     Spacer()

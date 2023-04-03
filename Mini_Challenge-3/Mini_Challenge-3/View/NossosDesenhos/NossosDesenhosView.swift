@@ -25,6 +25,8 @@ struct NossosDesenhosView: View {
     var body: some View {
         ZStack {
             ModoClaroEscuro(light: Image("fundoLight"), dark: Image("fundoDark"))
+                .ignoresSafeArea()
+            
 
             if recebeuInfDesenho {
                 NavigationLink(destination: ConfirmarDesenhoView(dadosImagemSelecionada: .constant(Data()), desenhoSelecionado: $desenhoSelecionado), isActive: self.$imagemEstaSelecionada, label: {})
@@ -77,7 +79,7 @@ struct NossosDesenhosView: View {
             ToolbarItem(placement: .principal) {
                 HStack {
                     Text("Nossos Desenhos")
-                        .foregroundColor(Color("texts"))
+                        .foregroundColor(.accentColor)
                 }
             }
         }

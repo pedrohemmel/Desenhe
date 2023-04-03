@@ -54,7 +54,7 @@ struct ConfirmarDesenhoView: View {
                     .padding(.trailing, 10)
                 }
             }
-            
+            .ignoresSafeArea()
         }
         .onAppear {
             self.eDesenho = self.verificaImagemNula(dadosImagemSelecionada: self.dadosImagemSelecionada, desenhoSelecionado: self.desenhoSelecionado)
@@ -63,15 +63,22 @@ struct ConfirmarDesenhoView: View {
                 self.confirmarDesenhoViewModel.buscarInfDesenho() {
                     self.recebeuInfDesenho = true
                     self.desenhoSelecionado = self.confirmarDesenhoViewModel.sortearDesenho()
-                    self.eDesenho = self.verificaImagemNula(dadosImagemSelecionada: self.dadosImagemSelecionada, desenhoSelecionado: self.desenhoSelecionado)
+                    self.eDesenho = true
+                    
+                    if eDesenho ?? false {
+                        self.telaDesenharParametrizada = TelaDesenharView(dadosImagemSelecionada: .constant(Data()), desenhoSelecionado: self.$desenhoSelecionado)
+                    } else {
+                        self.telaDesenharParametrizada = TelaDesenharView(dadosImagemSelecionada: self.$dadosImagemSelecionada, desenhoSelecionado: .constant(""))
+                    }
+                }
+            } else {
+                if eDesenho ?? false {
+                    self.telaDesenharParametrizada = TelaDesenharView(dadosImagemSelecionada: .constant(Data()), desenhoSelecionado: self.$desenhoSelecionado)
+                } else {
+                    self.telaDesenharParametrizada = TelaDesenharView(dadosImagemSelecionada: self.$dadosImagemSelecionada, desenhoSelecionado: .constant(""))
                 }
             }
             
-            if eDesenho ?? false {
-                self.telaDesenharParametrizada = TelaDesenharView(dadosImagemSelecionada: .constant(Data()), desenhoSelecionado: self.$desenhoSelecionado)
-            } else {
-                self.telaDesenharParametrizada = TelaDesenharView(dadosImagemSelecionada: self.$dadosImagemSelecionada, desenhoSelecionado: .constant(""))
-            }
             
         }
         .background(.black)

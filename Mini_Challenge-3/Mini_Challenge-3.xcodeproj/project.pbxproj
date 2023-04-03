@@ -195,7 +195,6 @@
 				BB7C6EC929CB9AA00056BBD7 /* NossosDesenhos */,
 				BB7C6F0829D248400056BBD7 /* ConfirmarDesenho */,
 				BB7C6F0C29D370B50056BBD7 /* TelaDesenhar */,
-				43EB89A129D622ED00968B76 /* ModoClaroEscuro.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -223,6 +222,7 @@
 		BB7C6EBC29CA2BB30056BBD7 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				43EB89A129D622ED00968B76 /* ModoClaroEscuro.swift */,
 				BB7C6EBD29CA2D9D0056BBD7 /* CarregadorInfDesenho.swift */,
 			);
 			path = Utils;
