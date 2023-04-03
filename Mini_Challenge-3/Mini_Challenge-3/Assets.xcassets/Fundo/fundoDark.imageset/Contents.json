@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "telainicialLight (2).png",
+      "filename" : "fundoDark.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "telainicialLight (2) 1.png",
+      "filename" : "fundoDark@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "telainicialLight (3).png",
+      "filename" : "fundoDark@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

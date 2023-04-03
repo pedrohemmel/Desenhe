@@ -21,8 +21,10 @@ struct CategoriaEscolhidaComponente: View {
         ScrollView {
             HStack {
                 Text("\(self.filtroSelecionado)")
+                    .font(.custom("AveriaGruesaLibre-Regular", fixedSize: 25))
+                    .foregroundColor(.accentColor)
                     .padding(10)
-                    .background(.secondary)
+//                    .background(.secondary)
                     .cornerRadius(10)
                     .padding(.horizontal, 10)
                 Spacer()
