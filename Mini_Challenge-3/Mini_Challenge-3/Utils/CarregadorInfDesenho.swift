@@ -22,7 +22,6 @@ class CarregadorInfDesenho {
                 guard let dados = try String(contentsOfFile: arquivoJSON).data(using: .utf8) else { return }
                 let jsonDecoder = JSONDecoder()
                 let dadosFormatados = try jsonDecoder.decode(InfDesenho.self, from: dados)
-                print(dadosFormatados)
                 
                 DispatchQueue.main.async {
                     self.infDesenho = dadosFormatados
@@ -33,7 +32,6 @@ class CarregadorInfDesenho {
             }
             return
         }
-        
         print("Erro: Não foi possível localizar o arquivo.")
     }
 }

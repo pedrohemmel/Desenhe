@@ -7,6 +7,7 @@
                 {
                     "id": 0,
                     "nomeDiretorio": "girafa",
+                    "nomeDiretorioMiniatura": "girafa_miniatura",
                     "palavrasChaves": [
                         "girafa",
 
@@ -19,6 +20,7 @@
                 {
                     "id": 1,
                     "nomeDiretorio": "gato",
+                    "nomeDiretorioMiniatura": "gato_miniatura",
                     "palavrasChaves": [
                         "gato",
 
@@ -31,6 +33,7 @@
                 {
                     "id": 2,
                     "nomeDiretorio": "papagaio",
+                    "nomeDiretorioMiniatura": "papagaio_miniatura",
                     "palavrasChaves": [
                         "papagaio",
 
@@ -43,6 +46,7 @@
                 {
                     "id": 3,
                     "nomeDiretorio": "aguia",
+                    "nomeDiretorioMiniatura": "aguia_miniatura",
                     "palavrasChaves": [
                         "aguia",
 
@@ -55,6 +59,7 @@
                 {
                     "id": 4,
                     "nomeDiretorio": "cavalo",
+                    "nomeDiretorioMiniatura": "cavalo_miniatura",
                     "palavrasChaves": [
                         "cavalo",
 
@@ -67,6 +72,7 @@
                 {
                     "id": 5,
                     "nomeDiretorio": "coelho",
+                    "nomeDiretorioMiniatura": "coelho_miniatura",
                     "palavrasChaves": [
                         "coelho",
 
@@ -79,6 +85,7 @@
                 {
                     "id": 6,
                     "nomeDiretorio": "lagarto",
+                    "nomeDiretorioMiniatura": "lagarto_miniatura",
                     "palavrasChaves": [
                         "lagarto",
 
@@ -91,6 +98,7 @@
                 {
                     "id": 7,
                     "nomeDiretorio": "lobo",
+                    "nomeDiretorioMiniatura": "lobo_miniatura",
                     "palavrasChaves": [
                         "lobo",
 
@@ -103,6 +111,7 @@
                 {
                     "id": 8,
                     "nomeDiretorio": "mariposa",
+                    "nomeDiretorioMiniatura": "mariposa_miniatura",
                     "palavrasChaves": [
                         "mariposa",
 
@@ -115,6 +124,7 @@
                 {
                     "id": 9,
                     "nomeDiretorio": "coruja",
+                    "nomeDiretorioMiniatura": "coruja_miniatura",
                     "palavrasChaves": [
                         "coruja",
 
@@ -134,6 +144,7 @@
                 {
                     "id": 0,
                     "nomeDiretorio": "margarida",
+                    "nomeDiretorioMiniatura": "margarida_miniatura",
                     "palavrasChaves": [
                         "flor",
 
@@ -146,6 +157,7 @@
                 {
                     "id": 1,
                     "nomeDiretorio": "girassol",
+                    "nomeDiretorioMiniatura": "girassol_miniatura",
                     "palavrasChaves": [
                         "amarela",
 
@@ -158,6 +170,7 @@
                 {
                     "id": 2,
                     "nomeDiretorio": "flor_azul",
+                    "nomeDiretorioMiniatura": "flor_azul_miniatura",
                     "palavrasChaves": [
                         "flor",
 
@@ -170,6 +183,7 @@
                 {
                     "id": 3,
                     "nomeDiretorio": "folhas_verdes",
+                    "nomeDiretorioMiniatura": "folhas_verdes_miniatura",
                     "palavrasChaves": [
                         "folha",
 
@@ -182,6 +196,7 @@
                 {
                     "id": 4,
                     "nomeDiretorio": "flor_branca",
+                    "nomeDiretorioMiniatura": "flor_branca_miniatura",
                     "palavrasChaves": [
                         "flor",
 
@@ -194,6 +209,7 @@
                 {
                     "id": 5,
                     "nomeDiretorio": "galho_com_folhas",
+                    "nomeDiretorioMiniatura": "galho_com_folhas_miniatura",
                     "palavrasChaves": [
                         "galho",
 
@@ -206,6 +222,7 @@
                 {
                     "id": 6,
                     "nomeDiretorio": "suculentas",
+                    "nomeDiretorioMiniatura": "suculentas_miniatura",
                     "palavrasChaves": [
                         "plantinha",
 
@@ -218,6 +235,7 @@
                 {
                     "id": 7,
                     "nomeDiretorio": "flores_roxas",
+                    "nomeDiretorioMiniatura": "flores_roxas_miniatura",
                     "palavrasChaves": [
                         "flor",
 
@@ -230,6 +248,7 @@
                 {
                     "id": 8,
                     "nomeDiretorio": "rosa_branca",
+                    "nomeDiretorioMiniatura": "rosa_branca_miniatura",
                     "palavrasChaves": [
                         "flor",
 
@@ -242,6 +261,7 @@
                 {
                     "id": 9,
                     "nomeDiretorio": "flor_rosa",
+                    "nomeDiretorioMiniatura": "flor_rosa_miniatura",
                     "palavrasChaves": [
                         "flor",
 
@@ -260,6 +280,7 @@
                 {
                     "id": 0,
                     "nomeDiretorio": "despertador",
+                    "nomeDiretorioMiniatura": "despertador_miniatura",
                     "palavrasChaves": [
                         "relogio",
 
@@ -272,6 +293,7 @@
                 {
                     "id": 1,
                     "nomeDiretorio": "globo",
+                    "nomeDiretorioMiniatura": "globo_miniatura",
                     "palavrasChaves": [
                         "terra",
 
@@ -284,6 +306,7 @@
                 {
                     "id": 2,
                     "nomeDiretorio": "tenis",
+                    "nomeDiretorioMiniatura": "tenis_miniatura",
                     "palavrasChaves": [
                         "calçado",
 
@@ -296,6 +319,7 @@
                 {
                     "id": 3,
                     "nomeDiretorio": "luminaria",
+                    "nomeDiretorioMiniatura": "luminaria_miniatura",
                     "palavrasChaves": [
                         "lampada",
 
@@ -308,6 +332,7 @@
                 {
                     "id": 4,
                     "nomeDiretorio": "lapis",
+                    "nomeDiretorioMiniatura": "lapis_miniatura",
                     "palavrasChaves": [
                         "lapis",
 
@@ -320,6 +345,7 @@
                 {
                     "id": 5,
                     "nomeDiretorio": "banco",
+                    "nomeDiretorioMiniatura": "banco_miniatura",
                     "palavrasChaves": [
                         "cadeira",
 
@@ -332,6 +358,7 @@
                 {
                     "id": 6,
                     "nomeDiretorio": "xadrez",
+                    "nomeDiretorioMiniatura": "xadrez_miniatura",
                     "palavrasChaves": [
                         "jogo",
 
@@ -344,6 +371,7 @@
                 {
                     "id": 7,
                     "nomeDiretorio": "caneca",
+                    "nomeDiretorioMiniatura": "caneca_miniatura",
                     "palavrasChaves": [
                         "xicara",
 
@@ -356,6 +384,7 @@
                 {
                     "id": 8,
                     "nomeDiretorio": "caderno",
+                    "nomeDiretorioMiniatura": "caderno_miniatura",
                     "palavrasChaves": [
                         "caderno",
 
@@ -368,6 +397,7 @@
                 {
                     "id": 9,
                     "nomeDiretorio": "canetinhas",
+                    "nomeDiretorioMiniatura": "canetinhas_miniatura",
                     "palavrasChaves": [
                         "caneta",
 
@@ -387,6 +417,7 @@
                 {
                     "id": 0,
                     "nomeDiretorio": "macbook",
+                    "nomeDiretorioMiniatura": "macbook_miniatura",
                     "palavrasChaves": [
                         "Primeira palavra chave",
 
@@ -399,6 +430,7 @@
                 {
                     "id": 1,
                     "nomeDiretorio": "iphone",
+                    "nomeDiretorioMiniatura": "iphone_miniatura",
                     "palavrasChaves": [
                         "celular",
 
@@ -411,6 +443,7 @@
                 {
                     "id": 2,
                     "nomeDiretorio": "ipad",
+                    "nomeDiretorioMiniatura": "ipad_miniatura",
                     "palavrasChaves": [
                         "tablet",
 
@@ -423,6 +456,7 @@
                 {
                     "id": 3,
                     "nomeDiretorio": "macintosh",
+                    "nomeDiretorioMiniatura": "macintosh_miniatura",
                     "palavrasChaves": [
                         "computador",
 
@@ -435,6 +469,7 @@
                 {
                     "id": 4,
                     "nomeDiretorio": "vinil",
+                    "nomeDiretorioMiniatura": "vinil_miniatura",
                     "palavrasChaves": [
                         "disco",
 
@@ -447,6 +482,7 @@
                 {
                     "id": 5,
                     "nomeDiretorio": "disquete",
+                    "nomeDiretorioMiniatura": "disquete_miniatura",
                     "palavrasChaves": [
                         "disquete",
 
@@ -459,6 +495,7 @@
                 {
                     "id": 6,
                     "nomeDiretorio": "cubo_magico",
+                    "nomeDiretorioMiniatura": "cubo_magico_miniatura",
                     "palavrasChaves": [
                         "cubo magico",
 
@@ -471,6 +508,7 @@
                 {
                     "id": 7,
                     "nomeDiretorio": "fita_k7",
+                    "nomeDiretorioMiniatura": "fita_k7_miniatura",
                     "palavrasChaves": [
                         "fita",
 
@@ -483,6 +521,7 @@
                 {
                     "id": 8,
                     "nomeDiretorio": "polaroid",
+                    "nomeDiretorioMiniatura": "polaroid_miniatura",
                     "palavrasChaves": [
                         "fotografia",
 
@@ -495,6 +534,7 @@
                 {
                     "id": 9,
                     "nomeDiretorio": "gameboy",
+                    "nomeDiretorioMiniatura": "gameboy_miniatura",
                     "palavrasChaves": [
                         "videogame",
 
@@ -513,6 +553,7 @@
                 {
                     "id": 0,
                     "nomeDiretorio": "rosquinhas",
+                    "nomeDiretorioMiniatura": "rosquinhas_miniatura",
                     "palavrasChaves": [
                         "rosquinha",
 
@@ -525,6 +566,7 @@
                 {
                     "id": 1,
                     "nomeDiretorio": "macarons",
+                    "nomeDiretorioMiniatura": "macarons_miniatura",
                     "palavrasChaves": [
                         "macaron",
 
@@ -537,6 +579,7 @@
                 {
                     "id": 2,
                     "nomeDiretorio": "suco",
+                    "nomeDiretorioMiniatura": "suco_miniatura",
                     "palavrasChaves": [
                         "suco",
 
@@ -549,6 +592,7 @@
                 {
                     "id": 3,
                     "nomeDiretorio": "sushi",
+                    "nomeDiretorioMiniatura": "sushi_miniatura",
                     "palavrasChaves": [
                         "sushi",
 
@@ -561,6 +605,7 @@
                 {
                     "id": 4,
                     "nomeDiretorio": "laranja",
+                    "nomeDiretorioMiniatura": "laranja_miniatura",
                     "palavrasChaves": [
                         "laranja",
 
@@ -573,6 +618,7 @@
                 {
                     "id": 5,
                     "nomeDiretorio": "cafe",
+                    "nomeDiretorioMiniatura": "cafe_miniatura",
                     "palavrasChaves": [
                         "cafe",
 
@@ -585,6 +631,7 @@
                 {
                     "id": 6,
                     "nomeDiretorio": "drink",
+                    "nomeDiretorioMiniatura": "drink_miniatura",
                     "palavrasChaves": [
                         "drink",
 
@@ -597,6 +644,7 @@
                 {
                     "id": 7,
                     "nomeDiretorio": "champanhe",
+                    "nomeDiretorioMiniatura": "champanhe_miniatura",
                     "palavrasChaves": [
                         "champanhe",
 
@@ -609,6 +657,7 @@
                 {
                     "id": 8,
                     "nomeDiretorio": "maca",
+                    "nomeDiretorioMiniatura": "maca_miniatura",
                     "palavrasChaves": [
                         "maçã",
 
@@ -621,6 +670,7 @@
                 {
                     "id": 9,
                     "nomeDiretorio": "hamburger",
+                    "nomeDiretorioMiniatura": "hamburguer_miniatura",
                     "palavrasChaves": [
                         "hamburger",
 
@@ -639,6 +689,7 @@
                 {
                     "id": 0,
                     "nomeDiretorio": "campo_noite",
+                    "nomeDiretorioMiniatura": "campo_noite_miniatura",
                     "palavrasChaves": [
                         "mato",
 
@@ -651,6 +702,7 @@
                 {
                     "id": 1,
                     "nomeDiretorio": "amanhecer",
+                    "nomeDiretorioMiniatura": "amanhecer_miniatura",
                     "palavrasChaves": [
                         "alvorada",
 
@@ -663,6 +715,7 @@
                 {
                     "id": 2,
                     "nomeDiretorio": "por_do_sol",
+                    "nomeDiretorioMiniatura": "por_do_sol_miniatura",
                     "palavrasChaves": [
                         "praia",
 
@@ -675,6 +728,7 @@
                 {
                     "id": 3,
                     "nomeDiretorio": "ceu_azul",
+                    "nomeDiretorioMiniatura": "ceu_azul_miniatura",
                     "palavrasChaves": [
                         "campo",
 
@@ -687,6 +741,7 @@
                 {
                     "id": 4,
                     "nomeDiretorio": "floresta",
+                    "nomeDiretorioMiniatura": "floresta_miniatura",
                     "palavrasChaves": [
                         "natureza",
 
@@ -699,6 +754,7 @@
                 {
                     "id": 5,
                     "nomeDiretorio": "baloes",
+                    "nomeDiretorioMiniatura": "baloes_miniatura",
                     "palavrasChaves": [
                         "ceu",
 
@@ -711,6 +767,7 @@
                 {
                     "id": 6,
                     "nomeDiretorio": "praia",
+                    "nomeDiretorioMiniatura": "praia_miniatura",
                     "palavrasChaves": [
                         "areia",
 
@@ -723,6 +780,7 @@
                 {
                     "id": 7,
                     "nomeDiretorio": "pinheiros",
+                    "nomeDiretorioMiniatura": "pinheiros_miniatura",
                     "palavrasChaves": [
                         "floresta",
 
@@ -735,6 +793,7 @@
                 {
                     "id": 8,
                     "nomeDiretorio": "riacho",
+                    "nomeDiretorioMiniatura": "riacho_miniatura",
                     "palavrasChaves": [
                         "rio",
 
@@ -747,6 +806,7 @@
                 {
                     "id": 9,
                     "nomeDiretorio": "rio",
+                    "nomeDiretorioMiniatura": "rio_miniatura",
                     "palavrasChaves": [
                         "riacho",
 
@@ -765,6 +825,7 @@
                 {
                     "id": 0,
                     "nomeDiretorio": "copan",
+                    "nomeDiretorioMiniatura": "copan_miniatura",
                     "palavrasChaves": [
                         "edificio copan",
 
@@ -777,6 +838,7 @@
                 {
                     "id": 1,
                     "nomeDiretorio": "louvre",
+                    "nomeDiretorioMiniatura": "louvre_miniatura",
                     "palavrasChaves": [
                         "louvre",
 
@@ -789,6 +851,7 @@
                 {
                     "id": 2,
                     "nomeDiretorio": "terrario",
+                    "nomeDiretorioMiniatura": "terrario_miniatura",
                     "palavrasChaves": [
                         "moderno",
 
@@ -801,6 +864,7 @@
                 {
                     "id": 3,
                     "nomeDiretorio": "catedral_se",
+                    "nomeDiretorioMiniatura": "catedral_se_miniatura",
                     "palavrasChaves": [
                         "são paulo",
 
@@ -813,6 +877,7 @@
                 {
                     "id": 4,
                     "nomeDiretorio": "paralelepipedo",
+                    "nomeDiretorioMiniatura": "paralelepipedo_miniatura",
                     "palavrasChaves": [
                         "brasil",
 
@@ -825,6 +890,7 @@
                 {
                     "id": 5,
                     "nomeDiretorio": "paulista",
+                    "nomeDiretorioMiniatura": "paulista_miniatura",
                     "palavrasChaves": [
                         "predios",
 
@@ -837,6 +903,7 @@
                 {
                     "id": 6,
                     "nomeDiretorio": "predios",
+                    "nomeDiretorioMiniatura": "predios_miniatura",
                     "palavrasChaves": [
                         "predios",
 
@@ -849,6 +916,7 @@
                 {
                     "id": 7,
                     "nomeDiretorio": "arcos",
+                    "nomeDiretorioMiniatura": "arcos_miniatura",
                     "palavrasChaves": [
                         "biblioteca",
 
@@ -861,6 +929,7 @@
                 {
                     "id": 8,
                     "nomeDiretorio": "nublado",
+                    "nomeDiretorioMiniatura": "nublado_miniatura",
                     "palavrasChaves": [
                         "cinza",
 
@@ -873,6 +942,7 @@
                 {
                     "id": 9,
                     "nomeDiretorio": "torre_eiffel",
+                    "nomeDiretorioMiniatura": "torre_eiffel_miniatura",
                     "palavrasChaves": [
                         "paris",
 

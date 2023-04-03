@@ -74,6 +74,7 @@ struct NossosDesenhosView: View {
             }
             
         }
+        .ignoresSafeArea(.keyboard)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .principal) {
