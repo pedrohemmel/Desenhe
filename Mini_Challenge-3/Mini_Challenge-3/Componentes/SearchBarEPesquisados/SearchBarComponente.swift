@@ -12,6 +12,7 @@ struct SearchBarComponente: View {
     
     @Binding var filtroAberto: Bool
     @Binding var filtroSelecionado: String
+    @Binding var textFieldEstaEditando: Bool
     
     var body: some View {
         HStack {
@@ -20,6 +21,8 @@ struct SearchBarComponente: View {
                     .foregroundColor(Color.gray)
                 TextField("Pesquise aqui", text: $textoPesquisa)
                     .keyboardType(.default)
+                    .disabled(self.textFieldEstaEditando)
+                    
             }
             .padding(7)
             .background(Color(.systemGray6))
@@ -27,7 +30,8 @@ struct SearchBarComponente: View {
             .padding(.leading, 10)
             
             Button {
-                self.filtroAberto = !self.filtroAberto
+                self.textFieldEstaEditando.toggle()
+                self.filtroAberto.toggle()
             } label: {
                 Image(systemName: "line.3.horizontal.decrease.circle")
                     .padding(7)
