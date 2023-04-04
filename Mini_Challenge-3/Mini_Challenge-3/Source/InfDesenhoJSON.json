@@ -150,7 +150,9 @@
 
                         "amarela",
 
-                        "branca"
+                        "branca",
+                        
+                        "margarida"
                     ],
                     "referenciaImagem": "Photo by AARN GIRI on Unsplash"
                 },
@@ -163,7 +165,9 @@
 
                         "flor",
 
-                        "sol"
+                        "sol",
+                        
+                        "girassol"
                     ],
                     "referenciaImagem": "Photo by Paul Green on Unsplash"
                 },
@@ -286,7 +290,9 @@
 
                         "ponteiros",
 
-                        "analogico"
+                        "analogico",
+                        
+                        "despertador"
                     ],
                     "referenciaImagem": "Photo by insung yoon on Unsplash"
                 },
@@ -299,7 +305,9 @@
 
                         "mundo",
 
-                        "planeta"
+                        "planeta",
+                        
+                        "globo"
                     ],
                     "referenciaImagem": "Photo by charlesdeluvio on Unsplash"
                 },
@@ -325,7 +333,9 @@
 
                         "luz",
 
-                        "abajour"
+                        "abajour",
+                        
+                        "luminaria"
                     ],
                     "referenciaImagem": "Photo by Jonny Caspari on Unsplash"
                 },
@@ -351,7 +361,9 @@
 
                         "banquinho",
 
-                        "sentar"
+                        "sentar",
+                        
+                        "banco"
                     ],
                     "referenciaImagem": "Photo by Glen Carrie on Unsplash"
                 },
@@ -364,7 +376,9 @@
 
                         "peças",
 
-                        "tabuleiro"
+                        "tabuleiro",
+                        
+                        "xadrez"
                     ],
                     "referenciaImagem": "Photo by Rafael Rex Felisilda on Unsplash"
                 },
@@ -419,11 +433,11 @@
                     "nomeDiretorio": "macbook",
                     "nomeDiretorioMiniatura": "macbook_miniatura",
                     "palavrasChaves": [
-                        "Primeira palavra chave",
+                        "macbook",
 
-                        "Segunda palavra chave",
+                        "notebook",
 
-                        "Terceira palavra chave"
+                        "apple"
                     ],
                     "referenciaImagem": "Foto de Dmitry Chernyshov na Unsplash"
                 },
@@ -510,7 +524,7 @@
                     "nomeDiretorio": "fita_k7",
                     "nomeDiretorioMiniatura": "fita_k7_miniatura",
                     "palavrasChaves": [
-                        "fita",
+                        "fita k7",
 
                         "radio",
 
@@ -540,7 +554,9 @@
 
                         "nintendo",
 
-                        "portatil"
+                        "portatil",
+                        
+                        "gameboy"
                     ],
                     "referenciaImagem": "Foto de Ben Griffiths na Unsplash"
                 }
@@ -568,7 +584,7 @@
                     "nomeDiretorio": "macarons",
                     "nomeDiretorioMiniatura": "macarons_miniatura",
                     "palavrasChaves": [
-                        "macaron",
+                        "macarons",
 
                         "biscoito",
 
@@ -747,7 +763,9 @@
 
                         "arvores",
 
-                        "plantas"
+                        "plantas",
+                        
+                        "floresta"
                     ],
                     "referenciaImagem": "Photo by Johannes Plenio on Unsplash"
                 },
@@ -760,7 +778,9 @@
 
                         "colorido",
 
-                        "passeio"
+                        "passeio",
+                        
+                        "balão"
                     ],
                     "referenciaImagem": "Photo by ian dooley on Unsplash"
                 },
@@ -773,7 +793,9 @@
 
                         "mar",
 
-                        "azul"
+                        "azul",
+                        
+                        "praia"
                     ],
                     "referenciaImagem": "Photo by Nattu Adnan on Unsplash"
                 },
@@ -786,7 +808,9 @@
 
                         "lagoa",
 
-                        "verde"
+                        "verde",
+                        
+                        "pinheiros"
                     ],
                     "referenciaImagem": "Photo by Joseph Young on Unsplash"
                 },
@@ -808,7 +832,7 @@
                     "nomeDiretorio": "rio",
                     "nomeDiretorioMiniatura": "rio_miniatura",
                     "palavrasChaves": [
-                        "riacho",
+                        "rio",
 
                         "floresta",
 

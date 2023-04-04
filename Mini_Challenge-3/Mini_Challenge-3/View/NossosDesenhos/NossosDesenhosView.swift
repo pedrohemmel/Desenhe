@@ -22,6 +22,12 @@ struct NossosDesenhosView: View {
     let larguraTela = UIScreen.main.bounds.size.width
     let alturaTela = UIScreen.main.bounds.size.height
     
+    private enum Field: Int {
+        case searchBar
+    }
+    
+    @FocusState private var focusedField: Field?
+    
     var body: some View {
         ZStack {
             ModoClaroEscuro(light: Image("fundoLight"), dark: Image("fundoDark"))
@@ -32,11 +38,21 @@ struct NossosDesenhosView: View {
                 NavigationLink(destination: ConfirmarDesenhoView(dadosImagemSelecionada: .constant(Data()), desenhoSelecionado: $desenhoSelecionado), isActive: self.$imagemEstaSelecionada, label: {})
                 
                 VStack {
+                    if focusedField != nil{
+                        withAnimation() {
+                            Rectangle()
+                                .fill(Color.clear)
+                                .frame(maxWidth: .infinity, maxHeight: 150)
+                        }
+                        
+                    }
+                    
                     SearchBarComponente(
                         textoPesquisa: self.$textoPesquisa,
                         filtroAberto: self.$filtroAberto,
                         filtroSelecionado: self.$filtroSelecionado)
                     .padding(.top, 65)
+                    .focused($focusedField, equals: .searchBar)
                     if textoPesquisa == "" {
                         if filtroSelecionado == "" {
                             ScrollView {
@@ -57,12 +73,14 @@ struct NossosDesenhosView: View {
                                 filtroSelecionado: self.$filtroSelecionado,
                                 categorias: .constant(self.categorias))
                         }
-                    } else {
+                    } else if textoPesquisa != "" && self.filtroSelecionado == "" {
                         DesenhosDePesquisaComponente(
                             textoPesquisa: self.$textoPesquisa,
                             desenhoSelecionado: self.$desenhoSelecionado,
                             imagemEstaSelecionada: self.$imagemEstaSelecionada,
                             categorias: self.$categorias)
+                    } else {
+                        
                     }
                     
                 }
