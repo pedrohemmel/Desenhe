@@ -27,15 +27,15 @@ struct NossosDesenhosView: View {
     private enum Field: Int {
         case searchBar
     }
-    
+
     @FocusState private var focusedField: Field?
+    
+    @State var textFieldEstaEditando = false
     
     var body: some View {
         ZStack {
             ModoClaroEscuro(light: Image("fundoLight"), dark: Image("fundoDark"))
                 .ignoresSafeArea()
-            
-
             if recebeuInfDesenho {
                 NavigationLink(
                     destination: ConfirmarDesenhoView(
@@ -48,19 +48,22 @@ struct NossosDesenhosView: View {
                     isActive: self.$imagemEstaSelecionada, label: {})
                 
                 VStack {
-                    if focusedField != nil{
-                        withAnimation() {
-                            Rectangle()
-                                .fill(Color.clear)
-                                .frame(maxWidth: .infinity, maxHeight: 150)
+                    if UIDevice.current.userInterfaceIdiom == .phone{
+                        if focusedField != nil && !self.textFieldEstaEditando {
+                            withAnimation() {
+                                Rectangle()
+                                    .fill(Color.clear)
+                                    .frame(maxWidth: .infinity, maxHeight: 140)
+                            }
+                            
                         }
-                        
                     }
                     
                     SearchBarComponente(
                         textoPesquisa: self.$textoPesquisa,
                         filtroAberto: self.$filtroAberto,
-                        filtroSelecionado: self.$filtroSelecionado)
+                        filtroSelecionado: self.$filtroSelecionado,
+                        textFieldEstaEditando: self.$textFieldEstaEditando)
                     .padding(.top, 65)
                     .focused($focusedField, equals: .searchBar)
                     if textoPesquisa == "" {
@@ -93,6 +96,14 @@ struct NossosDesenhosView: View {
                         
                     }
                     
+                }
+                if self.filtroAberto {
+                    Rectangle()
+                        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+                        .opacity(0.000000001)
+                        .onTapGesture {
+                            self.filtroAberto = false
+                        }
                 }
                 FiltroNossosDesenhosComponente(categorias: $categorias, filtroAberto: self.$filtroAberto, filtroSelecionado: self.$filtroSelecionado)
                     .padding(.top, 65)
