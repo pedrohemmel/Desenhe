@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 struct TelaInicialView: View {
     @State var imagemEstaSelecionada = false
     @State var dadosImagemSelecionada = Data()
@@ -17,7 +16,13 @@ struct TelaInicialView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                NavigationLink(destination: ConfirmarDesenhoView(dadosImagemSelecionada: $dadosImagemSelecionada, desenhoSelecionado: .constant("")), isActive: self.$imagemEstaSelecionada, label: {})
+                NavigationLink(
+                    destination: ConfirmarDesenhoView(
+                        dismissDasTelas: .constant({}),
+                        dadosImagemSelecionada: $dadosImagemSelecionada,
+                        desenhoSelecionado: .constant(""),
+                        voltaParaTelaInicial: .constant(false)),
+                    isActive: self.$imagemEstaSelecionada, label: {})
                 VStack {
                     Spacer()
                     Text("Vamos Desenhar!")
@@ -39,9 +44,9 @@ struct TelaInicialView: View {
                     
                     BotaoMenuInicialComponente(
                         destination: AnyView(ConfirmarDesenhoView(
-                            dadosImagemSelecionada: .constant(Data()),
+                            dismissDasTelas: .constant({}), dadosImagemSelecionada: .constant(Data()),
                             desenhoSelecionado: self.$desenhoSelecionado,
-                            eMeSurpreenda: true)),
+                            voltaParaTelaInicial: .constant(true), eMeSurpreenda: true)),
                         imageName: "lightbulb",
                         text: "     Me surpreenda")
                     Spacer()

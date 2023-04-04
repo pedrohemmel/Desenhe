@@ -10,8 +10,12 @@ import SwiftUI
 struct ConfirmarDesenhoView: View {
     @Environment(\.dismiss) var dismiss
     
+    @Binding var dismissDasTelas: (() -> Void)
+    
     @Binding var dadosImagemSelecionada: Data
     @Binding var desenhoSelecionado: String
+    @Binding var voltaParaTelaInicial: Bool
+    
     
     @State var eDesenho: Bool? = nil
     @State var telaDesenharParametrizada: TelaDesenharView? = nil
@@ -66,23 +70,32 @@ struct ConfirmarDesenhoView: View {
                     self.eDesenho = true
                     
                     if eDesenho ?? false {
-                        self.telaDesenharParametrizada = TelaDesenharView(dadosImagemSelecionada: .constant(Data()), desenhoSelecionado: self.$desenhoSelecionado)
+                        self.telaDesenharParametrizada = TelaDesenharView(dismissDasTelas: .constant(self.acaoDismissDasTelas), dadosImagemSelecionada: .constant(Data()), desenhoSelecionado: self.$desenhoSelecionado, voltaParaTelaInicial: self.$voltaParaTelaInicial)
                     } else {
-                        self.telaDesenharParametrizada = TelaDesenharView(dadosImagemSelecionada: self.$dadosImagemSelecionada, desenhoSelecionado: .constant(""))
+                        self.telaDesenharParametrizada = TelaDesenharView(dismissDasTelas: .constant(self.acaoDismissDasTelas), dadosImagemSelecionada: self.$dadosImagemSelecionada, desenhoSelecionado: .constant(""), voltaParaTelaInicial: self.$voltaParaTelaInicial)
                     }
                 }
             } else {
                 if eDesenho ?? false {
-                    self.telaDesenharParametrizada = TelaDesenharView(dadosImagemSelecionada: .constant(Data()), desenhoSelecionado: self.$desenhoSelecionado)
+                    self.telaDesenharParametrizada = TelaDesenharView(dismissDasTelas: .constant(self.acaoDismissDasTelas), dadosImagemSelecionada: .constant(Data()), desenhoSelecionado: self.$desenhoSelecionado, voltaParaTelaInicial: self.$voltaParaTelaInicial)
                 } else {
-                    self.telaDesenharParametrizada = TelaDesenharView(dadosImagemSelecionada: self.$dadosImagemSelecionada, desenhoSelecionado: .constant(""))
+                    self.telaDesenharParametrizada = TelaDesenharView(dismissDasTelas: .constant(self.acaoDismissDasTelas), dadosImagemSelecionada: self.$dadosImagemSelecionada, desenhoSelecionado: .constant(""), voltaParaTelaInicial: self.$voltaParaTelaInicial)
                 }
             }
-            
-            
         }
         .background(.black)
         .navigationBarTitleDisplayMode(.inline)
+        .animation({
+            if self.voltaParaTelaInicial == true {
+                return .none
+            } else {
+                return .default
+            }
+        }())
+        
+    }
+    func acaoDismissDasTelas() -> Void{
+        self.dismiss()
     }
     func verificaImagemNula(dadosImagemSelecionada: Data?, desenhoSelecionado: String?) -> Bool {
         if desenhoSelecionado != "" {

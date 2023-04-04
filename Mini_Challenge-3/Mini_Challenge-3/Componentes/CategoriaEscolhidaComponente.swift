@@ -41,6 +41,8 @@ struct CategoriaEscolhidaComponente: View {
                                     .resizable()
                                     .frame(width: self.larguraTela * 0.2, height: self.larguraTela * 0.2)
                                     .cornerRadius(10)
+                                    .clipped()
+                                    .shadow(color: Color.black.opacity(0.3), radius: 0.5, x: 2, y: 2)
                             })
                         }
                         
