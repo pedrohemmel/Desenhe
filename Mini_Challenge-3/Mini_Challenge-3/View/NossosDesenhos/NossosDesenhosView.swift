@@ -7,6 +7,7 @@
 
 import SwiftUI
 struct NossosDesenhosView: View {
+    @Environment(\.dismiss) var dismiss
     @State var imagemEstaSelecionada = false
     @State var desenhoSelecionado = ""
     
@@ -17,6 +18,7 @@ struct NossosDesenhosView: View {
     @State var infDesenho: InfDesenho? = nil
     @State var categorias = [Categoria]()
     @State var recebeuInfDesenho = false
+    @State var voltaParaTelaInicial = false
     var nossosDesenhosViewModel = NossosDesenhosViewModel()
     
     let larguraTela = UIScreen.main.bounds.size.width
@@ -29,7 +31,15 @@ struct NossosDesenhosView: View {
             
 
             if recebeuInfDesenho {
-                NavigationLink(destination: ConfirmarDesenhoView(dadosImagemSelecionada: .constant(Data()), desenhoSelecionado: $desenhoSelecionado), isActive: self.$imagemEstaSelecionada, label: {})
+                NavigationLink(
+                    destination: ConfirmarDesenhoView(
+                        dismissDasTelas: .constant {
+                            self.dismiss()
+                        },
+                        dadosImagemSelecionada: .constant(Data()),
+                        desenhoSelecionado: $desenhoSelecionado,
+                        voltaParaTelaInicial: self.$voltaParaTelaInicial),
+                    isActive: self.$imagemEstaSelecionada, label: {})
                 
                 VStack {
                     SearchBarComponente(
@@ -74,6 +84,13 @@ struct NossosDesenhosView: View {
             }
             
         }
+        .animation({
+            if self.voltaParaTelaInicial == true {
+                return .none
+            } else {
+                return .default
+            }
+        }())
         .ignoresSafeArea(.keyboard)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
@@ -85,11 +102,19 @@ struct NossosDesenhosView: View {
             }
         }
         .onAppear {
+            if self.verificaVoltaParaTelaInicial() {
+                self.dismiss()
+            }
             self.nossosDesenhosViewModel.buscarInfDesenho {
                 self.recebeuInfDesenho = true
                 self.infDesenho = self.nossosDesenhosViewModel.carregadorInfDesenho?.infDesenho
                 self.categorias = self.infDesenho!.categorias
             }
+            
         }
+    }
+    
+    func verificaVoltaParaTelaInicial() -> Bool {
+        return self.voltaParaTelaInicial
     }
 }

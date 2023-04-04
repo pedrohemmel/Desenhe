@@ -11,8 +11,11 @@ import AVFoundation
 struct TelaDesenharView: View {
     @Environment(\.dismiss) var dismiss
     
+    @Binding var dismissDasTelas: (() -> Void)
+    
     @Binding var dadosImagemSelecionada: Data
     @Binding var desenhoSelecionado: String
+    @Binding var voltaParaTelaInicial: Bool
     
     @State var eDesenho: Bool? = nil
     @State var estaTravado = false
@@ -100,7 +103,9 @@ struct TelaDesenharView: View {
                     Button {
                         self.dadosImagemSelecionada = Data()
                         self.desenhoSelecionado = ""
+                        self.voltaParaTelaInicial = true
                         self.dismiss()
+                        self.dismissDasTelas()
                     } label: {
                         Text("Concluir")
                             .fontWeight(.bold)
