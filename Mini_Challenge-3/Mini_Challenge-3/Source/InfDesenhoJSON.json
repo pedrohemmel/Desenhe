@@ -1,0 +1,982 @@
+{
+    "categorias": [
+        {
+            "id": 0,
+            "nomeCategoria": "Animais",
+            "desenhos": [
+                {
+                    "id": 0,
+                    "nomeDiretorio": "girafa",
+                    "nomeDiretorioMiniatura": "girafa_miniatura",
+                    "palavrasChaves": [
+                        "girafa",
+
+                        "africa",
+
+                        "pescoço"
+                    ],
+                    "referenciaImagem": "Foto de Arkam Rahuman na Unsplash"
+                },
+                {
+                    "id": 1,
+                    "nomeDiretorio": "gato",
+                    "nomeDiretorioMiniatura": "gato_miniatura",
+                    "palavrasChaves": [
+                        "gato",
+
+                        "felino",
+
+                        "gatuno"
+                    ],
+                    "referenciaImagem": "Foto de Daniel Shapiro na Unsplash"
+                },
+                {
+                    "id": 2,
+                    "nomeDiretorio": "papagaio",
+                    "nomeDiretorioMiniatura": "papagaio_miniatura",
+                    "palavrasChaves": [
+                        "papagaio",
+
+                        "ave",
+
+                        "passaro"
+                    ],
+                    "referenciaImagem": "Foto de Pierre Lemos na Unsplash"
+                },
+                {
+                    "id": 3,
+                    "nomeDiretorio": "aguia",
+                    "nomeDiretorioMiniatura": "aguia_miniatura",
+                    "palavrasChaves": [
+                        "aguia",
+
+                        "ave",
+
+                        "passaro"
+                    ],
+                    "referenciaImagem": "Foto de Brian Breeden na Unsplash"
+                },
+                {
+                    "id": 4,
+                    "nomeDiretorio": "cavalo",
+                    "nomeDiretorioMiniatura": "cavalo_miniatura",
+                    "palavrasChaves": [
+                        "cavalo",
+
+                        "equino",
+
+                        "equitação"
+                    ],
+                    "referenciaImagem": "Foto de Kristin O Karlsen na Unsplash"
+                },
+                {
+                    "id": 5,
+                    "nomeDiretorio": "coelho",
+                    "nomeDiretorioMiniatura": "coelho_miniatura",
+                    "palavrasChaves": [
+                        "coelho",
+
+                        "lebre",
+
+                        "peludo"
+                    ],
+                    "referenciaImagem": "Foto de Nikolett Emmert na Unsplash"
+                },
+                {
+                    "id": 6,
+                    "nomeDiretorio": "lagarto",
+                    "nomeDiretorioMiniatura": "lagarto_miniatura",
+                    "palavrasChaves": [
+                        "lagarto",
+
+                        "reptil",
+
+                        "lagartixa"
+                    ],
+                    "referenciaImagem": "Foto de Anastasiia Malai na Unsplash"
+                },
+                {
+                    "id": 7,
+                    "nomeDiretorio": "lobo",
+                    "nomeDiretorioMiniatura": "lobo_miniatura",
+                    "palavrasChaves": [
+                        "lobo",
+
+                        "feroz",
+
+                        "selvagem"
+                    ],
+                    "referenciaImagem": "Foto de Ethan Currier na Unsplash"
+                },
+                {
+                    "id": 8,
+                    "nomeDiretorio": "mariposa",
+                    "nomeDiretorioMiniatura": "mariposa_miniatura",
+                    "palavrasChaves": [
+                        "mariposa",
+
+                        "borboleta",
+
+                        "inseto"
+                    ],
+                    "referenciaImagem": "Foto de Marek Piwnicki na Unsplash"
+                },
+                {
+                    "id": 9,
+                    "nomeDiretorio": "coruja",
+                    "nomeDiretorioMiniatura": "coruja_miniatura",
+                    "palavrasChaves": [
+                        "coruja",
+
+                        "ave",
+
+                        "passaro"
+                    ],
+                    "referenciaImagem": "Foto de Lowes Takes Photos na Unsplash"
+                }
+            ]
+        },
+        {
+                            
+            "id": 1,
+            "nomeCategoria": "Plantas",
+            "desenhos": [
+                {
+                    "id": 0,
+                    "nomeDiretorio": "margarida",
+                    "nomeDiretorioMiniatura": "margarida_miniatura",
+                    "palavrasChaves": [
+                        "flor",
+
+                        "amarela",
+
+                        "branca",
+                        
+                        "margarida"
+                    ],
+                    "referenciaImagem": "Photo by AARN GIRI on Unsplash"
+                },
+                {
+                    "id": 1,
+                    "nomeDiretorio": "girassol",
+                    "nomeDiretorioMiniatura": "girassol_miniatura",
+                    "palavrasChaves": [
+                        "amarela",
+
+                        "flor",
+
+                        "sol",
+                        
+                        "girassol"
+                    ],
+                    "referenciaImagem": "Photo by Paul Green on Unsplash"
+                },
+                {
+                    "id": 2,
+                    "nomeDiretorio": "flor_azul",
+                    "nomeDiretorioMiniatura": "flor_azul_miniatura",
+                    "palavrasChaves": [
+                        "flor",
+
+                        "azul",
+
+                        "petala"
+                    ],
+                    "referenciaImagem": "Photo by Jeff Lowery on Unsplash"
+                },
+                {
+                    "id": 3,
+                    "nomeDiretorio": "folhas_verdes",
+                    "nomeDiretorioMiniatura": "folhas_verdes_miniatura",
+                    "palavrasChaves": [
+                        "folha",
+
+                        "verde",
+
+                        "planta"
+                    ],
+                    "referenciaImagem": "Foto de cleo stracuzza na Unsplash"
+                },
+                {
+                    "id": 4,
+                    "nomeDiretorio": "flor_branca",
+                    "nomeDiretorioMiniatura": "flor_branca_miniatura",
+                    "palavrasChaves": [
+                        "flor",
+
+                        "branca",
+
+                        "petala"
+                    ],
+                    "referenciaImagem": "Foto de Evie S. na Unsplash"
+                },
+                {
+                    "id": 5,
+                    "nomeDiretorio": "galho_com_folhas",
+                    "nomeDiretorioMiniatura": "galho_com_folhas_miniatura",
+                    "palavrasChaves": [
+                        "galho",
+
+                        "folha",
+
+                        "ramo"
+                    ],
+                    "referenciaImagem": "Photo by Igor Son on Unsplash"
+                },
+                {
+                    "id": 6,
+                    "nomeDiretorio": "suculentas",
+                    "nomeDiretorioMiniatura": "suculentas_miniatura",
+                    "palavrasChaves": [
+                        "plantinha",
+
+                        "suculenta",
+
+                        "petala"
+                    ],
+                    "referenciaImagem": "Photo by Annie Spratt on Unsplash"
+                },
+                {
+                    "id": 7,
+                    "nomeDiretorio": "flores_roxas",
+                    "nomeDiretorioMiniatura": "flores_roxas_miniatura",
+                    "palavrasChaves": [
+                        "flor",
+
+                        "roxa",
+
+                        "petala"
+                    ],
+                    "referenciaImagem": "Photo by Mario Dobelmann on Unsplash"
+                },
+                {
+                    "id": 8,
+                    "nomeDiretorio": "rosa_branca",
+                    "nomeDiretorioMiniatura": "rosa_branca_miniatura",
+                    "palavrasChaves": [
+                        "flor",
+
+                        "rosa",
+
+                        "branca"
+                    ],
+                    "referenciaImagem": "Photo by Vladimir Malyutin on Unsplash"
+                },
+                {
+                    "id": 9,
+                    "nomeDiretorio": "flor_rosa",
+                    "nomeDiretorioMiniatura": "flor_rosa_miniatura",
+                    "palavrasChaves": [
+                        "flor",
+
+                        "rosa",
+
+                        "petala"
+                    ],
+                    "referenciaImagem": "Photo by Andrew Small on Unsplash"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nomeCategoria": "Objetos",
+            "desenhos": [
+                {
+                    "id": 0,
+                    "nomeDiretorio": "despertador",
+                    "nomeDiretorioMiniatura": "despertador_miniatura",
+                    "palavrasChaves": [
+                        "relogio",
+
+                        "ponteiros",
+
+                        "analogico",
+                        
+                        "despertador"
+                    ],
+                    "referenciaImagem": "Photo by insung yoon on Unsplash"
+                },
+                {
+                    "id": 1,
+                    "nomeDiretorio": "globo",
+                    "nomeDiretorioMiniatura": "globo_miniatura",
+                    "palavrasChaves": [
+                        "terra",
+
+                        "mundo",
+
+                        "planeta",
+                        
+                        "globo"
+                    ],
+                    "referenciaImagem": "Photo by charlesdeluvio on Unsplash"
+                },
+                {
+                    "id": 2,
+                    "nomeDiretorio": "tenis",
+                    "nomeDiretorioMiniatura": "tenis_miniatura",
+                    "palavrasChaves": [
+                        "calçado",
+
+                        "sapato",
+
+                        "tenis"
+                    ],
+                    "referenciaImagem": "Photo by Paul Gaudriault on Unsplash"
+                },
+                {
+                    "id": 3,
+                    "nomeDiretorio": "luminaria",
+                    "nomeDiretorioMiniatura": "luminaria_miniatura",
+                    "palavrasChaves": [
+                        "lampada",
+
+                        "luz",
+
+                        "abajour",
+                        
+                        "luminaria"
+                    ],
+                    "referenciaImagem": "Photo by Jonny Caspari on Unsplash"
+                },
+                {
+                    "id": 4,
+                    "nomeDiretorio": "lapis",
+                    "nomeDiretorioMiniatura": "lapis_miniatura",
+                    "palavrasChaves": [
+                        "lapis",
+
+                        "escrever",
+
+                        "desenhar"
+                    ],
+                    "referenciaImagem": "Photo by Glen Carrie on Unsplash"
+                },
+                {
+                    "id": 5,
+                    "nomeDiretorio": "banco",
+                    "nomeDiretorioMiniatura": "banco_miniatura",
+                    "palavrasChaves": [
+                        "cadeira",
+
+                        "banquinho",
+
+                        "sentar",
+                        
+                        "banco"
+                    ],
+                    "referenciaImagem": "Photo by Glen Carrie on Unsplash"
+                },
+                {
+                    "id": 6,
+                    "nomeDiretorio": "xadrez",
+                    "nomeDiretorioMiniatura": "xadrez_miniatura",
+                    "palavrasChaves": [
+                        "jogo",
+
+                        "peças",
+
+                        "tabuleiro",
+                        
+                        "xadrez"
+                    ],
+                    "referenciaImagem": "Photo by Rafael Rex Felisilda on Unsplash"
+                },
+                {
+                    "id": 7,
+                    "nomeDiretorio": "caneca",
+                    "nomeDiretorioMiniatura": "caneca_miniatura",
+                    "palavrasChaves": [
+                        "xicara",
+
+                        "copo",
+
+                        "caneca"
+                    ],
+                    "referenciaImagem": "Photo by Nong V on Unsplash"
+                },
+                {
+                    "id": 8,
+                    "nomeDiretorio": "caderno",
+                    "nomeDiretorioMiniatura": "caderno_miniatura",
+                    "palavrasChaves": [
+                        "caderno",
+
+                        "folha",
+
+                        "escrever"
+                    ],
+                    "referenciaImagem": "Photo by Justin Morgan on Unsplash"
+                },
+                {
+                    "id": 9,
+                    "nomeDiretorio": "canetinhas",
+                    "nomeDiretorioMiniatura": "canetinhas_miniatura",
+                    "palavrasChaves": [
+                        "caneta",
+
+                        "canetinha",
+
+                        "colorido"
+                    ],
+                    "referenciaImagem": "Photo by Mediamodifier on Unsplash"
+                }
+            ]
+        },
+        {
+                            
+            "id": 3,
+            "nomeCategoria": "Tecnologia",
+            "desenhos": [
+                {
+                    "id": 0,
+                    "nomeDiretorio": "macbook",
+                    "nomeDiretorioMiniatura": "macbook_miniatura",
+                    "palavrasChaves": [
+                        "macbook",
+
+                        "notebook",
+
+                        "apple"
+                    ],
+                    "referenciaImagem": "Foto de Dmitry Chernyshov na Unsplash"
+                },
+                {
+                    "id": 1,
+                    "nomeDiretorio": "iphone",
+                    "nomeDiretorioMiniatura": "iphone_miniatura",
+                    "palavrasChaves": [
+                        "celular",
+
+                        "apple",
+
+                        "iphone"
+                    ],
+                    "referenciaImagem": "Foto de Alexander Andrews na Unsplash"
+                },
+                {
+                    "id": 2,
+                    "nomeDiretorio": "ipad",
+                    "nomeDiretorioMiniatura": "ipad_miniatura",
+                    "palavrasChaves": [
+                        "tablet",
+
+                        "apple",
+
+                        "ipad"
+                    ],
+                    "referenciaImagem": "Foto de Francois Hoang na Unsplash"
+                },
+                {
+                    "id": 3,
+                    "nomeDiretorio": "macintosh",
+                    "nomeDiretorioMiniatura": "macintosh_miniatura",
+                    "palavrasChaves": [
+                        "computador",
+
+                        "apple",
+
+                        "macintosh"
+                    ],
+                    "referenciaImagem": "Foto de Pablo Martinez na Unsplash"
+                },
+                {
+                    "id": 4,
+                    "nomeDiretorio": "vinil",
+                    "nomeDiretorioMiniatura": "vinil_miniatura",
+                    "palavrasChaves": [
+                        "disco",
+
+                        "vinil",
+
+                        "vitrola"
+                    ],
+                    "referenciaImagem": "Foto de Andrea Cipriani na Unsplash"
+                },
+                {
+                    "id": 5,
+                    "nomeDiretorio": "disquete",
+                    "nomeDiretorioMiniatura": "disquete_miniatura",
+                    "palavrasChaves": [
+                        "disquete",
+
+                        "computador",
+
+                        "retro"
+                    ],
+                    "referenciaImagem": "Foto de Vincent Botta na Unsplash"
+                },
+                {
+                    "id": 6,
+                    "nomeDiretorio": "cubo_magico",
+                    "nomeDiretorioMiniatura": "cubo_magico_miniatura",
+                    "palavrasChaves": [
+                        "cubo magico",
+
+                        "cores",
+
+                        "quadrado"
+                    ],
+                    "referenciaImagem": "Foto de Alexander Voronov na Unsplash"
+                },
+                {
+                    "id": 7,
+                    "nomeDiretorio": "fita_k7",
+                    "nomeDiretorioMiniatura": "fita_k7_miniatura",
+                    "palavrasChaves": [
+                        "fita k7",
+
+                        "radio",
+
+                        "musica"
+                    ],
+                    "referenciaImagem": "Foto de henry perks na Unsplash"
+                },
+                {
+                    "id": 8,
+                    "nomeDiretorio": "polaroid",
+                    "nomeDiretorioMiniatura": "polaroid_miniatura",
+                    "palavrasChaves": [
+                        "fotografia",
+
+                        "camera",
+
+                        "polaroid"
+                    ],
+                    "referenciaImagem": "Foto de Nicholas Doherty na Unsplash"
+                },
+                {
+                    "id": 9,
+                    "nomeDiretorio": "gameboy",
+                    "nomeDiretorioMiniatura": "gameboy_miniatura",
+                    "palavrasChaves": [
+                        "videogame",
+
+                        "nintendo",
+
+                        "portatil",
+                        
+                        "gameboy"
+                    ],
+                    "referenciaImagem": "Foto de Ben Griffiths na Unsplash"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "nomeCategoria": "Comidas",
+            "desenhos": [
+                {
+                    "id": 0,
+                    "nomeDiretorio": "rosquinhas",
+                    "nomeDiretorioMiniatura": "rosquinhas_miniatura",
+                    "palavrasChaves": [
+                        "rosquinha",
+
+                        "donuts",
+
+                        "biscoito"
+                    ],
+                    "referenciaImagem": "Foto de Beyza Yılmaz na Unsplash"
+                },
+                {
+                    "id": 1,
+                    "nomeDiretorio": "macarons",
+                    "nomeDiretorioMiniatura": "macarons_miniatura",
+                    "palavrasChaves": [
+                        "macarons",
+
+                        "biscoito",
+
+                        "bolacha"
+                    ],
+                    "referenciaImagem": "Foto de Dan Dennis na Unsplash"
+                },
+                {
+                    "id": 2,
+                    "nomeDiretorio": "suco",
+                    "nomeDiretorioMiniatura": "suco_miniatura",
+                    "palavrasChaves": [
+                        "suco",
+
+                        "fruta",
+
+                        "resfreco"
+                    ],
+                    "referenciaImagem": "Foto de Pramod Tiwari na Unsplash"
+                },
+                {
+                    "id": 3,
+                    "nomeDiretorio": "sushi",
+                    "nomeDiretorioMiniatura": "sushi_miniatura",
+                    "palavrasChaves": [
+                        "sushi",
+
+                        "japones",
+
+                        "comida crua"
+                    ],
+                    "referenciaImagem": "Foto de Mattia Occhi na Unsplash"
+                },
+                {
+                    "id": 4,
+                    "nomeDiretorio": "laranja",
+                    "nomeDiretorioMiniatura": "laranja_miniatura",
+                    "palavrasChaves": [
+                        "laranja",
+
+                        "fruta",
+
+                        "citrico"
+                    ],
+                    "referenciaImagem": "Foto de NITISH GOSWAMI na Unsplash"
+                },
+                {
+                    "id": 5,
+                    "nomeDiretorio": "cafe",
+                    "nomeDiretorioMiniatura": "cafe_miniatura",
+                    "palavrasChaves": [
+                        "cafe",
+
+                        "xicara",
+
+                        "bebida"
+                    ],
+                    "referenciaImagem": "Foto de Phil Desforges na Unsplash"
+                },
+                {
+                    "id": 6,
+                    "nomeDiretorio": "drink",
+                    "nomeDiretorioMiniatura": "drink_miniatura",
+                    "palavrasChaves": [
+                        "drink",
+
+                        "bebida",
+
+                        "coquetel"
+                    ],
+                    "referenciaImagem": "Foto de mina rad na Unsplash"
+                },
+                {
+                    "id": 7,
+                    "nomeDiretorio": "champanhe",
+                    "nomeDiretorioMiniatura": "champanhe_miniatura",
+                    "palavrasChaves": [
+                        "champanhe",
+
+                        "espumante",
+
+                        "bebida"
+                    ],
+                    "referenciaImagem": "Foto de Cody Chan na Unsplash"
+                },
+                {
+                    "id": 8,
+                    "nomeDiretorio": "maca",
+                    "nomeDiretorioMiniatura": "maca_miniatura",
+                    "palavrasChaves": [
+                        "maçã",
+
+                        "fruta",
+
+                        "comida"
+                    ],
+                    "referenciaImagem": "Foto de Thiva na Unsplash"
+                },
+                {
+                    "id": 9,
+                    "nomeDiretorio": "hamburger",
+                    "nomeDiretorioMiniatura": "hamburguer_miniatura",
+                    "palavrasChaves": [
+                        "hamburger",
+
+                        "carne",
+
+                        "sanduiche"
+                    ],
+                    "referenciaImagem": "Foto de Narek Petrosyan na Unsplash"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "nomeCategoria": "Paisagens",
+            "desenhos": [
+                {
+                    "id": 0,
+                    "nomeDiretorio": "campo_noite",
+                    "nomeDiretorioMiniatura": "campo_noite_miniatura",
+                    "palavrasChaves": [
+                        "mato",
+
+                        "luar",
+
+                        "montanha"
+                    ],
+                    "referenciaImagem": "Photo by Aron Visuals on Unsplash"
+                },
+                {
+                    "id": 1,
+                    "nomeDiretorio": "amanhecer",
+                    "nomeDiretorioMiniatura": "amanhecer_miniatura",
+                    "palavrasChaves": [
+                        "alvorada",
+
+                        "montanhas",
+
+                        "floresta"
+                    ],
+                    "referenciaImagem": "Photo by Jasper Boer on Unsplash"
+                },
+                {
+                    "id": 2,
+                    "nomeDiretorio": "por_do_sol",
+                    "nomeDiretorioMiniatura": "por_do_sol_miniatura",
+                    "palavrasChaves": [
+                        "praia",
+
+                        "montanhas",
+
+                        "anoitecer"
+                    ],
+                    "referenciaImagem": "Photo by Gabriel Silva Suares on Unsplash"
+                },
+                {
+                    "id": 3,
+                    "nomeDiretorio": "ceu_azul",
+                    "nomeDiretorioMiniatura": "ceu_azul_miniatura",
+                    "palavrasChaves": [
+                        "campo",
+
+                        "verde",
+
+                        "natureza"
+                    ],
+                    "referenciaImagem": "Photo by Chris Barbalis on Unsplash"
+                },
+                {
+                    "id": 4,
+                    "nomeDiretorio": "floresta",
+                    "nomeDiretorioMiniatura": "floresta_miniatura",
+                    "palavrasChaves": [
+                        "natureza",
+
+                        "arvores",
+
+                        "plantas",
+                        
+                        "floresta"
+                    ],
+                    "referenciaImagem": "Photo by Johannes Plenio on Unsplash"
+                },
+                {
+                    "id": 5,
+                    "nomeDiretorio": "baloes",
+                    "nomeDiretorioMiniatura": "baloes_miniatura",
+                    "palavrasChaves": [
+                        "ceu",
+
+                        "colorido",
+
+                        "passeio",
+                        
+                        "balão"
+                    ],
+                    "referenciaImagem": "Photo by ian dooley on Unsplash"
+                },
+                {
+                    "id": 6,
+                    "nomeDiretorio": "praia",
+                    "nomeDiretorioMiniatura": "praia_miniatura",
+                    "palavrasChaves": [
+                        "areia",
+
+                        "mar",
+
+                        "azul",
+                        
+                        "praia"
+                    ],
+                    "referenciaImagem": "Photo by Nattu Adnan on Unsplash"
+                },
+                {
+                    "id": 7,
+                    "nomeDiretorio": "pinheiros",
+                    "nomeDiretorioMiniatura": "pinheiros_miniatura",
+                    "palavrasChaves": [
+                        "floresta",
+
+                        "lagoa",
+
+                        "verde",
+                        
+                        "pinheiros"
+                    ],
+                    "referenciaImagem": "Photo by Joseph Young on Unsplash"
+                },
+                {
+                    "id": 8,
+                    "nomeDiretorio": "riacho",
+                    "nomeDiretorioMiniatura": "riacho_miniatura",
+                    "palavrasChaves": [
+                        "rio",
+
+                        "floresta",
+
+                        "montanhas"
+                    ],
+                    "referenciaImagem": "Photo by Hendrik Cornelissen on Unsplash"
+                },
+                {
+                    "id": 9,
+                    "nomeDiretorio": "rio",
+                    "nomeDiretorioMiniatura": "rio_miniatura",
+                    "palavrasChaves": [
+                        "rio",
+
+                        "floresta",
+
+                        "montanhas"
+                    ],
+                    "referenciaImagem": "Photo by Bailey Zindel on Unsplash"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "nomeCategoria": "Arquitetura",
+            "desenhos": [
+                {
+                    "id": 0,
+                    "nomeDiretorio": "copan",
+                    "nomeDiretorioMiniatura": "copan_miniatura",
+                    "palavrasChaves": [
+                        "edificio copan",
+
+                        "predio",
+
+                        "curva"
+                    ],
+                    "referenciaImagem": "Photo by Rony Anderson Bobadilla Vargas on Unsplash"
+                },
+                {
+                    "id": 1,
+                    "nomeDiretorio": "louvre",
+                    "nomeDiretorioMiniatura": "louvre_miniatura",
+                    "palavrasChaves": [
+                        "louvre",
+
+                        "paris",
+
+                        "vidro"
+                    ],
+                    "referenciaImagem": "Photo by Dario Mueller on Unsplash"
+                },
+                {
+                    "id": 2,
+                    "nomeDiretorio": "terrario",
+                    "nomeDiretorioMiniatura": "terrario_miniatura",
+                    "palavrasChaves": [
+                        "moderno",
+
+                        "futurista",
+
+                        "verde"
+                    ],
+                    "referenciaImagem": "Photo by Miguel Sousa on Unsplash"
+                },
+                {
+                    "id": 3,
+                    "nomeDiretorio": "catedral_se",
+                    "nomeDiretorioMiniatura": "catedral_se_miniatura",
+                    "palavrasChaves": [
+                        "são paulo",
+
+                        "praça da sé",
+
+                        "igreja"
+                    ],
+                    "referenciaImagem": "Photo by Brunno Tozzo on Unsplash"
+                },
+                {
+                    "id": 4,
+                    "nomeDiretorio": "paralelepipedo",
+                    "nomeDiretorioMiniatura": "paralelepipedo_miniatura",
+                    "palavrasChaves": [
+                        "brasil",
+
+                        "colorido",
+
+                        "cidade"
+                    ],
+                    "referenciaImagem": "Photo by Marianna Smiley on Unsplash"
+                },
+                {
+                    "id": 5,
+                    "nomeDiretorio": "paulista",
+                    "nomeDiretorioMiniatura": "paulista_miniatura",
+                    "palavrasChaves": [
+                        "predios",
+
+                        "são paulo",
+
+                        "avenida paulista"
+                    ],
+                    "referenciaImagem": "Photo by Joao Tzanno on Unsplash"
+                },
+                {
+                    "id": 6,
+                    "nomeDiretorio": "predios",
+                    "nomeDiretorioMiniatura": "predios_miniatura",
+                    "palavrasChaves": [
+                        "predios",
+
+                        "nova iorque",
+
+                        "cidade"
+                    ],
+                    "referenciaImagem": "Photo by Andres Garcia on Unsplash"
+                },
+                {
+                    "id": 7,
+                    "nomeDiretorio": "arcos",
+                    "nomeDiretorioMiniatura": "arcos_miniatura",
+                    "palavrasChaves": [
+                        "biblioteca",
+
+                        "clean",
+
+                        "marmore"
+                    ],
+                    "referenciaImagem": "Photo by Library of Congress on Unsplash"
+                },
+                {
+                    "id": 8,
+                    "nomeDiretorio": "nublado",
+                    "nomeDiretorioMiniatura": "nublado_miniatura",
+                    "palavrasChaves": [
+                        "cinza",
+
+                        "luminarias",
+
+                        "grades"
+                    ],
+                    "referenciaImagem": "Photo by Sandra Grünewald on Unsplash"
+                },
+                {
+                    "id": 9,
+                    "nomeDiretorio": "torre_eiffel",
+                    "nomeDiretorioMiniatura": "torre_eiffel_miniatura",
+                    "palavrasChaves": [
+                        "paris",
+
+                        "frança",
+
+                        "torre eiffel"
+                    ],
+                    "referenciaImagem": "Foto de Adrien na Unsplash"
+                }
+            ]
+        }
+    ]
+}

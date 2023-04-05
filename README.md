@@ -40,4 +40,4 @@ _Exemplo: criarBotao_
 
 ### Merge
 
-**Merge será feito somente na presença de todos Pike Pedro's após o code review**
+**Merge será feito somente na presença de todos integrantes após o code review**
