@@ -11,6 +11,7 @@ struct FiltroNossosDesenhosComponente: View {
     @Binding var categorias: [Categoria]
     @Binding var filtroAberto: Bool
     @Binding var filtroSelecionado: String
+    @Binding var textFieldEstaEditando: Bool
     
     var body: some View {
         VStack {
@@ -19,6 +20,7 @@ struct FiltroNossosDesenhosComponente: View {
                     ForEach(self.categorias, id: \.id) { categoria in
                         Button {
                             self.filtroSelecionado = categoria.nomeCategoria
+                            self.textFieldEstaEditando = false
                             self.filtroAberto = false
                         } label: {
                             VStack(alignment: .leading) {

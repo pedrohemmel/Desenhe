@@ -22,7 +22,6 @@ struct SearchBarComponente: View {
                 TextField("Pesquise aqui", text: $textoPesquisa)
                     .keyboardType(.default)
                     .disabled(self.textFieldEstaEditando)
-                    
             }
             .padding(7)
             .background(Color(.systemGray6))
