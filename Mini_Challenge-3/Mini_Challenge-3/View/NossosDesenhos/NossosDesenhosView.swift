@@ -19,6 +19,7 @@ struct NossosDesenhosView: View {
     @State var categorias = [Categoria]()
     @State var recebeuInfDesenho = false
     @State var voltaParaTelaInicial = false
+    
     var nossosDesenhosViewModel = NossosDesenhosViewModel()
     
     let larguraTela = UIScreen.main.bounds.size.width
@@ -74,7 +75,8 @@ struct NossosDesenhosView: View {
                                         imagemEstaSelecionada: self.$imagemEstaSelecionada,
                                         desenhoSelecionado: self.$desenhoSelecionado,
                                         categoriaDesenhos: .constant(categoria.nomeCategoria),
-                                        desenhos: .constant(categoria.desenhos))
+                                        desenhos: .constant(categoria.desenhos),
+                                        nossosDesenhosViewModel: self.nossosDesenhosViewModel)
                                         .padding(.top, 5)
                                 }
                             }
@@ -84,14 +86,16 @@ struct NossosDesenhosView: View {
                                 imagemEstaSelecionada: self.$imagemEstaSelecionada,
                                 desenhoSelecionado: self.$desenhoSelecionado,
                                 filtroSelecionado: self.$filtroSelecionado,
-                                categorias: .constant(self.categorias))
+                                categorias: .constant(self.categorias),
+                                nossosDesenhosViewModel: self.nossosDesenhosViewModel)
                         }
                     } else if textoPesquisa != "" && self.filtroSelecionado == "" {
                         DesenhosDePesquisaComponente(
                             textoPesquisa: self.$textoPesquisa,
                             desenhoSelecionado: self.$desenhoSelecionado,
                             imagemEstaSelecionada: self.$imagemEstaSelecionada,
-                            categorias: self.$categorias)
+                            categorias: self.$categorias,
+                            nossosDesenhosViewModel: self.nossosDesenhosViewModel)
                     } else {
                         
                     }
@@ -103,9 +107,14 @@ struct NossosDesenhosView: View {
                         .opacity(0.000000001)
                         .onTapGesture {
                             self.filtroAberto = false
+                            self.textFieldEstaEditando = false
                         }
                 }
-                FiltroNossosDesenhosComponente(categorias: $categorias, filtroAberto: self.$filtroAberto, filtroSelecionado: self.$filtroSelecionado)
+                FiltroNossosDesenhosComponente(
+                    categorias: $categorias,
+                    filtroAberto: self.$filtroAberto,
+                    filtroSelecionado: self.$filtroSelecionado,
+                    textFieldEstaEditando: self.$textFieldEstaEditando)
                     .padding(.top, 65)
             } else {
                 ProgressView()
@@ -113,13 +122,13 @@ struct NossosDesenhosView: View {
             }
             
         }
-        .animation({
-            if self.voltaParaTelaInicial == true {
-                return .none
-            } else {
-                return .default
-            }
-        }())
+        .onChange(of: self.textoPesquisa) { novaPesquisa in
+            self.filtroSelecionado = ""
+            
+        }
+        .onTapGesture {
+            self.nossosDesenhosViewModel.esconderTeclado()
+        }
         .ignoresSafeArea(.keyboard)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {

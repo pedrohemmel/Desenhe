@@ -15,6 +15,8 @@ struct DesenhosDePesquisaComponente: View {
     
     @State var desenhosPesquisados = [Desenho]()
     
+    var nossosDesenhosViewModel: NossosDesenhosViewModel? = nil
+    
     let larguraTela = UIScreen.main.bounds.size.width
     let colunas = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
     var body: some View {
@@ -26,6 +28,7 @@ struct DesenhosDePesquisaComponente: View {
                 LazyVGrid(columns: colunas, spacing: 10) {
                     ForEach(desenhosPesquisados, id: \.id) { desenho in
                         Button(action: {
+//                            self.nossosDesenhosViewModel?.esconderTeclado()
                             self.desenhoSelecionado = "\(desenho.nomeDiretorio)"
                             self.imagemEstaSelecionada = true
                         }, label: {
@@ -42,23 +45,12 @@ struct DesenhosDePesquisaComponente: View {
             Spacer()
         }
         .onChange(of: textoPesquisa) { novaPesquisa in
-            self.desenhosPesquisados = buscaDesenhosPesquisados(categorias: self.categorias, textoPesquisado: novaPesquisa)
+            if let nossosDesenhosViewModel {
+                self.desenhosPesquisados = nossosDesenhosViewModel.buscaDesenhosPesquisados(categorias: self.categorias, textoPesquisado: novaPesquisa)
+            }
         }
     }
     
-    func buscaDesenhosPesquisados(categorias: [Categoria], textoPesquisado: String) -> [Desenho] {
-        var desenhos = [Desenho]()
-        for categoria in categorias {
-            for desenho in categoria.desenhos {
-                for palavraChave in desenho.palavrasChaves {
-                    if palavraChave.lowercased().contains(textoPesquisado.lowercased()) {
-                        desenhos.append(desenho)
-                        break
-                    }
-                }
-            }
-        }
-        return desenhos
-    }
+    
     
 }

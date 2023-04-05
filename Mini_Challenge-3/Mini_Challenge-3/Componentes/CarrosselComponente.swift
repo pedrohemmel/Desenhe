@@ -13,6 +13,8 @@ struct CarrosselComponente: View {
     @Binding var categoriaDesenhos: String
     @Binding var desenhos: [Desenho]
     
+    var nossosDesenhosViewModel: NossosDesenhosViewModel? = nil
+    
     let larguraTela = UIScreen.main.bounds.size.width
     var body: some View {
         VStack {
@@ -32,6 +34,7 @@ struct CarrosselComponente: View {
                     content: {
                     ForEach(desenhos, id: \.id) { desenho in
                         Button {
+                            self.nossosDesenhosViewModel?.esconderTeclado()
                             self.desenhoSelecionado = desenho.nomeDiretorio
                             self.imagemEstaSelecionada = true
                         } label: {
