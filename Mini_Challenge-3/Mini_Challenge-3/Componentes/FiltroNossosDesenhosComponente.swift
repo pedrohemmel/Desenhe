@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct FiltroNossosDesenhosComponente: View {
+    @Environment(\.colorScheme) var colorScheme
+    
     @Binding var categorias: [Categoria]
     @Binding var filtroAberto: Bool
     @Binding var filtroSelecionado: String
@@ -25,17 +27,16 @@ struct FiltroNossosDesenhosComponente: View {
                         } label: {
                             VStack(alignment: .leading) {
                                 Text(categoria.nomeCategoria)
-                                    .foregroundColor(.white)
+                                    .foregroundColor(self.colorScheme == .dark ? .white : .black)
                                 Divider()
-                                    .background(.white)
+                                    .background(self.colorScheme == .dark ? .white : .black)
                             }
                         }
                         .padding(.leading, 15)
-                        
                     }
                 }
                 .padding([.top, .leading, .trailing], 10)
-                .background(.black)
+                .background(self.colorScheme == .dark ? .black : .white)
                 .cornerRadius(10)
                 .padding([.leading, .top] , 60)
                 .padding(.trailing, 20)

@@ -90,7 +90,8 @@ struct NossosDesenhosView: View {
                 }
                 if self.filtroAberto {
                     Rectangle()
-                        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+                        ////height esta - 150 pois o tamanho completo estava bugando a tela
+                        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 150)
                         .opacity(0.000000001)
                         .onTapGesture {
                             self.filtroAberto = false
@@ -102,7 +103,6 @@ struct NossosDesenhosView: View {
                     filtroAberto: self.$filtroAberto,
                     filtroSelecionado: self.$filtroSelecionado,
                     textFieldEstaEditando: self.$textFieldEstaEditando)
-                    .padding(.top, 65)
             } else {
                 ProgressView()
                     .progressViewStyle(CircularProgressViewStyle(tint: Color("texts")))
@@ -132,7 +132,7 @@ struct NossosDesenhosView: View {
             self.nossosDesenhosViewModel.buscarInfDesenho {
                 self.recebeuInfDesenho = true
                 self.infDesenho = self.nossosDesenhosViewModel.carregadorInfDesenho?.infDesenho
-                self.categorias = self.infDesenho!.categorias
+                self.categorias = self.infDesenho!.categorias.sorted(by: { $0.nomeCategoria < $1.nomeCategoria })
             }
             
         }
