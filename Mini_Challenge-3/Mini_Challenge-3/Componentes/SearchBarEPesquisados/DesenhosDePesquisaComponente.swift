@@ -19,6 +19,7 @@ struct DesenhosDePesquisaComponente: View {
     
     let larguraTela = UIScreen.main.bounds.size.width
     let colunas = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
+    
     var body: some View {
         ScrollView {
             if desenhosPesquisados.isEmpty {

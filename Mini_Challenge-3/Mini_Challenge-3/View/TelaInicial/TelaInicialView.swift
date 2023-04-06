@@ -25,14 +25,25 @@ struct TelaInicialView: View {
                     isActive: self.$imagemEstaSelecionada, label: {})
                 VStack {
                     Spacer()
-                    Text("Vamos Desenhar!")
-                        .font(.custom("AveriaGruesaLibre-Regular", fixedSize: 40))
-                        .padding(.bottom, 5)
-                        .foregroundColor(.accentColor)
-                    Text("Para começar...")
-                        .font(.custom("AveriaGruesaLibre-Regular", fixedSize: 20))
-                        .padding(.bottom, 50)
-                        .foregroundColor(.accentColor)
+                    if UIDevice.current.userInterfaceIdiom == .phone{
+                        Text("Vamos Desenhar!")
+                            .font(.custom("AveriaGruesaLibre-Regular", fixedSize: 40))
+                            .padding(.bottom, 5)
+                            .foregroundColor(.accentColor)
+                        Text("Para começar...")
+                            .font(.custom("AveriaGruesaLibre-Regular", fixedSize: 20))
+                            .padding(.bottom, 50)
+                            .foregroundColor(.accentColor)
+                    }else{
+                        Text("Vamos Desenhar!")
+                            .font(.custom("AveriaGruesaLibre-Regular", fixedSize: 80))
+                            .padding(.bottom, 5)
+                            .foregroundColor(.accentColor)
+                        Text("Para começar...")
+                            .font(.custom("AveriaGruesaLibre-Regular", fixedSize: 40))
+                            .padding(.bottom, 50)
+                            .foregroundColor(.accentColor)
+                    }
                     
                     BotaoImportarImagemComponente(imagemEstaSelecionada: self.$imagemEstaSelecionada, dadosImagemSelecionada: self.$dadosImagemSelecionada)
                         .padding(.bottom, 15)
@@ -52,7 +63,7 @@ struct TelaInicialView: View {
                     Spacer()
                     Spacer()
                 }
-                .background(ModoClaroEscuro(light: Image("fundoLight"), dark: Image("fundoDark")))
+                .background(Image("fundo"))
             }
             .ignoresSafeArea()
         }

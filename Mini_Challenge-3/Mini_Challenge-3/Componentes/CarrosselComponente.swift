@@ -20,7 +20,13 @@ struct CarrosselComponente: View {
         VStack {
             HStack {
                 Text("\(categoriaDesenhos)")
-                    .font(.custom("AveriaGruesaLibre-Regular", fixedSize: 25))
+                    .font(.custom("AveriaGruesaLibre-Regular", fixedSize: {
+                        if UIDevice.current.userInterfaceIdiom == .phone {
+                            return 25
+                        } else {
+                            return 50
+                        }
+                    }()))
                     .foregroundColor(.accentColor)
                     .padding(10)
                     .cornerRadius(10)

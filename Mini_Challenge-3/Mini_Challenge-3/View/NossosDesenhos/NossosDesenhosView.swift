@@ -35,8 +35,6 @@ struct NossosDesenhosView: View {
     
     var body: some View {
         ZStack {
-            ModoClaroEscuro(light: Image("fundoLight"), dark: Image("fundoDark"))
-                .ignoresSafeArea()
             if recebeuInfDesenho {
                 NavigationLink(
                     destination: ConfirmarDesenhoView(
@@ -48,24 +46,13 @@ struct NossosDesenhosView: View {
                         voltaParaTelaInicial: self.$voltaParaTelaInicial),
                     isActive: self.$imagemEstaSelecionada, label: {})
                 
-                VStack {
-                    if UIDevice.current.userInterfaceIdiom == .phone{
-                        if focusedField != nil && !self.textFieldEstaEditando {
-                            withAnimation() {
-                                Rectangle()
-                                    .fill(Color.clear)
-                                    .frame(maxWidth: .infinity, maxHeight: 140)
-                            }
-                            
-                        }
-                    }
-                    
+                VStack {                    
                     SearchBarComponente(
                         textoPesquisa: self.$textoPesquisa,
                         filtroAberto: self.$filtroAberto,
                         filtroSelecionado: self.$filtroSelecionado,
                         textFieldEstaEditando: self.$textFieldEstaEditando)
-                    .padding(.top, 65)
+                    .padding(.top, 20)
                     .focused($focusedField, equals: .searchBar)
                     if textoPesquisa == "" {
                         if filtroSelecionado == "" {
@@ -129,7 +116,6 @@ struct NossosDesenhosView: View {
         .onTapGesture {
             self.nossosDesenhosViewModel.esconderTeclado()
         }
-        .ignoresSafeArea(.keyboard)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .principal) {
@@ -150,6 +136,8 @@ struct NossosDesenhosView: View {
             }
             
         }
+        .background(Image("fundo").position(x: larguraTela*0.5, y: alturaTela*0.39))
+        .ignoresSafeArea(.keyboard)
     }
     
     func verificaVoltaParaTelaInicial() -> Bool {
