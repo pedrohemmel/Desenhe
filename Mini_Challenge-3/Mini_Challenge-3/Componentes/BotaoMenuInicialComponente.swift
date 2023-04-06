@@ -23,18 +23,17 @@ struct BotaoMenuInicialComponente: View {
         NavigationLink(destination: destination, label: {
             HStack {
                 image
-                    .font(.system(size: 25))
+                    .font(.system(size: UIDevice.current.userInterfaceIdiom == .phone ? 25 : 50))
                 Text("\(text)")
-                    .font(.system(size: 14))
+                    .font(.system(size: UIDevice.current.userInterfaceIdiom == .phone ? 14 : 28))
             }
-            .frame(minWidth: larguraTela*0.75, alignment: .leading)
+            .frame(minWidth: UIDevice.current.userInterfaceIdiom == .phone ? larguraTela*0.75 : larguraTela*0.60, alignment: .leading)
             .padding(.vertical, 10)
             .padding(.horizontal, 10)
         })
         .background(Color("corBotao"))
         .cornerRadius(10)
         .foregroundColor(Color("texts"))
-        
     }
     
 }
