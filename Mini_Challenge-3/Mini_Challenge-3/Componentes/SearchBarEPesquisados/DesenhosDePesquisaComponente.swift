@@ -29,7 +29,7 @@ struct DesenhosDePesquisaComponente: View {
                 LazyVGrid(columns: colunas, spacing: 10) {
                     ForEach(desenhosPesquisados, id: \.id) { desenho in
                         Button(action: {
-//                            self.nossosDesenhosViewModel?.esconderTeclado()
+                            self.nossosDesenhosViewModel?.esconderTeclado()
                             self.desenhoSelecionado = "\(desenho.nomeDiretorio)"
                             self.imagemEstaSelecionada = true
                         }, label: {
