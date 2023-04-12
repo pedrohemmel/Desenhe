@@ -304,7 +304,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					BB7C6E7B29C8FF9D0056BBD7 = {
 						CreatedOnToolsVersion = 14.1;
@@ -385,7 +385,6 @@
 				BB70C21A29D60C4B00FA8BA2 /* TelaDSplash.swift in Sources */,
 				BB7C6ECB29CB9AC90056BBD7 /* NossosDesenhosViewModel.swift in Sources */,
 				43CF997329CD4B8C00AF990C /* ModoCameraRepresentable.swift in Sources */,
-				BB7C6E8029C8FF9D0056BBD7 /* Mini_Challenge_3App.swift in Sources */,
 				43CF997729CD4C3E00AF990C /* ModoCameraViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -544,7 +543,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mini_Challenge-3/Preview Content\"";
-				DEVELOPMENT_TEAM = UFS93RKF34;
+				DEVELOPMENT_TEAM = V32Q5HA7F8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mini-Challenge-3-Info.plist";
@@ -576,7 +575,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mini_Challenge-3/Preview Content\"";
-				DEVELOPMENT_TEAM = UFS93RKF34;
+				DEVELOPMENT_TEAM = V32Q5HA7F8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mini-Challenge-3-Info.plist";

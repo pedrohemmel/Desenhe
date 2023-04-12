@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "aarn-giri-3tYZjGSBwbk-unsplash.jpg",
+      "filename" : "desenhomargarida.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "desenhomargarida@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "desenhomargarida@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -133,6 +133,32 @@
                         "passaro"
                     ],
                     "referenciaImagem": "Foto de Lowes Takes Photos na Unsplash"
+                },
+                {
+                    "id": 10,
+                    "nomeDiretorio": "cachorro",
+                    "nomeDiretorioMiniatura": "cachorro_miniatura",
+                    "palavrasChaves": [
+                        "cachorro",
+
+                        "cão",
+
+                        "cachorrinho"
+                    ],
+                    "referenciaImagem": "Foto de Lowes Takes Photos na Unsplash"
+                },
+                {
+                    "id": 11,
+                    "nomeDiretorio": "sapo",
+                    "nomeDiretorioMiniatura": "sapo_miniatura",
+                    "palavrasChaves": [
+                        "sapo",
+
+                        "rã",
+
+                        "anfibio"
+                    ],
+                    "referenciaImagem": "Foto de Lowes Takes Photos na Unsplash"
                 }
             ]
         },
@@ -272,6 +298,32 @@
                         "rosa",
 
                         "petala"
+                    ],
+                    "referenciaImagem": "Photo by Andrew Small on Unsplash"
+                },
+                {
+                    "id": 10,
+                    "nomeDiretorio": "plantaUm",
+                    "nomeDiretorioMiniatura": "plantaUm_miniatura",
+                    "palavrasChaves": [
+                        "galhos",
+
+                        "vaso",
+
+                        "folha verde"
+                    ],
+                    "referenciaImagem": "Photo by Andrew Small on Unsplash"
+                },
+                {
+                    "id": 11,
+                    "nomeDiretorio": "plantaDois",
+                    "nomeDiretorioMiniatura": "plantaDois_miniatura",
+                    "palavrasChaves": [
+                        "espada são jorge",
+
+                        "vaso",
+
+                        "folha verde"
                     ],
                     "referenciaImagem": "Photo by Andrew Small on Unsplash"
                 }
@@ -693,6 +745,32 @@
                         "carne",
 
                         "sanduiche"
+                    ],
+                    "referenciaImagem": "Foto de Narek Petrosyan na Unsplash"
+                },
+                {
+                    "id": 10,
+                    "nomeDiretorio": "cenoura",
+                    "nomeDiretorioMiniatura": "cenoura_miniatura",
+                    "palavrasChaves": [
+                        "cenoura",
+
+                        "laranja",
+
+                        "vegetal"
+                    ],
+                    "referenciaImagem": "Foto de Narek Petrosyan na Unsplash"
+                },
+                {
+                    "id": 11,
+                    "nomeDiretorio": "morango",
+                    "nomeDiretorioMiniatura": "morango_miniatura",
+                    "palavrasChaves": [
+                        "morango",
+
+                        "fruta",
+
+                        "vermelho"
                     ],
                     "referenciaImagem": "Foto de Narek Petrosyan na Unsplash"
                 }
