@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "desenhogato.png",
+      "filename" : "desenhocenoura.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "desenhogato@2x.png",
+      "filename" : "desenhocenoura@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "desenhogato@3x.png",
+      "filename" : "desenhocenoura@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
