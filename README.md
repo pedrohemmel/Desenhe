@@ -8,7 +8,7 @@
 * CamelCase
 * Estritamente com tipagem
 
-_Exemplo: var nomeCompleto: String = "Pike Pedros"_
+_Exemplo: var nomeCompleto: String = "Rodrigo"_
 
 ### Funções
 
@@ -40,4 +40,4 @@ _Exemplo: botao_tela_inicial
 
 ### Merge
 
-**Merge será feito somente na presença de todos Pike Pedro's após o code review**
+**Merge será feito somente na presença de todos após o code review**
