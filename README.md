@@ -8,7 +8,7 @@
 * CamelCase
 * Estritamente com tipagem
 
-_Exemplo: var nomeCompleto: String = "Pike Pedros"_
+_Exemplo: var nomeCompleto: String = "Rodrigo"_
 
 ### Funções
 
