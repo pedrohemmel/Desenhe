@@ -15,11 +15,11 @@ struct SliderComponente: View {
         HStack {
             Text("\(titulo)")
                 .font(.system(size: 14))
-                .foregroundColor(Color("texts"))
+                .foregroundColor(.accentColor)
                 .fontWeight(.bold)
             
             Slider(value: $medida, in: 0...1)
-                .tint(Color("texts"))
+                .tint(.accentColor)
         }
         
     }

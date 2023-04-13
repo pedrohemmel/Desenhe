@@ -23,7 +23,7 @@ struct SearchBarComponente: View {
                     .keyboardType(.default)
                     .disabled(self.textFieldEstaEditando)
             }
-            .padding(7)
+            .padding(UIDevice.current.userInterfaceIdiom == .phone ? 7 : 15)
             .background(Color(.systemGray6))
             .cornerRadius(8)
             .padding(.leading, 10)
@@ -35,7 +35,7 @@ struct SearchBarComponente: View {
                 Image(systemName: "line.3.horizontal.decrease.circle")
                     .padding(7)
                     .padding(.trailing, 10)
-                    .foregroundColor(Color.gray)
+                    .foregroundColor(.accentColor)
             }
         }
     }

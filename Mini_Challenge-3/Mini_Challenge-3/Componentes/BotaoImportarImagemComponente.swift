@@ -18,20 +18,19 @@ struct BotaoImportarImagemComponente: View {
         PhotosPicker(selection: $imagemSelecionada, matching: .images, photoLibrary: .shared()) {
             HStack {
                 Image(systemName: "square.and.arrow.down")
-                    .font(.system(size: 25))
-
+                    .font(.system(size: UIDevice.current.userInterfaceIdiom == .phone ? 25 : 50))
+                
                 Text("   Importe uma foto de sua galeria")
-                    .font(.system(size: 14))
-
+                    .font(.system(size: UIDevice.current.userInterfaceIdiom == .phone ? 14 : 28))
             }
             .foregroundColor(Color("texts"))
-            .frame(minWidth: larguraTela*0.75, alignment: .leading)
+            .frame(minWidth: UIDevice.current.userInterfaceIdiom == .phone ? larguraTela*0.75 : larguraTela*0.60, alignment: .leading)
             .padding(.vertical, 10)
             .padding(.horizontal, 10)
             .background(Color("corBotao"))
             .cornerRadius(10)
             .foregroundColor(.black)
-
+            
         }
         .onChange(of: imagemSelecionada) { novaImagemSelecionada in
             Task {

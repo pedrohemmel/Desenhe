@@ -10,6 +10,7 @@ import SwiftUI
 struct CarrosselComponente: View {
     @Binding var imagemEstaSelecionada: Bool
     @Binding var desenhoSelecionado: String
+    @Binding var referenciaDesenhoSelecionado: String
     @Binding var categoriaDesenhos: String
     @Binding var desenhos: [Desenho]
     
@@ -20,7 +21,13 @@ struct CarrosselComponente: View {
         VStack {
             HStack {
                 Text("\(categoriaDesenhos)")
-                    .font(.custom("AveriaGruesaLibre-Regular", fixedSize: 25))
+                    .font(.custom("AveriaGruesaLibre-Regular", fixedSize: {
+                        if UIDevice.current.userInterfaceIdiom == .phone {
+                            return 25
+                        } else {
+                            return 50
+                        }
+                    }()))
                     .foregroundColor(.accentColor)
                     .padding(10)
                     .cornerRadius(10)
@@ -36,6 +43,7 @@ struct CarrosselComponente: View {
                         Button {
                             self.nossosDesenhosViewModel?.esconderTeclado()
                             self.desenhoSelecionado = desenho.nomeDiretorio
+                            self.referenciaDesenhoSelecionado = "\(desenho.referenciaImagem)"
                             self.imagemEstaSelecionada = true
                         } label: {
                             Image("\(desenho.nomeDiretorioMiniatura)")

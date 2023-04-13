@@ -28,7 +28,7 @@
 
                         "gatuno"
                     ],
-                    "referenciaImagem": "Foto de Daniel Shapiro na Unsplash"
+                    "referenciaImagem": ""
                 },
                 {
                     "id": 2,
@@ -80,7 +80,7 @@
 
                         "peludo"
                     ],
-                    "referenciaImagem": "Foto de Nikolett Emmert na Unsplash"
+                    "referenciaImagem": ""
                 },
                 {
                     "id": 6,
@@ -133,6 +133,32 @@
                         "passaro"
                     ],
                     "referenciaImagem": "Foto de Lowes Takes Photos na Unsplash"
+                },
+                {
+                    "id": 10,
+                    "nomeDiretorio": "cachorro",
+                    "nomeDiretorioMiniatura": "cachorro_miniatura",
+                    "palavrasChaves": [
+                        "cachorro",
+
+                        "cão",
+
+                        "cachorrinho"
+                    ],
+                    "referenciaImagem": ""
+                },
+                {
+                    "id": 11,
+                    "nomeDiretorio": "sapo",
+                    "nomeDiretorioMiniatura": "sapo_miniatura",
+                    "palavrasChaves": [
+                        "sapo",
+
+                        "rã",
+
+                        "anfibio"
+                    ],
+                    "referenciaImagem": ""
                 }
             ]
         },
@@ -154,7 +180,7 @@
                         
                         "margarida"
                     ],
-                    "referenciaImagem": "Photo by AARN GIRI on Unsplash"
+                    "referenciaImagem": ""
                 },
                 {
                     "id": 1,
@@ -274,6 +300,32 @@
                         "petala"
                     ],
                     "referenciaImagem": "Photo by Andrew Small on Unsplash"
+                },
+                {
+                    "id": 10,
+                    "nomeDiretorio": "plantaUm",
+                    "nomeDiretorioMiniatura": "plantaUm_miniatura",
+                    "palavrasChaves": [
+                        "galhos",
+
+                        "vaso",
+
+                        "folha verde"
+                    ],
+                    "referenciaImagem": ""
+                },
+                {
+                    "id": 11,
+                    "nomeDiretorio": "plantaDois",
+                    "nomeDiretorioMiniatura": "plantaDois_miniatura",
+                    "palavrasChaves": [
+                        "espada são jorge",
+
+                        "vaso",
+
+                        "folha verde"
+                    ],
+                    "referenciaImagem": ""
                 }
             ]
         },
@@ -694,7 +746,33 @@
 
                         "sanduiche"
                     ],
-                    "referenciaImagem": "Foto de Narek Petrosyan na Unsplash"
+                    "referenciaImagem": ""
+                },
+                {
+                    "id": 10,
+                    "nomeDiretorio": "cenoura",
+                    "nomeDiretorioMiniatura": "cenoura_miniatura",
+                    "palavrasChaves": [
+                        "cenoura",
+
+                        "laranja",
+
+                        "vegetal"
+                    ],
+                    "referenciaImagem": ""
+                },
+                {
+                    "id": 11,
+                    "nomeDiretorio": "morango",
+                    "nomeDiretorioMiniatura": "morango_miniatura",
+                    "palavrasChaves": [
+                        "morango",
+
+                        "fruta",
+
+                        "vermelho"
+                    ],
+                    "referenciaImagem": ""
                 }
             ]
         },

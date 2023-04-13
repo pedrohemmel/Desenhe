@@ -10,6 +10,7 @@ import AVFoundation
 
 struct TelaDesenharView: View {
     @Environment(\.dismiss) var dismiss
+    @Environment(\.colorScheme) var colorScheme
     
     @Binding var dismissDasTelas: (() -> Void)
     
@@ -20,8 +21,8 @@ struct TelaDesenharView: View {
     @State var eDesenho: Bool? = nil
     @State var estaTravado = false
     
-    @State private var escalaZoom = 1.0
-    @State private var opacidadeFundo = 0.5
+    @State private var escalaZoom = 0.0
+    @State private var opacidadeFundo = 0.0
     @State private var opacidadeImagem = 0.5
     
     @StateObject var cameraViewModel = ModoCameraViewModel()
@@ -38,8 +39,9 @@ struct TelaDesenharView: View {
             Rectangle()
                 .frame(width: larguraTela, height: alturaTela)
                 .ignoresSafeArea(.all)
-                .background(.white)
+                .foregroundColor(.white)
                 .opacity(self.opacidadeFundo)
+                
             
             VStack {
                 if self.eDesenho ?? false {
@@ -67,6 +69,9 @@ struct TelaDesenharView: View {
                         SliderComponente(titulo: "Fundo", medida: self.$opacidadeFundo)
                     }
                     .padding()
+                    .background(self.colorScheme == .dark ? .black : .white)
+                    .cornerRadius(10)
+                    .padding()
                     .padding(.bottom, alturaTela * 0.1)
                     .opacity(0.8)
                     .onChange(of: escalaZoom) { escala in
@@ -89,11 +94,11 @@ struct TelaDesenharView: View {
                     if !self.estaTravado {
                         Image(systemName: "lock.open.fill")
                             .font(.system(size: 25))
-                            .foregroundColor(Color("texts"))
+                            .foregroundColor(self.opacidadeFundo <= 0.5 ? .accentColor : Color("texts"))
                     } else {
                         Image(systemName: "lock.fill")
                             .font(.system(size: 25))
-                            .foregroundColor(Color("texts"))
+                            .foregroundColor(self.opacidadeFundo <= 0.5 ? .accentColor : Color("texts"))
                     }
                 }
             }
@@ -109,7 +114,7 @@ struct TelaDesenharView: View {
                     } label: {
                         Text("Concluir")
                             .fontWeight(.bold)
-                            .foregroundColor(Color("texts"))
+                            .foregroundColor(self.opacidadeFundo <= 0.5 ? .accentColor : Color("texts"))
                     }
                 }
             }

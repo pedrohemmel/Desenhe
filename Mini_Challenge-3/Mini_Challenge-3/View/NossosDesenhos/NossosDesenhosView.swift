@@ -10,6 +10,7 @@ struct NossosDesenhosView: View {
     @Environment(\.dismiss) var dismiss
     @State var imagemEstaSelecionada = false
     @State var desenhoSelecionado = ""
+    @State var referenciaDesenhoSelecionado = ""
     
     @State private var textoPesquisa = ""
     @State var filtroSelecionado = ""
@@ -35,8 +36,6 @@ struct NossosDesenhosView: View {
     
     var body: some View {
         ZStack {
-            ModoClaroEscuro(light: Image("fundoLight"), dark: Image("fundoDark"))
-                .ignoresSafeArea()
             if recebeuInfDesenho {
                 NavigationLink(
                     destination: ConfirmarDesenhoView(
@@ -45,27 +44,17 @@ struct NossosDesenhosView: View {
                         },
                         dadosImagemSelecionada: .constant(Data()),
                         desenhoSelecionado: $desenhoSelecionado,
+                        referenciaDesenhoSelecionado: self.$referenciaDesenhoSelecionado,
                         voltaParaTelaInicial: self.$voltaParaTelaInicial),
                     isActive: self.$imagemEstaSelecionada, label: {})
                 
-                VStack {
-                    if UIDevice.current.userInterfaceIdiom == .phone{
-                        if focusedField != nil && !self.textFieldEstaEditando {
-                            withAnimation() {
-                                Rectangle()
-                                    .fill(Color.clear)
-                                    .frame(maxWidth: .infinity, maxHeight: 140)
-                            }
-                            
-                        }
-                    }
-                    
+                VStack {                    
                     SearchBarComponente(
                         textoPesquisa: self.$textoPesquisa,
                         filtroAberto: self.$filtroAberto,
                         filtroSelecionado: self.$filtroSelecionado,
                         textFieldEstaEditando: self.$textFieldEstaEditando)
-                    .padding(.top, 65)
+                    .padding(.top, 20)
                     .focused($focusedField, equals: .searchBar)
                     if textoPesquisa == "" {
                         if filtroSelecionado == "" {
@@ -74,6 +63,7 @@ struct NossosDesenhosView: View {
                                     CarrosselComponente(
                                         imagemEstaSelecionada: self.$imagemEstaSelecionada,
                                         desenhoSelecionado: self.$desenhoSelecionado,
+                                        referenciaDesenhoSelecionado: self.$referenciaDesenhoSelecionado,
                                         categoriaDesenhos: .constant(categoria.nomeCategoria),
                                         desenhos: .constant(categoria.desenhos),
                                         nossosDesenhosViewModel: self.nossosDesenhosViewModel)
@@ -85,6 +75,7 @@ struct NossosDesenhosView: View {
                             CategoriaEscolhidaComponente(
                                 imagemEstaSelecionada: self.$imagemEstaSelecionada,
                                 desenhoSelecionado: self.$desenhoSelecionado,
+                                referenciaDesenhoSelecionado: self.$referenciaDesenhoSelecionado,
                                 filtroSelecionado: self.$filtroSelecionado,
                                 categorias: .constant(self.categorias),
                                 nossosDesenhosViewModel: self.nossosDesenhosViewModel)
@@ -103,7 +94,8 @@ struct NossosDesenhosView: View {
                 }
                 if self.filtroAberto {
                     Rectangle()
-                        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+                        ////height esta - 150 pois o tamanho completo estava bugando a tela
+                        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 150)
                         .opacity(0.000000001)
                         .onTapGesture {
                             self.filtroAberto = false
@@ -115,7 +107,6 @@ struct NossosDesenhosView: View {
                     filtroAberto: self.$filtroAberto,
                     filtroSelecionado: self.$filtroSelecionado,
                     textFieldEstaEditando: self.$textFieldEstaEditando)
-                    .padding(.top, 65)
             } else {
                 ProgressView()
                     .progressViewStyle(CircularProgressViewStyle(tint: Color("texts")))
@@ -129,7 +120,6 @@ struct NossosDesenhosView: View {
         .onTapGesture {
             self.nossosDesenhosViewModel.esconderTeclado()
         }
-        .ignoresSafeArea(.keyboard)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .principal) {
@@ -146,10 +136,12 @@ struct NossosDesenhosView: View {
             self.nossosDesenhosViewModel.buscarInfDesenho {
                 self.recebeuInfDesenho = true
                 self.infDesenho = self.nossosDesenhosViewModel.carregadorInfDesenho?.infDesenho
-                self.categorias = self.infDesenho!.categorias
+                self.categorias = self.infDesenho!.categorias.sorted(by: { $0.nomeCategoria < $1.nomeCategoria })
             }
             
         }
+        .background(Image("fundo").position(x: larguraTela*0.5, y: alturaTela*0.39))
+        .ignoresSafeArea(.keyboard)
     }
     
     func verificaVoltaParaTelaInicial() -> Bool {

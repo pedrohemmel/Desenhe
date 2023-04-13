@@ -13,6 +13,7 @@ struct CategoriaEscolhidaComponente: View {
     
     @Binding var imagemEstaSelecionada: Bool
     @Binding var desenhoSelecionado: String
+    @Binding var referenciaDesenhoSelecionado: String
     @Binding var filtroSelecionado: String
     @Binding var categorias: [Categoria]
     
@@ -37,6 +38,7 @@ struct CategoriaEscolhidaComponente: View {
                             Button(action: {
                                 self.nossosDesenhosViewModel?.esconderTeclado()
                                 self.desenhoSelecionado = "\(desenho.nomeDiretorio)"
+                                self.referenciaDesenhoSelecionado = "\(desenho.referenciaImagem)"
                                 self.imagemEstaSelecionada = true
                             }, label: {
                                 Image("\(desenho.nomeDiretorioMiniatura)")

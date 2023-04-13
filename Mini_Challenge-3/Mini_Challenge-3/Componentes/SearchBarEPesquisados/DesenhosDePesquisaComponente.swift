@@ -19,6 +19,7 @@ struct DesenhosDePesquisaComponente: View {
     
     let larguraTela = UIScreen.main.bounds.size.width
     let colunas = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
+    
     var body: some View {
         ScrollView {
             if desenhosPesquisados.isEmpty {
@@ -26,9 +27,11 @@ struct DesenhosDePesquisaComponente: View {
                     .padding(.top, 40)
             } else {
                 LazyVGrid(columns: colunas, spacing: 10) {
-                    ForEach(desenhosPesquisados, id: \.id) { desenho in
+                    ForEach(desenhosPesquisados.indices, id: \.self) { indice in
+                        let desenho = desenhosPesquisados[indice]
+
                         Button(action: {
-//                            self.nossosDesenhosViewModel?.esconderTeclado()
+                            self.nossosDesenhosViewModel?.esconderTeclado()
                             self.desenhoSelecionado = "\(desenho.nomeDiretorio)"
                             self.imagemEstaSelecionada = true
                         }, label: {

@@ -12,7 +12,7 @@ class TelaDesenharViewModel {
     let camera = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)
     
     func alterarZoom(escala: CGFloat) {
-        let novaEscala = 1 + 6 * (1 - escala)
+        let novaEscala = 1 + 6 * escala
         do {
             try camera?.lockForConfiguration()
             camera?.videoZoomFactor = novaEscala
