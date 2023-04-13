@@ -10,6 +10,7 @@ struct NossosDesenhosView: View {
     @Environment(\.dismiss) var dismiss
     @State var imagemEstaSelecionada = false
     @State var desenhoSelecionado = ""
+    @State var referenciaDesenhoSelecionado = ""
     
     @State private var textoPesquisa = ""
     @State var filtroSelecionado = ""
@@ -43,6 +44,7 @@ struct NossosDesenhosView: View {
                         },
                         dadosImagemSelecionada: .constant(Data()),
                         desenhoSelecionado: $desenhoSelecionado,
+                        referenciaDesenhoSelecionado: self.$referenciaDesenhoSelecionado,
                         voltaParaTelaInicial: self.$voltaParaTelaInicial),
                     isActive: self.$imagemEstaSelecionada, label: {})
                 
@@ -61,6 +63,7 @@ struct NossosDesenhosView: View {
                                     CarrosselComponente(
                                         imagemEstaSelecionada: self.$imagemEstaSelecionada,
                                         desenhoSelecionado: self.$desenhoSelecionado,
+                                        referenciaDesenhoSelecionado: self.$referenciaDesenhoSelecionado,
                                         categoriaDesenhos: .constant(categoria.nomeCategoria),
                                         desenhos: .constant(categoria.desenhos),
                                         nossosDesenhosViewModel: self.nossosDesenhosViewModel)
@@ -72,6 +75,7 @@ struct NossosDesenhosView: View {
                             CategoriaEscolhidaComponente(
                                 imagemEstaSelecionada: self.$imagemEstaSelecionada,
                                 desenhoSelecionado: self.$desenhoSelecionado,
+                                referenciaDesenhoSelecionado: self.$referenciaDesenhoSelecionado,
                                 filtroSelecionado: self.$filtroSelecionado,
                                 categorias: .constant(self.categorias),
                                 nossosDesenhosViewModel: self.nossosDesenhosViewModel)
