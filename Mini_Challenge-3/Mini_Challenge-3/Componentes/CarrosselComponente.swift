@@ -10,6 +10,7 @@ import SwiftUI
 struct CarrosselComponente: View {
     @Binding var imagemEstaSelecionada: Bool
     @Binding var desenhoSelecionado: String
+    @Binding var referenciaDesenhoSelecionado: String
     @Binding var categoriaDesenhos: String
     @Binding var desenhos: [Desenho]
     
@@ -42,6 +43,7 @@ struct CarrosselComponente: View {
                         Button {
                             self.nossosDesenhosViewModel?.esconderTeclado()
                             self.desenhoSelecionado = desenho.nomeDiretorio
+                            self.referenciaDesenhoSelecionado = "\(desenho.referenciaImagem)"
                             self.imagemEstaSelecionada = true
                         } label: {
                             Image("\(desenho.nomeDiretorioMiniatura)")

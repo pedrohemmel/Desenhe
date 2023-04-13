@@ -14,8 +14,8 @@ struct ConfirmarDesenhoView: View {
     
     @Binding var dadosImagemSelecionada: Data
     @Binding var desenhoSelecionado: String
+    @Binding var referenciaDesenhoSelecionado: String
     @Binding var voltaParaTelaInicial: Bool
-    
     
     @State var eDesenho: Bool? = nil
     @State var telaDesenharParametrizada: TelaDesenharView? = nil
@@ -45,6 +45,8 @@ struct ConfirmarDesenhoView: View {
                             .frame(width: larguraTela)
                     }
                 }
+                Text("\(self.referenciaDesenhoSelecionado)")
+                    .foregroundColor(Color(cgColor: CGColor(red: 150, green: 150, blue: 150, alpha: 0.3)))
                 Spacer()
                 HStack {
                     NavigationLink(destination: self.telaDesenharParametrizada, label: {
@@ -66,7 +68,7 @@ struct ConfirmarDesenhoView: View {
             if eMeSurpreenda ?? false {
                 self.confirmarDesenhoViewModel.buscarInfDesenho() {
                     self.recebeuInfDesenho = true
-                    self.desenhoSelecionado = self.confirmarDesenhoViewModel.sortearDesenho()
+                    (self.desenhoSelecionado, self.referenciaDesenhoSelecionado) = self.confirmarDesenhoViewModel.sortearDesenho()
                     self.eDesenho = true
                     
                     if eDesenho ?? false {

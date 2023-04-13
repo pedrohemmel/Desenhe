@@ -10,6 +10,8 @@ struct TelaInicialView: View {
     @State var imagemEstaSelecionada = false
     @State var dadosImagemSelecionada = Data()
     @State var desenhoSelecionado = ""
+    @State var referenciaDesenhoSelecionado = ""
+    
     let larguraTela = UIScreen.main.bounds.size.width
     let alturaTela = UIScreen.main.bounds.size.height
     
@@ -21,6 +23,7 @@ struct TelaInicialView: View {
                         dismissDasTelas: .constant({}),
                         dadosImagemSelecionada: $dadosImagemSelecionada,
                         desenhoSelecionado: .constant(""),
+                        referenciaDesenhoSelecionado: self.$referenciaDesenhoSelecionado,
                         voltaParaTelaInicial: .constant(false)),
                     isActive: self.$imagemEstaSelecionada, label: {})
                 VStack {
@@ -55,9 +58,12 @@ struct TelaInicialView: View {
                     
                     BotaoMenuInicialComponente(
                         destination: AnyView(ConfirmarDesenhoView(
-                            dismissDasTelas: .constant({}), dadosImagemSelecionada: .constant(Data()),
+                            dismissDasTelas: .constant({}),
+                            dadosImagemSelecionada: .constant(Data()),
                             desenhoSelecionado: self.$desenhoSelecionado,
-                            voltaParaTelaInicial: .constant(true), eMeSurpreenda: true)),
+                            referenciaDesenhoSelecionado: self.$referenciaDesenhoSelecionado,
+                            voltaParaTelaInicial: .constant(true),
+                            eMeSurpreenda: true)),
                         imageName: "lightbulb",
                         text: "     Me surpreenda")
                     Spacer()

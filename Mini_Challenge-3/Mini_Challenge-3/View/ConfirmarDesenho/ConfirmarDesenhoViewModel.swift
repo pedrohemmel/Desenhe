@@ -13,14 +13,17 @@ class ConfirmarDesenhoViewModel {
         self.carregadorInfDesenho = CarregadorInfDesenho(resposta: resposta)
     }
     
-    func sortearDesenho() -> String {
+    //retorna nome do diretório do desenho e referencia do desenho
+    func sortearDesenho() -> (String, String) {
         var desenhos = [Desenho]()
         for categoria in self.carregadorInfDesenho?.infDesenho?.categorias ?? [Categoria]() {
             for desenho in categoria.desenhos {
                 desenhos.append(desenho)
             }
         }
-        return desenhos[Int.random(in: 0...(desenhos.count - 1))].nomeDiretorio
+        
+        let imagemSorteada = desenhos[Int.random(in: 0...(desenhos.count - 1))]
+        return (imagemSorteada.nomeDiretorio, imagemSorteada.referenciaImagem)
     }
 }
 
