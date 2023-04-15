@@ -118,11 +118,6 @@ struct TelaDesenharView: View {
                     }
                 }
             }
-                
         }
     }
-    
-    
-    
-    
 }
