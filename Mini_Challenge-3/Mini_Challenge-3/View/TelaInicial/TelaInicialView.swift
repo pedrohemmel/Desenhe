@@ -66,7 +66,6 @@ struct TelaInicialView: View {
                             dadosImagemSelecionada: self.$dadosImagemSelecionada,
                             desenhoSelecionado: self.$desenhoSelecionado,
                             referenciaDesenhoSelecionado: self.$referenciaDesenhoSelecionado,
-                            voltaParaTelaInicial: .constant(false),
                             eMeSurpreenda: false)),
                         image: Image(systemName: "rectangle.3.offgrid.fill"),
                         text: "Escolha um de nossos desenhos")
@@ -84,7 +83,6 @@ struct TelaInicialView: View {
                             dadosImagemSelecionada: .constant(Data()),
                             desenhoSelecionado: self.$desenhoSelecionado,
                             referenciaDesenhoSelecionado: self.$referenciaDesenhoSelecionado,
-                            voltaParaTelaInicial: .constant(true),
                             eMeSurpreenda: true)),
                         image: Image(systemName: "lightbulb"),
                         text: "     Me surpreenda")

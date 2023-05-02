@@ -19,7 +19,6 @@ struct ConfirmarDesenhoView: View {
     @Binding var desenhoSelecionado: String
     @Binding var imagemEstaSelecionada: Bool
     @Binding var referenciaDesenhoSelecionado: String
-    @Binding var voltaParaTelaInicial: Bool
     
     @State var eDesenho: Bool? = nil
     @State var telaDesenharParametrizada: TelaDesenharView? = nil
@@ -80,18 +79,21 @@ struct ConfirmarDesenhoView: View {
                             self.desenhoSelecionado = ""
                             self.dadosImagemSelecionada = Data()
                             self.imagemEstaSelecionada = false
+                            self.referenciaDesenhoSelecionado = ""
                             self.eMeSurpreenda = false
                             self.dismiss()
                         } else if !self.eDesenho! {
                             self.desenhoSelecionado = ""
                             self.dadosImagemSelecionada = Data()
                             self.imagemEstaSelecionada = false
+                            self.referenciaDesenhoSelecionado = ""
                             self.eMeSurpreenda = false
                             self.dismiss()
                         } else {
                             self.desenhoSelecionado = ""
                             self.dadosImagemSelecionada = Data()
-                            self.imagemEstaSelecionada = false 
+                            self.imagemEstaSelecionada = false
+                            self.referenciaDesenhoSelecionado = ""
                             self.paginaTelaDesenhar = false
                             self.paginaConfirmarDesenho = false
                             self.paginaNossosDesenhos = true

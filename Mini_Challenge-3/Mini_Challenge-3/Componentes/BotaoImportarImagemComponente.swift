@@ -32,7 +32,6 @@ struct BotaoImportarImagemComponente: View {
                     dadosImagemSelecionada: self.$dadosImagemSelecionada,
                     desenhoSelecionado: self.$desenhoSelecionado,
                     referenciaDesenhoSelecionado: self.$referenciaDesenhoSelecionado,
-                    voltaParaTelaInicial: .constant(false),
                     eMeSurpreenda: false),
                 isActive: self.$acionouNavigation,
                 label: {})

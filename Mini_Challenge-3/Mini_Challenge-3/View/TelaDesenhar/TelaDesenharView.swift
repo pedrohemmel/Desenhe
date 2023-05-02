@@ -15,10 +15,10 @@ struct TelaDesenharView: View {
     @Binding var paginaNossosDesenhos: Bool
     @Binding var paginaTelaDesenhar: Bool
     
-    @Binding var dismissDasTelas: (() -> Void)
     @Binding var dadosImagemSelecionada: Data
     @Binding var desenhoSelecionado: String
-    @Binding var voltaParaTelaInicial: Bool
+    @Binding var imagemEstaSelecionada: Bool
+    @Binding var referenciaDesenhoSelecionado: String
     
     @State var eDesenho: Bool? = nil
     @State var estaTravado = false
@@ -110,9 +110,9 @@ struct TelaDesenharView: View {
                     Button {
                         self.dadosImagemSelecionada = Data()
                         self.desenhoSelecionado = ""
-                        self.voltaParaTelaInicial = true
+                        self.imagemEstaSelecionada = false
+                        self.referenciaDesenhoSelecionado = ""
                         self.dismiss()
-                        self.dismissDasTelas()
                     } label: {
                         Text("Concluir")
                             .fontWeight(.bold)

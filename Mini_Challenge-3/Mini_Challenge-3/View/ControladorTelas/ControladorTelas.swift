@@ -18,7 +18,6 @@ struct ControladorTelas: View {
     @Binding var dadosImagemSelecionada: Data
     @Binding var desenhoSelecionado: String
     @Binding var referenciaDesenhoSelecionado: String
-    @Binding var voltaParaTelaInicial: Bool
     
     var eMeSurpreenda: Bool
     
@@ -34,7 +33,6 @@ struct ControladorTelas: View {
                     dadosImagemSelecionada: self.$dadosImagemSelecionada,
                     desenhoSelecionado: self.$desenhoSelecionado,
                     imagemEstaSelecionada: self.$imagemEstaSelecionada, referenciaDesenhoSelecionado: self.$referenciaDesenhoSelecionado,
-                    voltaParaTelaInicial: self.$voltaParaTelaInicial,
                     eMeSurpreenda: self.eMeSurpreenda)
             } else if self.paginaNossosDesenhos {
                 NossosDesenhosView(
@@ -49,10 +47,10 @@ struct ControladorTelas: View {
                     paginaConfirmarDesenho: self.$paginaConfirmarDesenho,
                     paginaNossosDesenhos: self.$paginaNossosDesenhos,
                     paginaTelaDesenhar: self.$paginaTelaDesenhar,
-                    dismissDasTelas: .constant({print("voltar")}),
                     dadosImagemSelecionada: self.$dadosImagemSelecionada,
                     desenhoSelecionado: self.$desenhoSelecionado,
-                    voltaParaTelaInicial: self.$voltaParaTelaInicial)
+                    imagemEstaSelecionada: self.$imagemEstaSelecionada,
+                    referenciaDesenhoSelecionado: self.$referenciaDesenhoSelecionado)
             }
         }
     }
