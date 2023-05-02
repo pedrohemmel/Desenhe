@@ -37,6 +37,7 @@
 		BB7C6F0529CCF1830056BBD7 /* SearchBarComponente.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C6F0429CCF1830056BBD7 /* SearchBarComponente.swift */; };
 		BB7C6F0729CE1ABA0056BBD7 /* FiltroNossosDesenhosComponente.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C6F0629CE1ABA0056BBD7 /* FiltroNossosDesenhosComponente.swift */; };
 		BB7C6F0A29D2487E0056BBD7 /* ConfirmarDesenhoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C6F0929D2487E0056BBD7 /* ConfirmarDesenhoViewModel.swift */; };
+		BBC5506C29F714F8006F31E0 /* ControladorTelas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC5506B29F714F8006F31E0 /* ControladorTelas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		BB7C6F0429CCF1830056BBD7 /* SearchBarComponente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarComponente.swift; sourceTree = "<group>"; };
 		BB7C6F0629CE1ABA0056BBD7 /* FiltroNossosDesenhosComponente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltroNossosDesenhosComponente.swift; sourceTree = "<group>"; };
 		BB7C6F0929D2487E0056BBD7 /* ConfirmarDesenhoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmarDesenhoViewModel.swift; sourceTree = "<group>"; };
+		BBC5506B29F714F8006F31E0 /* ControladorTelas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorTelas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 			children = (
 				BB70C21929D60C4B00FA8BA2 /* TelaDSplash.swift */,
 				05E7280D29CA1FD3007C7D72 /* TelaInicial */,
+				BBC5506A29F714D4006F31E0 /* ControladorTelas */,
 				BB7C6EC929CB9AA00056BBD7 /* NossosDesenhos */,
 				BB7C6F0829D248400056BBD7 /* ConfirmarDesenho */,
 				BB7C6F0C29D370B50056BBD7 /* TelaDesenhar */,
@@ -256,6 +259,14 @@
 				BB70C21429D371DC00FA8BA2 /* TelaDesenharViewModel.swift */,
 			);
 			path = TelaDesenhar;
+			sourceTree = "<group>";
+		};
+		BBC5506A29F714D4006F31E0 /* ControladorTelas */ = {
+			isa = PBXGroup;
+			children = (
+				BBC5506B29F714F8006F31E0 /* ControladorTelas.swift */,
+			);
+			path = ControladorTelas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,6 +391,7 @@
 				BB7C6EBE29CA2D9D0056BBD7 /* CarregadorInfDesenho.swift in Sources */,
 				05162EBC29CCE12C007A7FB3 /* CarrosselComponente.swift in Sources */,
 				BB7C6E8029C8FF9D0056BBD7 /* Mini_Challenge_3App.swift in Sources */,
+				BBC5506C29F714F8006F31E0 /* ControladorTelas.swift in Sources */,
 				BB7C6EC529CA300D0056BBD7 /* Categoria.swift in Sources */,
 				BB7C6F0529CCF1830056BBD7 /* SearchBarComponente.swift in Sources */,
 				BB70C21A29D60C4B00FA8BA2 /* TelaDSplash.swift in Sources */,

@@ -11,9 +11,11 @@ import AVFoundation
 struct TelaDesenharView: View {
     @Environment(\.dismiss) var dismiss
     @Environment(\.colorScheme) var colorScheme
+    @Binding var paginaConfirmarDesenho: Bool
+    @Binding var paginaNossosDesenhos: Bool
+    @Binding var paginaTelaDesenhar: Bool
     
     @Binding var dismissDasTelas: (() -> Void)
-    
     @Binding var dadosImagemSelecionada: Data
     @Binding var desenhoSelecionado: String
     @Binding var voltaParaTelaInicial: Bool

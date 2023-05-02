@@ -8,9 +8,13 @@
 import SwiftUI
 struct NossosDesenhosView: View {
     @Environment(\.dismiss) var dismiss
-    @State var imagemEstaSelecionada = false
-    @State var desenhoSelecionado = ""
-    @State var referenciaDesenhoSelecionado = ""
+    @Binding var paginaConfirmarDesenho: Bool
+    @Binding var paginaNossosDesenhos: Bool
+    @Binding var paginaTelaDesenhar: Bool
+    
+    @Binding var imagemEstaSelecionada: Bool
+    @Binding var desenhoSelecionado: String
+    @Binding var referenciaDesenhoSelecionado: String
     
     @State private var textoPesquisa = ""
     @State var filtroSelecionado = ""
@@ -37,17 +41,6 @@ struct NossosDesenhosView: View {
     var body: some View {
         ZStack {
             if recebeuInfDesenho {
-                NavigationLink(
-                    destination: ConfirmarDesenhoView(
-                        dismissDasTelas: .constant {
-                            self.dismiss()
-                        },
-                        dadosImagemSelecionada: .constant(Data()),
-                        desenhoSelecionado: $desenhoSelecionado,
-                        referenciaDesenhoSelecionado: self.$referenciaDesenhoSelecionado,
-                        voltaParaTelaInicial: self.$voltaParaTelaInicial),
-                    isActive: self.$imagemEstaSelecionada, label: {})
-                
                 VStack {                    
                     SearchBarComponente(
                         textoPesquisa: self.$textoPesquisa,
@@ -113,9 +106,15 @@ struct NossosDesenhosView: View {
             }
             
         }
+        .onChange(of: self.imagemEstaSelecionada) { iES in
+            if iES {
+                self.paginaTelaDesenhar = false
+                self.paginaNossosDesenhos = false
+                self.paginaConfirmarDesenho = true
+            }
+        }
         .onChange(of: self.textoPesquisa) { novaPesquisa in
             self.filtroSelecionado = ""
-            
         }
         .onTapGesture {
             self.nossosDesenhosViewModel.esconderTeclado()
@@ -130,9 +129,6 @@ struct NossosDesenhosView: View {
             }
         }
         .onAppear {
-            if self.verificaVoltaParaTelaInicial() {
-                self.dismiss()
-            }
             self.nossosDesenhosViewModel.buscarInfDesenho {
                 self.recebeuInfDesenho = true
                 self.infDesenho = self.nossosDesenhosViewModel.carregadorInfDesenho?.infDesenho
@@ -143,8 +139,5 @@ struct NossosDesenhosView: View {
         .background(Image("fundo").position(x: larguraTela*0.5, y: alturaTela*0.39))
         .ignoresSafeArea(.keyboard)
     }
-    
-    func verificaVoltaParaTelaInicial() -> Bool {
-        return self.voltaParaTelaInicial
-    }
+
 }

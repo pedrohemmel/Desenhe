@@ -8,32 +8,51 @@
 import SwiftUI
 
 struct BotaoMenuInicialComponente: View {
-    let larguraTela = UIScreen.main.bounds.size.width
+    @Binding var paginaNossosDesenhos: Bool
+    @Binding var paginaConfirmarDesenhos: Bool
+    var paginaEscolhida: String
     var destination: AnyView
     var image: Image
     var text: String
     
-    init(destination: AnyView, imageName: String,text: String) {
-        self.destination = destination
-        self.image = Image(systemName: imageName)
-        self.text = text
-    }
+    @State var acionouBotao = false
+    
+    let larguraTela = UIScreen.main.bounds.size.width
     
     var body: some View {
-        NavigationLink(destination: destination, label: {
-            HStack {
-                image
-                    .font(.system(size: UIDevice.current.userInterfaceIdiom == .phone ? 25 : 50))
-                Text("\(text)")
-                    .font(.system(size: UIDevice.current.userInterfaceIdiom == .phone ? 14 : 28))
+        ZStack {
+            NavigationLink(
+                destination: destination,
+                isActive: self.$acionouBotao,
+                label: {})
+            Button {
+                if self.paginaEscolhida == "PND" {
+                    self.paginaConfirmarDesenhos = false
+                    self.paginaConfirmarDesenhos = false
+                    self.paginaNossosDesenhos = true
+                } else if self.paginaEscolhida == "PCD" {
+                    self.paginaConfirmarDesenhos = false
+                    self.paginaConfirmarDesenhos = true
+                    self.paginaNossosDesenhos = false
+                }
+                self.acionouBotao.toggle()
+            } label: {
+                HStack {
+                    image
+                        .font(.system(size: UIDevice.current.userInterfaceIdiom == .phone ? 25 : 50))
+                    Text("\(text)")
+                        .font(.system(size: UIDevice.current.userInterfaceIdiom == .phone ? 14 : 28))
+                }
+                .frame(minWidth: UIDevice.current.userInterfaceIdiom == .phone ? larguraTela*0.75 : larguraTela*0.60, alignment: .leading)
+                .padding(.vertical, 10)
+                .padding(.horizontal, 10)
             }
-            .frame(minWidth: UIDevice.current.userInterfaceIdiom == .phone ? larguraTela*0.75 : larguraTela*0.60, alignment: .leading)
-            .padding(.vertical, 10)
-            .padding(.horizontal, 10)
-        })
-        .background(Color("corBotao"))
-        .cornerRadius(10)
-        .foregroundColor(Color("texts"))
+            .background(Color("corBotao"))
+            .cornerRadius(10)
+            .foregroundColor(Color("texts"))
+            
+        }
+        
     }
     
 }

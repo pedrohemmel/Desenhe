@@ -7,6 +7,9 @@
 
 import SwiftUI
 struct TelaInicialView: View {
+    @State var paginaConfirmarDesenho = false
+    @State var paginaNossosDesenhos = false
+    @State var paginaTelaDesenhar = false
     @State var imagemEstaSelecionada = false
     @State var dadosImagemSelecionada = Data()
     @State var desenhoSelecionado = ""
@@ -18,14 +21,7 @@ struct TelaInicialView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                NavigationLink(
-                    destination: ConfirmarDesenhoView(
-                        dismissDasTelas: .constant({}),
-                        dadosImagemSelecionada: $dadosImagemSelecionada,
-                        desenhoSelecionado: .constant(""),
-                        referenciaDesenhoSelecionado: self.$referenciaDesenhoSelecionado,
-                        voltaParaTelaInicial: .constant(false)),
-                    isActive: self.$imagemEstaSelecionada, label: {})
+                
                 VStack {
                     Spacer()
                     if UIDevice.current.userInterfaceIdiom == .phone{
@@ -48,24 +44,51 @@ struct TelaInicialView: View {
                             .foregroundColor(.accentColor)
                     }
                     
-                    BotaoImportarImagemComponente(imagemEstaSelecionada: self.$imagemEstaSelecionada, dadosImagemSelecionada: self.$dadosImagemSelecionada)
+                    BotaoImportarImagemComponente(
+                        paginaConfirmarDesenho: self.$paginaConfirmarDesenho,
+                        paginaNossosDesenhos: self.$paginaNossosDesenhos,
+                        paginaTelaDesenhar: self.$paginaTelaDesenhar,
+                        imagemEstaSelecionada: self.$imagemEstaSelecionada,
+                        dadosImagemSelecionada: self.$dadosImagemSelecionada,
+                        desenhoSelecionado: self.$desenhoSelecionado,
+                        referenciaDesenhoSelecionado: self.$referenciaDesenhoSelecionado)
                         .padding(.bottom, 15)
-                        
-                    
-                    BotaoMenuInicialComponente(destination: AnyView(NossosDesenhosView()), imageName: "rectangle.3.offgrid.fill", text: "Escolha um de nossos desenhos")
-                        .padding(.bottom, 15)
-                      
                     
                     BotaoMenuInicialComponente(
-                        destination: AnyView(ConfirmarDesenhoView(
-                            dismissDasTelas: .constant({}),
+                        paginaNossosDesenhos: self.$paginaNossosDesenhos,
+                        paginaConfirmarDesenhos: self.$paginaConfirmarDesenho,
+                        paginaEscolhida: "PND",
+                        destination: AnyView(ControladorTelas(
+                            paginaConfirmarDesenho: self.$paginaConfirmarDesenho,
+                            paginaNossosDesenhos: self.$paginaNossosDesenhos,
+                            paginaTelaDesenhar: self.$paginaTelaDesenhar,
+                            imagemEstaSelecionada: self.$imagemEstaSelecionada,
+                            dadosImagemSelecionada: self.$dadosImagemSelecionada,
+                            desenhoSelecionado: self.$desenhoSelecionado,
+                            referenciaDesenhoSelecionado: self.$referenciaDesenhoSelecionado,
+                            voltaParaTelaInicial: .constant(false),
+                            eMeSurpreenda: false)),
+                        image: Image(systemName: "rectangle.3.offgrid.fill"),
+                        text: "Escolha um de nossos desenhos")
+                        .padding(.bottom, 15)
+                    
+                    BotaoMenuInicialComponente(
+                        paginaNossosDesenhos: self.$paginaNossosDesenhos,
+                        paginaConfirmarDesenhos: self.$paginaConfirmarDesenho,
+                        paginaEscolhida: "PCD",
+                        destination: AnyView(ControladorTelas(
+                            paginaConfirmarDesenho: self.$paginaConfirmarDesenho,
+                            paginaNossosDesenhos: self.$paginaNossosDesenhos,
+                            paginaTelaDesenhar: self.$paginaTelaDesenhar,
+                            imagemEstaSelecionada: self.$imagemEstaSelecionada,
                             dadosImagemSelecionada: .constant(Data()),
                             desenhoSelecionado: self.$desenhoSelecionado,
                             referenciaDesenhoSelecionado: self.$referenciaDesenhoSelecionado,
                             voltaParaTelaInicial: .constant(true),
                             eMeSurpreenda: true)),
-                        imageName: "lightbulb",
+                        image: Image(systemName: "lightbulb"),
                         text: "     Me surpreenda")
+                    
                     Spacer()
                     Spacer()
                 }
@@ -73,6 +96,7 @@ struct TelaInicialView: View {
             }
             .ignoresSafeArea()
         }
+        .animation(nil, value: self.imagemEstaSelecionada)
         .navigationViewStyle(StackNavigationViewStyle())
     }
 }
