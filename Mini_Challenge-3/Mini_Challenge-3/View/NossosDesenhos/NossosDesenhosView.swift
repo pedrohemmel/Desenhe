@@ -81,7 +81,13 @@ struct NossosDesenhosView: View {
                             categorias: self.$categorias,
                             nossosDesenhosViewModel: self.nossosDesenhosViewModel)
                     } else {
-                        
+                        CategoriaEscolhidaComponente(
+                            imagemEstaSelecionada: self.$imagemEstaSelecionada,
+                            desenhoSelecionado: self.$desenhoSelecionado,
+                            referenciaDesenhoSelecionado: self.$referenciaDesenhoSelecionado,
+                            filtroSelecionado: self.$filtroSelecionado,
+                            categorias: .constant(self.categorias),
+                            nossosDesenhosViewModel: self.nossosDesenhosViewModel)
                     }
                     
                 }

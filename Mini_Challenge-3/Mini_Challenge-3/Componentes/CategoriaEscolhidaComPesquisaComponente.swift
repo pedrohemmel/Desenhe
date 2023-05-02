@@ -1,13 +1,14 @@
 //
-//  TelaFiltroEscolhidoView.swift
+//  CategoriaEscolhidaComPesquisaComponente.swift
 //  Mini_Challenge-3
 //
-//  Created by Rodrigo Ferreira Pereira on 24/03/23.
+//  Created by Pedro henrique Dias hemmel de oliveira souza on 02/05/23.
 //
 
 import SwiftUI
 
-struct CategoriaEscolhidaComponente: View {
+//MARK: - FEATURE PARA SER IMPLEMENTADA FUTURAMENTE
+struct CategoriaEscolhidaComPesquisaComponente: View {
     let itens = 1...50
     let colunas = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
     
@@ -16,6 +17,7 @@ struct CategoriaEscolhidaComponente: View {
     @Binding var referenciaDesenhoSelecionado: String
     @Binding var filtroSelecionado: String
     @Binding var categorias: [Categoria]
+    @Binding var textoPesquisa: String
     
     var nossosDesenhosViewModel: NossosDesenhosViewModel? = nil
     
@@ -35,26 +37,25 @@ struct CategoriaEscolhidaComponente: View {
                 ForEach(self.categorias, id: \.id) { categoria in
                     if categoria.nomeCategoria == self.filtroSelecionado {
                         ForEach(categoria.desenhos, id: \.id) { desenho in
-                            Button(action: {
-                                self.nossosDesenhosViewModel?.esconderTeclado()
-                                self.desenhoSelecionado = "\(desenho.nomeDiretorio)"
-                                self.referenciaDesenhoSelecionado = "\(desenho.referenciaImagem)"
-                                self.imagemEstaSelecionada = true
-                            }, label: {
-                                Image("\(desenho.nomeDiretorioMiniatura)")
-                                    .resizable()
-                                    .frame(width: self.larguraTela * 0.2, height: self.larguraTela * 0.2)
-                                    .cornerRadius(10)
-                                    .clipped()
-                                    .shadow(color: Color.black.opacity(0.3), radius: 0.5, x: 2, y: 2)
-                            })
+                            if desenho.palavrasChaves.contains(self.textoPesquisa) {
+                                Button(action: {
+                                    self.nossosDesenhosViewModel?.esconderTeclado()
+                                    self.desenhoSelecionado = "\(desenho.nomeDiretorio)"
+                                    self.referenciaDesenhoSelecionado = "\(desenho.referenciaImagem)"
+                                    self.imagemEstaSelecionada = true
+                                }, label: {
+                                    Image("\(desenho.nomeDiretorioMiniatura)")
+                                        .resizable()
+                                        .frame(width: self.larguraTela * 0.2, height: self.larguraTela * 0.2)
+                                        .cornerRadius(10)
+                                        .clipped()
+                                        .shadow(color: Color.black.opacity(0.3), radius: 0.5, x: 2, y: 2)
+                                })
+                            }
                         }
-                        
                     }
                 }
             }
-            .padding(.horizontal, 5)
         }
-        
     }
 }

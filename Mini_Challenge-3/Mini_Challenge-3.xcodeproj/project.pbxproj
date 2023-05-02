@@ -38,6 +38,7 @@
 		BB7C6F0729CE1ABA0056BBD7 /* FiltroNossosDesenhosComponente.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C6F0629CE1ABA0056BBD7 /* FiltroNossosDesenhosComponente.swift */; };
 		BB7C6F0A29D2487E0056BBD7 /* ConfirmarDesenhoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C6F0929D2487E0056BBD7 /* ConfirmarDesenhoViewModel.swift */; };
 		BBC5506C29F714F8006F31E0 /* ControladorTelas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC5506B29F714F8006F31E0 /* ControladorTelas.swift */; };
+		BBC550752A014955006F31E0 /* CategoriaEscolhidaComPesquisaComponente.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC550742A014955006F31E0 /* CategoriaEscolhidaComPesquisaComponente.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		BB7C6F0629CE1ABA0056BBD7 /* FiltroNossosDesenhosComponente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltroNossosDesenhosComponente.swift; sourceTree = "<group>"; };
 		BB7C6F0929D2487E0056BBD7 /* ConfirmarDesenhoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmarDesenhoViewModel.swift; sourceTree = "<group>"; };
 		BBC5506B29F714F8006F31E0 /* ControladorTelas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorTelas.swift; sourceTree = "<group>"; };
+		BBC550742A014955006F31E0 /* CategoriaEscolhidaComPesquisaComponente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaEscolhidaComPesquisaComponente.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				05162EBB29CCE12C007A7FB3 /* CarrosselComponente.swift */,
 				BB7C6F0629CE1ABA0056BBD7 /* FiltroNossosDesenhosComponente.swift */,
 				05162EBD29CD1183007A7FB3 /* SliderComponente.swift */,
+				BBC550742A014955006F31E0 /* CategoriaEscolhidaComPesquisaComponente.swift */,
 			);
 			path = Componentes;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				BB70C21729D5FEC000FA8BA2 /* DesenhosDePesquisaComponente.swift in Sources */,
 				BB7C6EC329CA2FCC0056BBD7 /* InfDesenho.swift in Sources */,
 				BB7C6EC829CB95AC0056BBD7 /* BotaoImportarImagemComponente.swift in Sources */,
+				BBC550752A014955006F31E0 /* CategoriaEscolhidaComPesquisaComponente.swift in Sources */,
 				43910A3C29CE30C000B1BBD8 /* ConfirmarDesenhoView.swift in Sources */,
 				BB70C21329D371C400FA8BA2 /* TelaDesenharView.swift in Sources */,
 				BB7C6ECD29CB9AD20056BBD7 /* NossosDesenhosView.swift in Sources */,

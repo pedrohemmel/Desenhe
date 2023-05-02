@@ -83,6 +83,7 @@ struct TelaDesenharView: View {
                 
             }
         }
+        .ignoresSafeArea()
         .onAppear {
             self.eDesenho = self.telaDesenharViewModel.verificaImagemNula(dadosImagemSelecionada: self.dadosImagemSelecionada, desenhoSelecionado: self.desenhoSelecionado)
         }

@@ -44,6 +44,7 @@ struct DesenhosDePesquisaComponente: View {
                         })
                     }
                 }
+                .padding(.horizontal, 5)
             }
             Spacer()
         }

@@ -38,19 +38,20 @@ struct ConfirmarDesenhoView: View {
                     Image(self.desenhoSelecionado)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: larguraTela)
+                        .frame(maxHeight: alturaTela / 1.5)
+                        .padding(.top, self.alturaTela * 0.05)
                     
                 } else {
                     if let uiImage = UIImage(data: self.dadosImagemSelecionada) {
                         Image(uiImage: uiImage)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: larguraTela)
+                            .frame(maxHeight: alturaTela / 1.5)
+                            .padding(.top, self.alturaTela * 0.05)
                     }
                 }
                 Text("\(self.referenciaDesenhoSelecionado)")
                     .foregroundColor(Color(cgColor: CGColor(red: 150, green: 150, blue: 150, alpha: 0.3)))
-                Spacer()
                 HStack {
                     Button {
                         self.paginaNossosDesenhos = false
@@ -63,11 +64,13 @@ struct ConfirmarDesenhoView: View {
                             .background(Color("buttonBackground"))
                             .cornerRadius(10)
                     }
-                    .padding(.bottom, 40)
+                    .padding(.bottom, 60)
                     .padding(.trailing, 10)
                     
                 }
+                
             }
+            .frame(width: self.larguraTela)
             .ignoresSafeArea()
         }
         .navigationBarBackButtonHidden(true)
@@ -105,10 +108,7 @@ struct ConfirmarDesenhoView: View {
                         Image(systemName: "chevron.left")
                         Text("Voltar")
                     }
-                    .padding(10)
-                    .background(Color("corBotao"))
-                    .cornerRadius(20)
-                    .foregroundColor(Color("texts"))
+                    .foregroundColor(Color("corBotao"))
                 }
             }
         }
