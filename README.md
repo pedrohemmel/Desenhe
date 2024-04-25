@@ -26,13 +26,13 @@ _Exemplo: class PersonagemPrincipal {}_
 
 ### Branches
 
-* Snake case
-* Tudo minúsculo
+* CamelCase
 * Nome auto explicativo
+* Verbo
 * Utilizado para resolver uma função única
 * Nao fazer alteração na main/v1 sem consultar os colegas
 
-_Exemplo: botao_tela_inicial
+_Exemplo: criarBotao_
 
 ### Commit
 
@@ -40,4 +40,4 @@ _Exemplo: botao_tela_inicial
 
 ### Merge
 
-**Merge será feito somente na presença de todos após o code review**
+**Merge será feito somente na presença de todos integrantes após o code review**
