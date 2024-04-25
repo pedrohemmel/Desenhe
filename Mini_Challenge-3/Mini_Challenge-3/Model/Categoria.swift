@@ -11,5 +11,5 @@ struct Categoria: Codable {
     let id: Int
     let nomeCategoria: String
     let desenhos: [Desenho]
-}
+} 
 
