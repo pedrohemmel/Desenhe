@@ -1,5 +1,11 @@
 # Mini_challenge-3
 
+## Desenhê
+
+Desenhê é um aplicativo que auxilia pessoas no ato de desenhar a parti de uma imagem.
+
+[Acesse nosso aplicativo na loja](https://apps.apple.com/br/app/desenh%C3%AA/id6447317984?l=en-GB)
+
 ## Padrão de estrutura do código
 
 ### Variáveis
